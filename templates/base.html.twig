@@ -2,13 +2,41 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="stylesheet" href="{{asset('assets/css/styles.css')}}">
+        <title>{% block title %}Cook and Cool{% endblock %}</title>
+         <link rel="stylesheet" href="{{asset('assets/css/styles.css')}}">
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
+
+     <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#"><img src="{{asset('assets/img/iconPng/Setting.png')}}" alt=""></a></li>
+            </ul>
+        </nav>
+        <div class="logoHeader">
+            <a href="index.html"><img class="logoHeader" src="{{asset('assets/img/Logo.png')}}" alt="Cook&Cool"></a>
+        </div>
+    </header>
+
         {% block body %}{% endblock %}
-         <script src="{{asset('assets/js/main.js')}}"> </script>
+
+      <footer>
+        <div class="footerMenu">
+            <nav>
+                <ul class="footerMenuIcon">
+                   <div class="footerMiseEnPage"> <li><img class="footNavImg" src="{{asset('assets/img/iconPng/menu.png')}}" alt=""><a href="#">Menus</a></li></div>
+                   <div class="footerMiseEnPage"> <li><img class="footNavImg" src="{{asset('assets/img/iconPng/Liste.png')}}" alt=""><a href="#">Listes</a>
+                    </li></div>
+                    <div class="footerMiseEnPage">
+                    <li><img class="footNavImg" src="{{asset('assets/img/iconPng/Stock.png')}}" alt=""><a href="#">Stock</a></li>
+                </div>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+          <script src="{{asset('assets/js/main.js')}}"> </script>
         {% block javascripts %}{% endblock %}
     </body>
 </html>

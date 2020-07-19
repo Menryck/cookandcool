@@ -1,3 +1,120 @@
-h1 {
-    color: red;
+html, body {
+    font-size:14px;
+    width:100%;
+    padding:0;
+    margin:0;
+    text-align: center;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    width:100%;
+    box-sizing: border-box;
+}
+
+/* header */
+header {
+    overflow: hidden;
+    display: flex;
+flex-direction: column;
+    align-items: center;
+}
+
+.logoHeader{
+    width: 350px;
+}
+
+
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline ;
+    padding: 2px;
+   float: right;
+    list-style: none;
+    width: 80px;
+    margin-right: 2rem;
+}
+nav ul li {
+    padding:0.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: bgb(121, 171, 174);
+}
+
+a:hover{
+    color: #FFFF;
+    text-shadow: 1px 2px rgb(61, 58, 58);
+}
+
+
+/* MAIN */
+
+
+#button-accueil{
+    color:whitesmoke;
+    cursor: pointer;
+    border: none;
+    font-size: 25px;
+    font-weight: lighter;
+    box-shadow: 0 0 1em rgba(121, 171, 174, 0.5);
+    background-color: rgb(186, 232, 232);
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    margin-top: 220px;
+    text-shadow: 1px 1px rgb(42, 42, 42);
+
+}
+
+#button-accueil:hover{
+    color: #FFFF;
+    text-shadow: 2px 2px rgb(92, 92, 92);
+}
+
+
+/* FOOTER */
+footer{
+    
+   position: absolute;
+    width: 100%;
+    bottom: 0;
+    font-family: 'SukhumvitSet-Light', 'sans-serif';
+    font-weight: lighter;
+    text-align: center;
+    padding:2rem;
+   
+}
+
+.footerMenu {
+    display: flex;
+    justify-content: center;
+  
+}
+.footerMenuIcon {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    font-size: 21px;
+    width: 80%;
+    list-style: none;
+    font-family: 'SukhumvitSet-Light', 'sans-serif';
+}
+.footerMiseEnPage {
+    
+    width: 80px;
+}
+footer nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem;
 }

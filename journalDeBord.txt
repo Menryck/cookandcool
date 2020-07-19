@@ -4,6 +4,10 @@
                                 js/main.js
                                 img/icon png   + image logo.png
 4.Dans base.html.twig creation des chemins vers css et js
+---------------------------------------------------------------------
+5.Codage header et footer dans base.html.twig
+6.codage accueil.html.twig avec importation du css dans styles.css
+  (a definir si il restera dans le fichier css générale ou pas).
 
 
 
