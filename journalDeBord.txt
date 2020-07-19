@@ -1,0 +1,13 @@
+1.Creation de accueil.php avec php bin/console make:controller
+2.dans accueilController.php changement de la route en / (page racine public)
+3.Creation des dossier Assets/ css/styles.css
+                                js/main.js
+                                img/icon png   + image logo.png
+4.Dans base.html.twig creation des chemins vers css et js
+
+
+
+
+
+
+A faire pour bdd modifier .env
