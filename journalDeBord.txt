@@ -8,6 +8,17 @@
 5.Codage header et footer dans base.html.twig
 6.codage accueil.html.twig avec importation du css dans styles.css
   (a definir si il restera dans le fichier css générale ou pas).
+---------------------------------------------------------------------
+7.creation avec php bin/console make:controller de :
+    -configMenu
+    -menuJours
+    -type
+    -categoriePlats
+    -listeRecettes
+    -recettes
+    -listeCourse
+-----------------------------------------------------------------------
+
 
 
 
