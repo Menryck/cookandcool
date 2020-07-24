@@ -1,0 +1,26 @@
+h2 {
+    color: rgb(208, 209, 209);
+    background-color: rgba(223, 238, 238, 0.3);
+    padding: 25px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.typeDiv1 {
+    background-image: url('../img/typeImg/entrée04.webp');
+    height: 30rem;
+    margin: 20px 0;
+    object-fit: cover;
+}
+.typeDiv2 {
+    background-image: url('../img/typeImg/plat02.webp');
+    height: 30rem;
+    margin: 20px 0;
+    object-fit: cover;
+}
+.typeDiv3 {
+    background-image: url('../img/typeImg/dessert03.webp');
+    height: 30rem;
+    margin: 20px 0;
+    object-fit: cover;
+}

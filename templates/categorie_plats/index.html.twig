@@ -1,12 +1,16 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello CategoriePlatsController!{% endblock %}
+{% block title %}Catégorie{% endblock %}
+
+{{% block stylesheets %}
+<link rel="stylesheet" href="{{asset('assets/css/categorie.css')}}">
+{% endblock %}
 
 {% block body %}
 <section class='categorieR'>
 
 <h2>Categorie</h2>
-<div>
+<div class="categorie">
 Viandes
 </div>
 

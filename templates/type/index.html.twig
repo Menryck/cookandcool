@@ -1,31 +1,25 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello TypeController!{% endblock %}
+{% block title %}Type{% endblock %}
+{% block stylesheets %}
+<link rel="stylesheet" href="{{asset('assets/css/types.css')}}">
+{% endblock %}
 
 {% block body %}
 
-    <div class="typeDiv">
-    
+    <a href="#"> <div class="typeDiv1">
         <h2>Entrées</h2>
+                 </div>
+    </a>
 
-    <ul class="typeUl">
-                <li><a href="#"><img src="{{asset('assets/img/typeImg/entrée04.webp')}}" alt=""></a></li>
-            </ul>
-    </div>
-
-    <div class="typeDiv">
-
+    <a href="#"><div class="typeDiv2">
         <h2>Plats</h2>
+                 </div>
+    </a>
+           
+    <a href="#"> <div class="typeDiv3">
+            <h2>Desserts</h2>
+                 </div>
+    </a>
 
-            <ul class="typeUl">
-                <li><a href="#"><img src="{{asset('assets/img/typeImg/plat02.webp')}}" alt=""></a></li>
-            </ul>
-    </div>
-
-    <div class="typeDiv">
-        <h2>Desserts</h2>
-            <ul class="typeUl">
-                <li><a href="#"><img src="{{asset('assets/img/typeImg/dessert02.webp')}}" alt=""></a></li>
-            </ul>
-    </div>
 {% endblock %}
