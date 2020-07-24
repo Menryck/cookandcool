@@ -3,12 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Cook and Cool{% endblock %}</title>
-         <link rel="stylesheet" href="{{asset('assets/css/styles.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/css/styles.css')}}">
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
 
-     <header>
+    <header>
         <nav>
             <ul class="nav-links">
                 <li><a href="#"><img src="{{asset('assets/img/iconPng/Setting.png')}}" alt=""></a></li>
@@ -21,12 +21,12 @@
 
         {% block body %}{% endblock %}
 
-      <footer>
+    <footer>
         <div class="footerMenu">
             <nav>
                 <ul class="footerMenuIcon">
-                   <div class="footerMiseEnPage"> <li><img class="footNavImg" src="{{asset('assets/img/iconPng/menu.png')}}" alt=""><a href="#">Menus</a></li></div>
-                   <div class="footerMiseEnPage"> <li><img class="footNavImg" src="{{asset('assets/img/iconPng/Liste.png')}}" alt=""><a href="#">Listes</a>
+                    <div class="footerMiseEnPage"> <li><img class="footNavImg" src="{{asset('assets/img/iconPng/menu.png')}}" alt=""><a href="#">Menus</a></li></div>
+                    <div class="footerMiseEnPage"> <li><img class="footNavImg" src="{{asset('assets/img/iconPng/Liste.png')}}" alt=""><a href="#">Listes</a>
                     </li></div>
                     <div class="footerMiseEnPage">
                     <li><img class="footNavImg" src="{{asset('assets/img/iconPng/Stock.png')}}" alt=""><a href="#">Stock</a></li>
@@ -36,7 +36,7 @@
         </div>
     </footer>
 
-          <script src="{{asset('assets/js/main.js')}}"> </script>
+        <script src="{{asset('assets/js/main.js')}}"> </script>
         {% block javascripts %}{% endblock %}
     </body>
 </html>
