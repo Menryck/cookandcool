@@ -1,9 +1,9 @@
 html, body {
-    font-size:14px;
+/*     font-size:14px; */
     width:100%;
     padding:0;
     margin:0;
-    text-align: center;
+/*     text-align: center; */
 }
 
 * {
@@ -42,12 +42,20 @@ nav ul li {
 
 a {
     text-decoration: none;
-    color: bgb(121, 171, 174);
+    color: rgb(121, 171, 174);
 }
 
 a:hover{
-    color: #FFFF;
-    text-shadow: 1px 2px rgb(61, 58, 58);
+    color: rgb(186, 232, 232);
+/*     text-shadow: 1px 2px rgb(61, 58, 58); */
+}
+
+.footerMiseEnPage a{
+    color: rgb(121, 171, 174);
+}
+
+.footerMiseEnPage a:hover{
+    color: rgb(49, 166, 158);
 }
 
 
@@ -59,6 +67,7 @@ a:hover{
     height:600px;  /* a modifier pour desktop et ipad  a 300px */
     border-radius:50%;
     background: #F2F2F2;
+/*     background-color: rgb(186, 232, 232); */
     text-decoration:none;
     color:#0B0B0B;
     font-family: 'Open Sans', sans-serif;
@@ -68,7 +77,6 @@ a:hover{
     transition: box-shadow 399ms ease-in-out;
     margin : auto;
 }
-
 
 .sectionCreerMenu, .button {
     display: flex;
