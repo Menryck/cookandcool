@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
         <title>{% block title %}Cook and Cool{% endblock %}</title>
         <link rel="stylesheet" href="{{asset('assets/css/styles.css')}}">
         {% block stylesheets %}{% endblock %}
@@ -12,6 +12,11 @@
         <nav>
             <ul class="nav-links">
                 <li><a href="#"><img src="{{asset('assets/img/iconPng/Setting.png')}}" alt=""></a></li>
+            </ul>
+            <ul class="headerMenuIcon">
+                    <div id="iconMenus" class="footerMiseEnPage"><li><img class="footNavImg" src="{{asset('assets/img/iconPng/menu.png')}}" alt=""><a href="#">MENUS</a></li></div>
+                    <div id="iconListes" class="footerMiseEnPage"><li><img class="footNavImg" src="{{asset('assets/img/iconPng/Liste.png')}}" alt=""><a href="#">LISTES</a></li></div>
+                    <div id="iconStock" class="footerMiseEnPage"><li><img class="footNavImg" src="{{asset('assets/img/iconPng/Stock.png')}}" alt=""><a href="#">STOCK</a></li></div>
             </ul>
         </nav>
         <div class="logoHeader">
@@ -25,9 +30,9 @@
         <div class="footerMenu">
             <nav>
                 <ul class="footerMenuIcon">
-                    <div class="footerMiseEnPage"><li><img class="footNavImg" src="{{asset('assets/img/iconPng/menu.png')}}" alt=""><a href="#">Menus</a></li></div>
-                    <div class="footerMiseEnPage"><li><img class="footNavImg" src="{{asset('assets/img/iconPng/Liste.png')}}" alt=""><a href="#">Listes</a></li></div>
-                    <div class="footerMiseEnPage"><li><img class="footNavImg" src="{{asset('assets/img/iconPng/Stock.png')}}" alt=""><a href="#">Stock</a></li></div>
+                    <div id="iconMenus" class="footerMiseEnPage"><li><img class="footNavImg" src="{{asset('assets/img/iconPng/menu.png')}}" alt=""><a href="#">MENUS</a></li></div>
+                    <div id="iconListes" class="footerMiseEnPage"><li><img class="footNavImg" src="{{asset('assets/img/iconPng/Liste.png')}}" alt=""><a href="#">LISTES</a></li></div>
+                    <div id="iconStock" class="footerMiseEnPage"><li><img class="footNavImg" src="{{asset('assets/img/iconPng/Stock.png')}}" alt=""><a href="#">STOCK</a></li></div>
                 </ul>
             </nav>
         </div>
