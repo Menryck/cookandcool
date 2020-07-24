@@ -2,17 +2,38 @@
 
 {% block title %}Catégorie{% endblock %}
 
-{{% block stylesheets %}
-<link rel="stylesheet" href="{{asset('assets/css/categorie.css')}}">
+{% block stylesheets %}
+<link rel="stylesheet" href="{{asset('assets/css/categories.css')}}">
 {% endblock %}
 
 {% block body %}
 <section class='categorieR'>
 
-<h2>Categorie</h2>
-<div class="categorie">
+<h2>Categorie </h2>
+<section class="categorieL1">
+<a href=""><div class="categorieViandes bgSize">
 Viandes
-</div>
+</div></a>
+<a href=""><div class="categoriePoissons bgSize">
+Poissons
+</div></a>
+</section>
+<section class="categorieL1">
+<a href=""><div class="categorieVegan bgSize">
+Vegan
+</div></a>
+<a href=""><div class="categorieTraditionnel bgSize">
+Traditionnel
+</div></a>
+</section>
+<section class="categorieL1">
+<a href=""><div class="categorieGastronomique bgSize">
+Gastronomique
+</div></a>
+<a href=""><div class="categorieMonde bgSize">
+Cuisine du monde
+</div></a>
+</section>
 
 </section>
 {% endblock %}

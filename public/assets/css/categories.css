@@ -1,0 +1,45 @@
+.categorieL1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    width: 100%;
+}
+.categorieL1 img {
+
+    object-fit: cover;
+    width: 100%;
+    
+}
+
+.categorieViandes {
+    background-image: url('../img/categoriePlatsImg/viande01.webp');
+   
+}
+.categoriePoissons {
+    background-image: url('../img/categoriePlatsImg/poisson03.webp');
+   
+}
+.categorieVegan {
+    background-image: url('../img/categoriePlatsImg/vegan01.webp');
+ 
+}
+.categorieGastronomique {
+    background-image: url('../img/categoriePlatsImg/poisson02.webp');
+   
+}
+.categorieTraditionnel {
+    background-image: url('../img/categoriePlatsImg/cuisineTraditionnel02.webp');
+    
+}
+.categorieMonde {
+    background-image: url('../img/categoriePlatsImg/cuisineDuMonde02.webp');
+   
+}
+
+.bgSize {
+    background-size: cover;
+    background-position: center;
+    height: 20rem;
+    margin: 20px 0;
+}
