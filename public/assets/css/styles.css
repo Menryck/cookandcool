@@ -1,9 +1,9 @@
 html, body {
-    font-size:14px;
+/*     font-size:14px; */
     width:100%;
     padding:0;
     margin:0;
-    text-align: center;
+/*     text-align: center; */
 }
 
 * {
@@ -17,12 +17,22 @@ html, body {
 header {
     overflow: hidden;
     display: flex;
-flex-direction: column;
+    flex-direction: column;
     align-items: center;
 }
 
 .logoHeader{
-    width: 350px;
+    width: 650px;
+    margin-top: 50px;
+}
+
+.nav-links{
+    margin-top: 70px; /* a modifier pour desktop et ipad */
+    margin-right: 70px; /* a modifier pour desktop et ipad */
+}
+
+.headerMenuIcon {
+    display: none;
 }
 
 
@@ -42,34 +52,48 @@ nav ul li {
 
 a {
     text-decoration: none;
-    color: bgb(121, 171, 174);
+    color: rgb(121, 171, 174);
 }
 
 a:hover{
-    color: #FFFF;
-    text-shadow: 1px 2px rgb(61, 58, 58);
+    color: rgb(186, 232, 232);
+/*     text-shadow: 1px 2px rgb(61, 58, 58); */
+}
+
+.footerMiseEnPage a{
+    color: rgb(0, 0, 0);
+    letter-spacing: 3px;
+}
+
+.footerMiseEnPage a:hover{
+    color: rgb(49, 166, 158);
 }
 
 
 /* MAIN */
-
-
 #button-accueil{
     cursor: pointer;
     border: none;
-    width:300px;
-    height:300px;
+    width:550px;
+    height:550px;
     border-radius:50%;
     background: #F2F2F2;
+    background-color: rgb(186, 232, 232);
     text-decoration:none;
-    color:#0B0B0B;
+    color:#ffffff;
+    letter-spacing: 0.5rem;
     font-family: 'Open Sans', sans-serif;
     font-weight: lighter;
-    font-size: 25px;
+    font-size: 30px;
     box-shadow: inset 0 0 15px rgba(66, 66, 66, 0), inset 0 0 20px rgba(255, 255, 255, 0), 7px 7px 15px rgba(58, 58, 58, 0.15), -7px -7px 20px white, inset 0px 0px 4px rgba(255, 255, 255, 0.2);
     transition: box-shadow 399ms ease-in-out;
+    margin : auto;
 }
 
+#button-accueil:hover{
+    box-shadow: inset 7px 7px 15px rgba(66, 66, 66, 0.15), inset -7px -7px 20px white, 0px 0px 4px rgba(255, 255, 255, 0.2);
+    color:#676767;
+}
 
 .sectionCreerMenu, .button {
     display: flex;
@@ -79,19 +103,16 @@ a:hover{
 
 .sectionCreerMenu {
     width: 100%;
-    height: 90vh;
+    height: 55vh;
 }
 
 
-#button-accueil:hover{
-    box-shadow: inset 7px 7px 15px rgba(66, 66, 66, 0.15), inset -7px -7px 20px white, 0px 0px 4px rgba(255, 255, 255, 0.2);
-    color:#676767;
-}
+
+
 
 
 /* FOOTER */
 footer{
-    
     position: absolute;
     width: 100%;
     bottom: 0;
@@ -107,10 +128,10 @@ footer{
 }
 .footerMenuIcon {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
 }
-footer nav ul {
+footer nav ul { 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,12 +141,56 @@ footer nav ul {
     list-style: none;
     font-family: 'SukhumvitSet-Light', 'sans-serif';
 }
+
 .footerMiseEnPage {
-    
-    width: 80px;
+    width: 150px;
 }
-footer nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 5rem;
+
+#iconMenus{
+    margin-left: 25px;
+}
+
+
+
+
+
+@media screen and (min-width: 1080px) {
+    .sectionCreerMenu {
+        width: 100%;
+        height: 70vh;
+    }
+
+    #button-accueil{
+        width:300px;
+        height:300px;
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
+
+    .logoHeader{
+        width: 350px;
+        margin-top: 30px;
+        margin-right: 15px;
+    }
+
+    .nav-links{
+        margin-top: 30px;
+        margin-right: 25px;
+    }
+
+    footer {
+        display: none;
+    }
+
+    header {
+        display: block;
+    }
+
+    .headerMenuIcon {
+        display: flex;
+        padding: 2rem;
+        margin: auto;
+        margin-top: 30px;
+        font-family: 'SukhumvitSet-Light', 'sans-serif';
+    }
 }
