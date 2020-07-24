@@ -1,20 +1,63 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello RecettesController!{% endblock %}
+{% block title %}Hello ListeRecettesController!{% endblock %}
+{% block stylesheets %}
+<link rel="stylesheet" href="{{asset('assets/css/recettes.css')}}">
+{% endblock %}
+
+{% block header %}
+<div class="logoHeader">
+    <table>
+        <tr>
+            <td><a href="{{ url('accueil') }}"><img class="logoHeader" src="{{asset('assets/img/Logo.png')}}" alt="Cook&Cool"></a></td>
+            <td class="left"><a href="#"><img class="commandesTop" src="{{asset('assets/img/iconPng/Setting.png')}}" alt=""></a></td>
+        </tr>
+    </table>
+</div>
+{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
-
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/xampp/htdocs/cookv1/src/Controller/RecettesController.php'|file_link(0) }}">src/Controller/RecettesController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/xampp/htdocs/cookv1/templates/recettes/index.html.twig'|file_link(0) }}">templates/recettes/index.html.twig</a></code></li>
-    </ul>
-</div>
+<main>
+    <section class="banniere">
+        <h1 class="texte" id ="titre">Nom de la recette</h1>
+    </section>
+    <section class="ingredients">
+        <table class="texte centrer">
+            <tr class="gras">
+                <td><h2>Ingredients</h2></td>
+                <td><h2>Temps</h2></td>
+            </tr>
+            <tr>
+                <td>Ingredient 1</td>
+                <td>Minutes</td>
+            </tr>
+            <tr>
+                <td>Ingredient 2</td>
+            </tr>
+            <tr>
+                <td>Ingredient 3</td>
+            </tr>
+            <tr>
+                <td>Ingredient 4</td>
+            </tr>
+        </table>
+    </section>
+    <section class="preparation">
+        <h2 class="texte">Préparation</h2>
+        <ul>
+        <li class="etape texte">Faire étape 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sint facere natus tempore ipsa eaque.Esse dolore perspiciatis veniam. Quos esse quaerat accusamus maiores rerum facere sint labore amet praesentium?</li>
+        <li class="etape texte">Faire étape 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sint facere natus</li>
+        <li class="etape texte">Faire étape 3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sint facere natus</li>
+        <li class="etape texte">Faire étape 4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sint facere natus</li>
+        </ul>
+    </section>
+    <section class="commande">
+        <table>
+            <tr class="ligneBlanche">
+                <td><img src="{{asset('assets/img/iconPng/retour.png')}}" class="commandesBottom"></td>
+                <td><img src="{{asset('assets/img/iconPng/validation.png')}}" class="commandesBottom"></td>
+            </tr>
+        </table>
+    </section>
+</main>
 {% endblock %}
