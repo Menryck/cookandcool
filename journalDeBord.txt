@@ -69,3 +69,9 @@ Note 2= a la creation du champs recette relation manytoone j'ai mis ingredient a
 qui n'était pas la bonne cela donne recette [tableRecetteIngredient] en toute logique cela aurait du rajouté un champ ingredient dans recette mais ce n'est pas le cas...
 a surveiller au cas ou.
 Samedi 24 juiller commit avant 10h30 pour revenir avant ce problème.
+----------------------------------------------------------------------
+crud ingredient et recette creer et fonctionnent!
+a faire:
+-corriger unite ingredient (changer integer en string 160)
+-ajouter les champs quantité ordre et ingredients a l'aide de tableRecetteIngredients
+----------------------------------------------------------------------------------------------
