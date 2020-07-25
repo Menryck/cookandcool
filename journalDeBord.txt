@@ -20,11 +20,52 @@
 -----------------------------------------------------------------------
 correction lien logo qui mène a l'accueil
 ---------------------------------------------------------------
+pour bdd modifier .env
+DATABASE_URL=mysql://root:@127.0.0.1:3306/cook&cool?serverVersion=mariadb-10.4.11
+MAILER_DSN=null://null
+
+creation bdd cook&cool
+
+#ingredient
+-nom      ->string 160
+-image    ->string 160
+-calories ->integer yes
+-unité    ->integer   
+-typeIngredient*html->string 160
+-vegan    ->boolean yes
+-vegetarien ->boolean yes
+-gluten     ->boolean yes
+-saison*html(si fruits ou légumes) ->string 160
+
+#Recette 👍:
+-titre   -> string 160
+-difficulte -> string 160 yes
+-duree      -> integer yes
+-cuisson? -> integer yes
+-photo  -> string 160
+-ingredientsRecette ->  string 160instructions yes
+-instructions       -> text yes
+-type*html  -> string 160(entrée, plat, dessert, (boissons))
+-categorie*html -> string 160 (salade,soupe, crudités)(viandes ,poissons,vegan)(gateaux,sorbet,fruits)(cocktail, café thé)
+-(nbrePart) integer yes
 
 
 
 
+#tableRecetteIngredient
+-many to one recette
+-many to one ingredient
+-quantite _>integer yes
+-ordre => integer yes
 
+!!!Note J'ai eu un probleme lors de la creation de la tableRecetteIngredient
+du coup j'ai fait un git checkout qui n'a pas regler le probleme, puis j'ai recloner le projet et tout recommencer.
+j'ai supprimé 2 fichiers doctrines_migrations_version dans phpmyadmin
+j'en ai laissé un, ce qui creer un avertissemet a chaque php bin/console make:migrations
+. a la base le probleme est survenu apres que j'ai supprime des fichier dans le git commit...
+Bref le problème semble réglé mais je le notifi au cas ou nous rencontrons un bug plus tard.
 
-
-A faire pour bdd modifier .env
+Note 2= a la creation du champs recette relation manytoone j'ai mis ingredient a une question 
+qui n'était pas la bonne cela donne recette [tableRecetteIngredient] en toute logique cela aurait du rajouté un champ ingredient dans recette mais ce n'est pas le cas...
+a surveiller au cas ou.
+Samedi 24 juiller commit avant 10h30 pour revenir avant ce problème.
