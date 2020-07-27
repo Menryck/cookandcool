@@ -11,7 +11,12 @@
 h3 {
     font-style: normal;
 }
-
+/* footer du main (icone navigation) */
+main {
+    max-height: 73vh;
+    overflow-y: scroll;
+    padding-bottom: 3rem;
+}
 a {
     text-decoration: none;
     color: black;

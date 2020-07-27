@@ -116,18 +116,28 @@ h2 {
 }
 
 
-/* mediaquerries */
+/* mediaquerries smartphone*/
 @media (min-width: 250px) and (max-width: 768px){
- 
+ .titreCategorie {
+     font-size: 18px;
+     color: rgb(36, 34, 34);
+     padding-bottom: 0;
+     padding-top: 2px;
+     background-color: white;
+     border: 1px solid rgb(221, 221, 221);
+     text-transform: uppercase;
+ }
 .bgSize {
 
     background-size: cover;
         background-position: center;
-        height: 20rem;
+        height: 7rem;
         margin: 20px 10px;
         border-radius: 10px;
         width: 90%;
+        
     }
+    /* .categorieViandes, .categorieViandes, */
     .categorieL1 {
         display: flex;
         justify-content: center;
