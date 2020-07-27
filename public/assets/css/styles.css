@@ -41,7 +41,7 @@ html, body {
 header nav ul {
     display: flex;
     justify-content: flex-end;
-    align-items: baseline ;
+    align-items: baseline;
     padding: 2px;
     float: right;
     list-style: none;

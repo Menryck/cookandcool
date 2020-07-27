@@ -4,17 +4,48 @@
 
 {% block body %}
 <style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+    .header-liste-course { 
+        display: flex;
+        height: 50px;
+        width: 100%;
+        max-width: 768px;
+        font-size: 14px;
+        font-family: 'SukhumvitSet-Light', 'sans-serif';
+        text-align: center;
+        color: #FFFF;
+        background-color: #8C8C8C;
+    }
+
+.titre-liste-course{
+    font-weight: lighter;
+}
+
+.text-print{
+    width: 25px;
+}
+
+.text-print, a{
+    color: #ffff;
+}
+
+
+.affichage-liste-course{
+    color: #C4C4C4;
+}
+
+
+
+
+
 </style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+<div class="header-liste-course">
+    <h2 class="titre-liste-course">Votre liste</h2>
+    <a href="#">Imprimer liste<img class="text-print"src="../../public/assets/img/iconPng/print-white.png" alt=""></a>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/xampp/htdocs/cookv1/src/Controller/ListeCourseController.php'|file_link(0) }}">src/Controller/ListeCourseController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/xampp/htdocs/cookv1/templates/liste_course/index.html.twig'|file_link(0) }}">templates/liste_course/index.html.twig</a></code></li>
-    </ul>
+</div class="affichage-liste-course">
+
 </div>
+
+
 {% endblock %}
