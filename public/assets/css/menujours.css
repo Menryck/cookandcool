@@ -1,0 +1,44 @@
+.cyan {
+    background-color: #5ED3D3;
+    color: white;
+    text-align: center;
+    width: 100%;
+    min-height: 5vh;
+    display: table;
+}
+
+.jour {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.repas {
+    padding-left: 3vw;
+}
+
+.droite {
+    text-align: right;
+}
+
+.logo {
+    margin: 0px 5vw;
+    width: 30px;
+    padding : 5px;
+}
+
+.gauche {
+    text-align: left;
+}
+
+.gris {
+    background-color: #C7C7C7;
+    color: white;
+    width: 100%;
+    display: table;
+    min-height: 3vh;
+}
+
+.blanc {
+    width: 100%;
+    min-height: 30vh;
+}
