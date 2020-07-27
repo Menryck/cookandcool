@@ -10,24 +10,24 @@ h2 {
 
 .typeDiv1 {
     background-image: url('../img/typeImg/entrée04.webp');
-    height: 25rem;
-    margin: 50px auto;
+    height: 17vh;
+    margin: 45px auto;
     object-fit: cover;
     border-radius: 10px;
     width: 90%;
 }
 .typeDiv2 {
     background-image: url('../img/typeImg/plat02.webp');
-    height: 25rem;
-    margin: 50px auto;
+    height: 17vh;
+    margin: 45px auto;
     object-fit: cover;
     border-radius: 10px;
     width: 90%;
 }
 .typeDiv3 {
     background-image: url('../img/typeImg/dessert03.webp');
-    height: 25rem;
-    margin: 50px auto;
+    height: 17vh;
+    margin: 45px auto;
     object-fit: cover;
     border-radius: 10px;
     width: 90%;

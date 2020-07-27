@@ -80,11 +80,12 @@ h2 {
    
 }
 
-.categorieGastronomiqueE {
+/* .categorieGastronomiqueE {
     /* Changer image */
-    background-image: url('../img/categoriePlatsImg/cuisineDuMonde02.webp');
+  /*  background-image: url('../img/categoriePlatsImg/cuisineDuMonde02.webp');
    
-}
+} */
+
 
 /* Categorie Desserts */
 
@@ -104,14 +105,34 @@ h2 {
     background-image: url('../img/categoriePlatsImg/dessertGlacés01.webp.webp');
    
 }
-.categorieGastronomiqueD {
+/* .categorieGastronomiqueD { */
     /* Changer image */
-    background-image: url('../img/categoriePlatsImg/cuisineTraditionnel02.webp');
+    /* background-image: url('../img/categoriePlatsImg/cuisineTraditionnel02.webp');
     
-}
+} */
 .categorieVeganD {
     background-image: url('../img/categoriePlatsImg/dessertVegan01.webp');
    
 }
 
 
+/* mediaquerries */
+@media (min-width: 250px) and (max-width: 768px){
+ 
+.bgSize {
+
+    background-size: cover;
+        background-position: center;
+        height: 20rem;
+        margin: 20px 10px;
+        border-radius: 10px;
+        width: 90%;
+    }
+    .categorieL1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+}
