@@ -1,9 +1,7 @@
 html, body {
-/*     font-size:14px; */
     width:100%;
     padding:0;
     margin:0;
-/*     text-align: center; */
 }
 
 * {
@@ -13,8 +11,13 @@ html, body {
     box-sizing: border-box;
 }
 
-/* header */
 
+
+/* REGLAGES SMARTPHONE */
+
+
+
+/* header */
 .logoHeader{
     width: 150px;
     margin-top: 15px;
@@ -35,7 +38,6 @@ html, body {
     display: none;
 }
 
-
 header nav ul {
     display: flex;
     justify-content: flex-end;
@@ -46,6 +48,7 @@ header nav ul {
     width: 80px;
     margin-right: 2rem;
 }
+
 nav ul li {
     padding:0.5rem;
 }
@@ -59,17 +62,9 @@ a:hover{
     color: rgb(186, 232, 232);
 }
 
-.footerMiseEnPage a{
-    color: rgb(0, 0, 0);
-    letter-spacing: 3px;
-}
-
-.footerMiseEnPage a:hover{
-    color: rgb(49, 166, 158);
-}
 
 
-/* MAIN */
+/* main */
 #button-accueil{
     cursor: pointer;
     border: none;
@@ -104,13 +99,14 @@ a:hover{
     width: 100%;
     height: 70vh;
 }
+/* footer du main (icone navigation) */
+main {
+    max-height: 76vh;
+    overflow-y: scroll;
+    padding-bottom: 4rem;
+}
 
-
-
-
-
-
-/* FOOTER */
+/* footer */
 footer{
     position: absolute;
     width: 100%;
@@ -125,11 +121,13 @@ footer{
     display: flex;
     justify-content: center;
 }
+
 .footerMenuIcon {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
+
 footer nav ul { 
     display: flex;
     justify-content: center;
@@ -145,10 +143,18 @@ footer nav ul {
     width: 65px;
 }
 
+.footerMiseEnPage a{
+    color: rgb(0, 0, 0);
+    letter-spacing: 3px;
+}
+
+.footerMiseEnPage a:hover{
+    color: rgb(49, 166, 158);
+}
 
 
 
-
+/* REGLAGES DESKTOP */
 
 
 
@@ -227,9 +233,11 @@ footer nav ul {
     #iconStock{
         padding: 0 0 0 35px;
     }
-
 }
 
+
+
+/* REGLAGES TABLETTE */
 
 
 
@@ -255,5 +263,4 @@ footer nav ul {
         justify-content: space-around;
         width: 100%;
     }
-
 }
