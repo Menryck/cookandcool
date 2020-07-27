@@ -4,17 +4,18 @@
 
 {% block body %}
 <style>
-    .header-liste-course { 
-        display: flex;
-        height: 50px;
-        width: 100%;
-        max-width: 768px;
-        font-size: 14px;
-        font-family: 'SukhumvitSet-Light', 'sans-serif';
-        text-align: center;
-        color: #FFFF;
-        background-color: #8C8C8C;
-    }
+.header-liste-course { 
+    display: flex;
+    height: 50px;
+    width: 100%;
+    max-width: 768px;
+    font-size: 14px;
+    font-family: 'SukhumvitSet-Light', 'sans-serif';
+    text-align: center;
+    color: #FFFF;
+    background-color: #8C8C8C;
+    position: fixed;
+}
 
 .titre-liste-course{
     font-weight: lighter;
@@ -28,20 +29,21 @@
     color: #ffff;
 }
 
-
 .affichage-liste-course{
     width: 100%;
     height: 500px;
     background-color: #C4C4C4;
 }
 
-
-
 </style>
+
+
+
+
 
 <div class="header-liste-course">
     <h2 class="titre-liste-course">Votre liste</h2>
-    <a href="#">Imprimer liste<img class="text-print"src="../../public/assets/img/iconPng/print-white.png" alt=""></a>
+    <a href="#">Imprimer liste<img class="text-print"src="../../public/assets/img/iconPng/print-white.png" alt="imprimer"></a>
 </div>
 
 <div class="affichage-liste-course">
