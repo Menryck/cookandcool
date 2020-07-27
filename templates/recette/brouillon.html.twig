@@ -1,0 +1,67 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ListeRecettesController!{% endblock %}
+{% block stylesheets %}
+<link rel="stylesheet" href="{{asset('assets/css/recettes.css')}}">
+{% endblock %}
+
+{% block header %}
+<div class="logoHeader">
+    <table>
+        <tr>
+            <td><a href="{{ url('accueil') }}"><img class="logoHeader" src="{{asset('assets/img/Logo.png')}}" alt="Cook&Cool"></a></td>
+            <td class="left"><a href="#"><img class="commandesTop" src="{{asset('assets/img/iconPng/Setting.png')}}" alt=""></a></td>
+        </tr>
+    </table>
+</div>
+{% endblock %}
+
+{% block body %}
+<main>
+    <section class="banniere">
+        <h1 class="texte" id ="titre">{{ recette.titre }}</h1>
+    </section>
+    <section class="ingredients">
+        <table class="texte centrer">
+            <tr class="gras">
+                <td><h2>Ingredients</h2></td>
+                <td><h2>Temps de préparation / Cuisson</h2></td>
+            </tr>
+            <tr>
+                <td>Ingredient 1</td>
+                <td>{{ recette.duree }} / {{ recette.cuisson }} minutes</td>
+            </tr>
+            <tr>
+                <h2>Difficulte</h2>
+                <td>{{ recette.difficulte }}</td>
+            </tr>
+            <tr>
+                <td>Ingredient 2</td>
+            </tr>
+            <tr>
+                <td>Ingredient 3</td>
+            </tr>
+            <tr>
+                <td>Ingredient 4</td>
+            </tr>
+        </table>
+    </section>
+    <section class="preparation">
+        <h2 class="texte">Préparation</h2>
+        <ul>
+        <li class="etape texte">Faire étape 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sint facere natus tempore ipsa eaque.Esse dolore perspiciatis veniam. Quos esse quaerat accusamus maiores rerum facere sint labore amet praesentium?</li>
+        <li class="etape texte">Faire étape 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sint facere natus</li>
+        <li class="etape texte">Faire étape 3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sint facere natus</li>
+        <li class="etape texte">Faire étape 4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sint facere natus</li>
+        </ul>
+    </section>
+    <section class="commande">
+        <table>
+            <tr class="ligneBlanche">
+                <td><img src="{{asset('assets/img/iconPng/retour.png')}}" class="commandesBottom"></td>
+                <td><img src="{{asset('assets/img/iconPng/validation.png')}}" class="commandesBottom"></td>
+            </tr>
+        </table>
+    </section>
+</main>
+{% endblock %}
