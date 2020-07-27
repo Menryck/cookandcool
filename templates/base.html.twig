@@ -8,8 +8,9 @@
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
-    {% block header %}
+    
     <header>
+    {% block header %}
         <nav>
             <ul class="iconReglageDesktop">
                 <li><a href="#"><img src="{{asset('assets/img/iconPng/Setting.png')}}" alt=""></a></li>
@@ -27,13 +28,15 @@
         <div class="logoHeader">
             <a href="{{ url('accueil') }}"><img class="logoHeader" src="{{asset('assets/img/Logo.png')}}" alt="Cook&Cool"></a>
         </div>
-    </header>
     {% endblock %}
+    </header>
+    
 
         {% block body %}{% endblock %}
 
-    {% block footer %}
+    
     <footer>
+    {% block footer %}
         <div class="footerMenu">
             <nav>
                 <ul class="footerMenuIcon">
@@ -43,8 +46,9 @@
                 </ul>
             </nav>
         </div>
-    </footer>
     {% endblock %}
+    </footer>
+    
 
         <script src="{{asset('assets/js/main.js')}}"> </script>
         {% block javascripts %}{% endblock %}
