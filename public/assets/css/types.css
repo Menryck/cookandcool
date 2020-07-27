@@ -6,21 +6,46 @@ h2 {
     font-size: 40px;
 }
 
+
+
 .typeDiv1 {
     background-image: url('../img/typeImg/entrée04.webp');
-    height: 30rem;
-    margin: 20px 0;
+    height: 17vh;
+    margin: 45px auto;
     object-fit: cover;
+    border-radius: 10px;
+    width: 90%;
 }
 .typeDiv2 {
     background-image: url('../img/typeImg/plat02.webp');
-    height: 30rem;
-    margin: 20px 0;
+    height: 17vh;
+    margin: 45px auto;
     object-fit: cover;
+    border-radius: 10px;
+    width: 90%;
 }
 .typeDiv3 {
     background-image: url('../img/typeImg/dessert03.webp');
-    height: 30rem;
-    margin: 20px 0;
+    height: 17vh;
+    margin: 45px auto;
     object-fit: cover;
+    border-radius: 10px;
+    width: 90%;
 }
+
+.footerMenuIcon {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 1rem !important;
+}
+
+
+
+/* mediaquerries */
+/* @media (min-width: 250px) and (max-width: 768px){
+    .logoHeader{
+        width: 250px;
+        margin-top: 30px;
+        margin-right: 15px;
+    } */

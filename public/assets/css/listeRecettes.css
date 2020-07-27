@@ -1,0 +1,22 @@
+h2 {
+    color: rgb(208, 209, 209);
+    background-color: rgba(223, 238, 238, 0.3);
+    padding: 25px;
+    text-align: center;
+    font-size: 40px;
+}
+
+
+.listeDiv1 {
+    background-image: url('../img/typeImg/entrée04.webp');
+    height: 25rem;
+    margin: 50px auto;
+    object-fit: cover;
+    border-radius: 10px;
+    width: 90%;
+}
+
+
+
+
+/* mediaquerries */

@@ -99,8 +99,12 @@ a:hover{
     width: 100%;
     height: 70vh;
 }
-
-
+/* footer du main (icone navigation) */
+main {
+    max-height: 73vh;
+    overflow-y: scroll;
+    padding-bottom: 3rem;
+}
 
 /* footer */
 footer{
@@ -116,9 +120,11 @@ footer{
 .footerMenu {
     display: flex;
     justify-content: center;
+   
 }
 
 .footerMenuIcon {
+    background-color: #ffffff;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -130,7 +136,7 @@ footer nav ul {
     align-items: center;
     padding: 2rem;
     font-size: 12px;
-    width: 80%;
+    width: 80%; 
     list-style: none;
     font-family: 'SukhumvitSet-Light', 'sans-serif';
 }

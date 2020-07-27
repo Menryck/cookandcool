@@ -1,20 +1,28 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello MenuJoursController!{% endblock %}
-
+{% block stylesheets %}
+<link rel="stylesheet" href="{{asset('assets/css/menujours.css')}}">
+{% endblock %}
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/xampp/htdocs/cookv1/src/Controller/MenuJoursController.php'|file_link(0) }}">src/Controller/MenuJoursController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/xampp/htdocs/cookv1/templates/menu_jours/index.html.twig'|file_link(0) }}">templates/menu_jours/index.html.twig</a></code></li>
-    </ul>
+<div class="cyan">
+    <img class="logo gauche jour" src="{{asset('assets/img/iconPng/retour.png')}}" alt="Précédent">
+    <span class="jour">Jour 1</span>
+    <img class="logo droite jour" src="{{asset('assets/img/iconPng/bottom.png')}}" alt="Suivant">
 </div>
+<div class="gris">
+    <span class="jour repas">Déjeuner</span>
+    <img class="logo droite" src="{{asset('assets/img/iconPng/plus.png')}}" alt="Ajouter une recette">
+</div>
+<div class="blanc">
+
+</div>
+<div class="gris">
+    <span class="jour repas">Dîner</span>
+    <img class="logo droite" src="{{asset('assets/img/iconPng/plus.png')}}" alt="Ajouter une recette">
+</div>
+<div class="blanc">
+
+</div>
+
 {% endblock %}
