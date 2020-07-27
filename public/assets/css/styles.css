@@ -99,8 +99,12 @@ a:hover{
     width: 100%;
     height: 70vh;
 }
-
-
+/* footer du main (icone navigation) */
+main {
+    max-height: 76vh;
+    overflow-y: scroll;
+    padding-bottom: 4rem;
+}
 
 /* footer */
 footer{
