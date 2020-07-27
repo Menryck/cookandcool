@@ -39,6 +39,8 @@
     {% block footer %}
         <div class="footerMenu">
             <nav>
+        {# <div id="iconMenus footerMenuIcon" class="footerMiseEnPage"><li><a href="{{ url('type') }}"><img class="backImg" src="{{asset('assets/img/iconPng/retour.png')}}" alt="Menus"></a></li></div> #}
+              
                 <ul class="footerMenuIcon">
                     <div id="iconMenus" class="footerMiseEnPage"><li><a href="{{ url('menu_jours') }}"><img class="footNavImg" src="{{asset('assets/img/iconPng/menu.png')}}" alt="Menus">MENUS</a></li></div>
                     <div id="iconListes" class="footerMiseEnPage"><li><a href="{{ url('liste_course') }}"><img class="footNavImg" src="{{asset('assets/img/iconPng/Liste.png')}}" alt="Listes">LISTES</a></li></div>
