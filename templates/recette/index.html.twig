@@ -6,6 +6,7 @@
 <style>
 .btn{
     width: 200px;
+    margin: 7px;
 }
 .container{
     display: flex;
@@ -53,8 +54,8 @@
                 <td>{{ recette.categorie }}</td>
                 <td>{{ recette.nbrePart }}</td>
                 <td>
-                    <a href="{{ path('recette_show', {'id': recette.id}) }}">voir</a>
-                    <a href="{{ path('recette_edit', {'id': recette.id}) }}">modifier</a>
+                    <a class="btn btn-danger" href="{{ path('recette_show', {'id': recette.id}) }}">voir</a>
+                    <a class="btn btn-danger" href="{{ path('recette_edit', {'id': recette.id}) }}">modifier</a>
                 </td>
             </tr>
         {% else %}

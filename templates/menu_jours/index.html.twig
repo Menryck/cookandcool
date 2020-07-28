@@ -12,17 +12,25 @@
 </div>
 <div class="gris">
     <span class="jour repas">Déjeuner</span>
-    <a href="{{ url('type')}}"> <div><img class="logo droite" src="{{asset('assets/img/iconPng/plus.png')}}" alt="Ajouter une recette"></a>
+    <a href="{{ url('type')}}"> <div><img class="logo droite" src="{{asset('assets/img/iconPng/plus.png')}}" alt="Ajouter un déjeuner"></a>
 </div></div>
 <div class="blanc">
 
 </div>
 <div class="gris">
     <span class="jour repas">Dîner</span>
-    <a href="{{ url('type')}}"> <div><img class="logo droite" src="{{asset('assets/img/iconPng/plus.png')}}" alt="Ajouter une recette"></a>
+    <a href="{{ url('type')}}"> <div><img class="logo droite" src="{{asset('assets/img/iconPng/plus.png')}}" alt="Ajouter un diner"></a>
 </div></div>
 <div class="blanc">
 
 </div>
+{% endblock %}
 
+{% block javascripts %}
+
+<script>
+    var ajouter = document.getElementById('addDejeuner');
+
+
+</script>
 {% endblock %}
