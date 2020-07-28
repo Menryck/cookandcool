@@ -33,7 +33,7 @@ class Ingredient
     private $calories;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="string")
      */
     private $unite;
 

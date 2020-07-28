@@ -37,6 +37,11 @@ class TableRecetteIngredients
      */
     private $ordre;
 
+    /**
+     * @ORM\Column(type="text", nullable=true)
+     */
+    private $etape;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -86,6 +91,18 @@ class TableRecetteIngredients
     public function setOrdre(?int $ordre): self
     {
         $this->ordre = $ordre;
+
+        return $this;
+    }
+
+    public function getEtape(): ?string
+    {
+        return $this->etape;
+    }
+
+    public function setEtape(?string $etape): self
+    {
+        $this->etape = $etape;
 
         return $this;
     }
