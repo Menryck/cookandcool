@@ -5,9 +5,9 @@
 {% block body %}
 <style>
 
-body { 
+{# body { 
     background-color: #C4C4C4;
-}
+} #}
 
 header{
     background-color: #ffff;
@@ -60,14 +60,32 @@ header{
     margin-top: 65px;
     margin-left: 35px;
     margin-bottom: 30px;
-    color: #ffff;
+    color: #000000;
     font-size: 14px;
     font-family: 'SukhumvitSet-Light', 'sans-serif';
 }
 
 
 
+/* REGLAGES DESKTOP */
+@media screen and (min-width: 1080px){
+.header-liste-course { 
+    display: flex;
+    align-items: center;
+    height: 80px;
+    max-width: 100%;
+    font-size: 20px;
+    font-family: 'SukhumvitSet-Light', 'sans-serif';
+    text-align: center;
+    color: #FFFF;
+    background-color: #8C8C8C;
+    position: fixed;
+}
 
+
+
+
+}
 
 
 </style>

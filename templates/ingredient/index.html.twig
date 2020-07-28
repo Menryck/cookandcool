@@ -2,9 +2,17 @@
 
 {% block title %}Ingredient index{% endblock %}
 
-{% block body %}
-    <h1>Ingredient index</h1>
 
+{% block body %}
+
+<style>
+.btn{
+    width: 200px;
+}
+</style>
+
+<section class="container">
+    <h1>Ingredient index</h1>
     <table class="table">
         <thead>
             <tr>
@@ -35,17 +43,18 @@
                 <td>{{ ingredient.gluten ? 'Yes' : 'No' }}</td>
                 <td>{{ ingredient.saison }}</td>
                 <td>
-                    <a href="{{ path('ingredient_show', {'id': ingredient.id}) }}">show</a>
-                    <a href="{{ path('ingredient_edit', {'id': ingredient.id}) }}">edit</a>
+                    <a href="{{ path('ingredient_show', {'id': ingredient.id}) }}">voir</a>
+                    <a href="{{ path('ingredient_edit', {'id': ingredient.id}) }}">modifier</a>
                 </td>
             </tr>
         {% else %}
             <tr>
-                <td colspan="11">no records found</td>
+                <td colspan="11">aucunes données ici</td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
-    <a href="{{ path('ingredient_new') }}">Create new</a>
+    <a class="btn btn-danger" href="{{ path('ingredient_new') }}">Ajouter un ingrédient</a>
+</section>
 {% endblock %}

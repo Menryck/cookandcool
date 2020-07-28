@@ -3,9 +3,19 @@
 {% block title %}New Ingredient{% endblock %}
 
 {% block body %}
-    <h1>Create new Ingredient</h1>
+
+<style>
+.btn{
+    width: 200px;
+    margin: 7px;
+}
+</style>
+
+<section class="container">
+    <h1>Creer un nouvel ingrédient</h1>
 
     {{ include('ingredient/_form.html.twig') }}
 
-    <a href="{{ path('ingredient_index') }}">back to list</a>
+    <a class="btn btn-danger" href="{{ path('ingredient_index') }}">retour à la liste</a>
+</section>
 {% endblock %}
