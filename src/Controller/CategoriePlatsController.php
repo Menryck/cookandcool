@@ -17,11 +17,11 @@ class CategoriePlatsController extends AbstractController
         ]);
     }
     /**
-     * @Route("/categorie/entrées", name="categorie_entrées")
+     * @Route("/categorie/entrees", name="categorie_entrees")
      */
-    public function entrées()
+    public function entrees()
     {
-        return $this->render('categorie_Plats/entrées.html.twig', [
+        return $this->render('categorie_Plats/entrees.html.twig', [
             'controller_name' => 'CategoriePlatsController',
         ]);
     }

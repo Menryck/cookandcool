@@ -33,7 +33,7 @@ class Ingredient
     private $calories;
 
     /**
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="string", nullable=true)
      */
     private $unite;
 
@@ -58,7 +58,7 @@ class Ingredient
     private $gluten;
 
     /**
-     * @ORM\Column(type="string", length=160)
+     * @ORM\Column(type="string", length=160, nullable=true)
      */
     private $saison;
 
@@ -108,7 +108,7 @@ class Ingredient
         return $this->unite;
     }
 
-    public function setUnite(int $unite): self
+    public function setUnite(string $unite): self
     {
         $this->unite = $unite;
 
