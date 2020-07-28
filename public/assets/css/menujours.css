@@ -1,3 +1,7 @@
+/* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+
 .cyan {
     background-color: #5ED3D3;
     color: white;
@@ -10,10 +14,12 @@
 .jour {
     vertical-align: middle;
     display: table-cell;
+    font-family: 'Roboto', 'sans-serif';
 }
 
 .repas {
     padding-left: 3vw;
+    font-family: 'Roboto', 'sans-serif';
 }
 
 .droite {

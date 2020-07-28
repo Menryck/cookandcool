@@ -1,3 +1,6 @@
+/* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
 
 .categorieL1 {
     display: flex;
@@ -14,16 +17,25 @@
     border-radius: 10px;
     width: 90%;
 }
+
 h2 {
-    color: rgb(208, 209, 209);
-    background-color: rgba(223, 238, 238, 0.3);
     padding: 25px;
-    text-align: center;
     font-size: 40px;
+    font-weight: 200;
+    text-align: center;
+    font-family: 'Roboto', 'sans-serif';
+    background-color: rgba(255, 255, 255, 0.906);
 }
+
+a{
+    color:#3f3f3f;
+}
+
+
 .titreCategorie {
     font-size: 50px;
     margin-top: 25px;
+    background-color: rgba(223, 238, 238, 0.3);
 }
 /* categorie plats */
 
@@ -130,15 +142,21 @@ h2 {
      padding-bottom: 2rem;
  }
 
- h2 {
-     background-color: hsl(176, 39%, 53%, 30%);
-     padding: 2px;
-     font-size: 30px;
-     color: hsl(0, 0%, 0%, 77%);
-     text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.77);
- }
-.bgSize {
+h2 {
+    padding: 2px;
+    font-size: 30px;
+    font-weight: 200;
+    text-align: center;
+    font-family: 'Roboto', 'sans-serif';
+    background-color: rgba(255, 255, 255, 0.906);
+}
 
+.titreCategorie {
+    background-color: rgba(223, 238, 238, 0.3);
+}
+
+
+.bgSize {
         background-size: cover;
         background-position: center;
         height: 5rem;
@@ -157,4 +175,9 @@ h2 {
         flex-wrap: wrap;
         max-width: 100%;
     }
+
+
+
+
+
 }

@@ -54,6 +54,9 @@ header{
     flex-direction: column;
     justify-content: space-around;
     width: 100%;
+    margin-top: 120px;
+    margin-left: 35px;
+    margin-bottom: 30px;
 }
 
 .affichage-liste-course-item{
@@ -106,42 +109,22 @@ header{
 
 <div id="affichage-liste-course">
 
-<div class="affichage-liste-course-item">
+<form class="was-validated">
+<div class="custom-control custom-checkbox mb-3">
+    <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+    <label class="custom-control-label" for="customControlValidation1">nom du produit</label>
+    <div class="invalid-feedback">le produit n'est pas valider</div>
+</div>
+</form>
+
+{# <div class="affichage-liste-course-item">
     <input type="checkbox" id="validation" name="form-validation" checked>
     <label>Test 01</label>
 </div>
 <div class="affichage-liste-course-item">
     <input type="checkbox" id="validation" name="form-validation" checked>
     <label>Test 02</label>
-</div>
-<div class="affichage-liste-course-item">
-    <input type="checkbox" id="validation" name="form-validation" checked>
-    <label>Test 03</label>
-</div>
-<div class="affichage-liste-course-item">
-    <input type="checkbox" id="validation" name="form-validation" checked>
-    <label>Test 04</label>
-</div>
-<div class="affichage-liste-course-item">
-    <input type="checkbox" id="validation" name="form-validation" checked>
-    <label>Test 05</label>
-</div>
-<div class="affichage-liste-course-item">
-    <input type="checkbox" id="validation" name="form-validation" checked>
-    <label>Test 06</label>
-</div>
-<div class="affichage-liste-course-item">
-    <input type="checkbox" id="validation" name="form-validation" checked>
-    <label>Test 07</label>
-</div>
-<div class="affichage-liste-course-item">
-    <input type="checkbox" id="validation" name="form-validation" checked>
-    <label>Test 08</label>
-</div>
-<div class="affichage-liste-course-item">
-    <input type="checkbox" id="validation" name="form-validation" checked>
-    <label>Test 09</label>
-</div>
+</div> #}
 
 </div>
 
