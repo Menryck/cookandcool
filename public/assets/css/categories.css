@@ -103,19 +103,16 @@ a{
 
 .categorieGateaux {
     background-image: url('../img/categoriePlatsImg/dessertGateaux01.webp');
-   
 }
 .categorieSaladeDeFruits {
     background-image: url('../img/categoriePlatsImg/dessertSaladeFruits01.webp');
-   
 }
 .categorieCrèpes {
     background-image: url('../img/categoriePlatsImg/dessertCrèpes01.webp');
- 
+
 }
 .categorieDessertGlacés {
     background-image: url('../img/categoriePlatsImg/dessertGlacés01.webp.webp');
-   
 }
 /* .categorieGastronomiqueD { */
     /* Changer image */
@@ -124,23 +121,21 @@ a{
 } */
 .categorieVeganD {
     background-image: url('../img/categoriePlatsImg/dessertVegan01.webp');
-   
 }
 
 
 /* mediaquerries smartphone*/
 @media (min-width: 250px) and (max-width: 768px){
- .titreCategorie {
-     font-size: 18px;
-     color: rgb(36, 34, 34);
-     
+.titreCategorie {
+    font-size: 35px;
+    color: rgb(36, 34, 34);
     padding-top: 1rem;
-     background-color: white;
-     border: 1px solid rgb(221, 221, 221);
-     text-transform: uppercase;
-     text-shadow: none;
-     padding-bottom: 2rem;
- }
+    background-color: white;
+    border: 1px solid rgb(221, 221, 221);
+    text-transform: uppercase;
+    text-shadow: none;
+    padding-bottom: 2rem;
+}
 
 h2 {
     padding: 2px;
@@ -164,10 +159,10 @@ h2 {
         margin-top: 0px;
         border-radius: 10px;
         width: 95%;
-        box-shadow: 2px 1px 1px hsl(0, 0%, 0%, 50%);
-        
+/*         box-shadow: 2px 1px 1px hsl(0, 0%, 0%, 50%); */
     }
-    /* .categorieViandes, .categorieViandes, */
+
+/* .categorieViandes, .categorieViandes, */
     .categorieL1 {
         display: flex;
         justify-content: center;
