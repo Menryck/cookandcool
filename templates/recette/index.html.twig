@@ -3,6 +3,22 @@
 {% block title %}Recette index{% endblock %}
 
 {% block body %}
+<style>
+.btn{
+    width: 200px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.table{
+    
+}
+</style>
+
+<section class="container">
     <h1>Recette index</h1>
 
     <table class="table">
@@ -37,17 +53,18 @@
                 <td>{{ recette.categorie }}</td>
                 <td>{{ recette.nbrePart }}</td>
                 <td>
-                    <a href="{{ path('recette_show', {'id': recette.id}) }}">show</a>
-                    <a href="{{ path('recette_edit', {'id': recette.id}) }}">edit</a>
+                    <a href="{{ path('recette_show', {'id': recette.id}) }}">voir</a>
+                    <a href="{{ path('recette_edit', {'id': recette.id}) }}">modifier</a>
                 </td>
             </tr>
         {% else %}
             <tr>
-                <td colspan="12">no records found</td>
+                <td colspan="12">aucunes données ici</td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
-    <a href="{{ path('recette_new') }}">Create new</a>
+    <a class="btn btn-danger" href="{{ path('recette_new') }}">Ajouter une recette</a>
+</section>
 {% endblock %}
