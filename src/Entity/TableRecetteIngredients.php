@@ -23,7 +23,7 @@ class TableRecetteIngredients
     private $recette;
 
     /**
-     * @ORM\ManyToOne(targetEntity=Ingredient::class)
+     * @ORM\ManyToOne(targetEntity=Ingredient::class, fetch="EAGER")
      */
     private $ingredient;
 
