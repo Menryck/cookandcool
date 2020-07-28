@@ -19,7 +19,7 @@ html, body {
     background-color: #eeeeee;
     padding: 2rem;
 }
-.table  td {
+.table td {
     border:1px solid #cccccc;
     width: fit-content;
     padding:0.5rem;
