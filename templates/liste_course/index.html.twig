@@ -4,8 +4,19 @@
 
 {% block body %}
 <style>
+
+body { 
+    background-color: #C4C4C4;
+}
+
+header{
+    background-color: #ffff;
+    padding-top: 2px;
+}
+
 .header-liste-course { 
     display: flex;
+    align-items: center;
     height: 50px;
     width: 100%;
     max-width: 768px;
@@ -21,19 +32,46 @@
     font-weight: lighter;
 }
 
-.text-print{
+.icon-print{
     width: 25px;
 }
 
-.text-print, a{
+.icon-print, a{
     color: #ffff;
 }
 
-.affichage-liste-course{
-    width: 100%;
-    height: 500px;
-    background-color: #C4C4C4;
+.text-print{
+    display: flex;
+    margin-left: 50px;
 }
+
+.icon-print{
+    margin-left: 20px;
+}
+
+#affichage-liste-course{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.affichage-liste-course-item{
+    margin-top: 65px;
+    margin-left: 35px;
+    margin-bottom: 30px;
+    color: #ffff;
+    font-size: 14px;
+    font-family: 'SukhumvitSet-Light', 'sans-serif';
+}
+
+
+
+
+
+
+
+
 
 </style>
 
@@ -43,11 +81,55 @@
 
 <div class="header-liste-course">
     <h2 class="titre-liste-course">Votre liste</h2>
-    <a href="#">Imprimer liste<img class="text-print"src="../../public/assets/img/iconPng/print-white.png" alt="imprimer"></a>
+    <a class="text-print" href="#">Imprimer liste<img class="icon-print"src="../../public/assets/img/iconPng/print-white.png" alt="imprimer"></a>
 </div>
 
-<div class="affichage-liste-course">
+
+
+
+
+
+<div id="affichage-liste-course">
+
+<div class="affichage-liste-course-item">
+    <input type="checkbox" id="validation" name="form-validation" checked>
+    <label>Scales</label>
 </div>
+<div class="affichage-liste-course-item">
+    <input type="checkbox" id="validation" name="form-validation" checked>
+    <label>Scales</label>
+</div>
+<div class="affichage-liste-course-item">
+    <input type="checkbox" id="validation" name="form-validation" checked>
+    <label>Scales</label>
+</div>
+<div class="affichage-liste-course-item">
+    <input type="checkbox" id="validation" name="form-validation" checked>
+    <label>Scales</label>
+</div>
+<div class="affichage-liste-course-item">
+    <input type="checkbox" id="validation" name="form-validation" checked>
+    <label>Scales</label>
+</div>
+<div class="affichage-liste-course-item">
+    <input type="checkbox" id="validation" name="form-validation" checked>
+    <label>Scales</label>
+</div>
+<div class="affichage-liste-course-item">
+    <input type="checkbox" id="validation" name="form-validation" checked>
+    <label>Scales</label>
+</div>
+<div class="affichage-liste-course-item">
+    <input type="checkbox" id="validation" name="form-validation" checked>
+    <label>Scales</label>
+</div>
+<div class="affichage-liste-course-item">
+    <input type="checkbox" id="validation" name="form-validation" checked>
+    <label>Scales</label>
+</div>
+
+</div>
+
 
 
 {% endblock %}
