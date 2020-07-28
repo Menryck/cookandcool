@@ -44,9 +44,9 @@
                 <img src="{{asset('assets/img/iconPng/validation.png')}}" class="commandesBottom"></a>
             </div>
         <div class="ligneBlanche texte">
-            <span class="commandesTexte">Nombre de personnes : </span><span class="personnes">1</span> 
-            <img src="{{asset('assets/img/iconPng/plus.png')}}" class="commandesBottom"> 
-            <img src="{{asset('assets/img/iconPng/negative-sign.png')}}" class="commandesBottom">
+            <span class="commandesTexte">Nombre de personnes : </span><span id="quantite">1</span> 
+            <img src="{{asset('assets/img/iconPng/plus.png')}}" class="commandesBottom" id="plus"> 
+            <img src="{{asset('assets/img/iconPng/negative-sign.png')}}" class="commandesBottom" id="moins">
         </div>
             
     </section>
@@ -64,7 +64,7 @@
             </tr>
             {% for ingredient in recette.ingredient %}
             <tr>
-                <td><span class="personnes>{{ ingredient.quantite }}</span> {{ ingredient.ingredient.unite }} 
+                <td><span class="personnes">{{ ingredient.quantite }}</span> {{ ingredient.ingredient.unite }} 
                     {% if ingredient.quantite > 1 %}
                 {{ ingredient.ingredient.nom }}s</td>
             {% else %}
@@ -77,10 +77,10 @@
 
 
     <section class="preparation">
-    <h2 class="texte">Préparation</h2>
+        <h2 class="texte">Préparation</h2>
     <ul>
-        {% for etape in recette.ingredient %}
-        <li>{{ dump(etape) }}</li>
+        {% for ingredient in recette.ingredient %}
+        <li>{{ ingredient.ingredient.etape ?? ""}}</li>
         {% endfor %}
     </ul>
     </section>
