@@ -101,7 +101,6 @@ a:hover{
 main {
     max-height: 73vh;
     overflow-y: scroll;
-    padding-bottom: 3rem;
 }
 
 /* footer */
