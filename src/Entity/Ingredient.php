@@ -103,7 +103,7 @@ class Ingredient
         return $this;
     }
 
-    public function getUnite(): ?int
+    public function getUnite(): ?string
     {
         return $this->unite;
     }
