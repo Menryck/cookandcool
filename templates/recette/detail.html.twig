@@ -26,7 +26,7 @@
     </div>
 <style>
     .banniere {
-    background-image: url("{{ recette.photo }}");
+        background-image: url("{{asset('assets/img/recettesImg/' ~ recette.photo)}}");
 </style>
 {% endblock %}
 
@@ -68,13 +68,6 @@
             {% endfor %}
         </table>
     </section>
-    <section class="preparation">
-        <h2 class="texte">Préparation</h2>
-        <ul>
-            {% for etape in table_recette_etapes %}
-            <li>{{ table_recette_ingredients.table }}</li>
-            {% endfor %}
-        </ul>
     </section>
 </main>
 {% endblock %}
