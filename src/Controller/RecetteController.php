@@ -91,4 +91,14 @@ class RecetteController extends AbstractController
 
         return $this->redirectToRoute('recette_index');
     }
+
+    /**
+     * @Route("/detail/{id}", name="recette_show", methods={"GET"})
+     */
+    public function detail(Recette $recette): Response
+    {
+        return $this->render('recette/detail.html.twig', [
+            'recette' => $recette,
+        ]);
+    }
 }
