@@ -93,7 +93,7 @@ class RecetteController extends AbstractController
     }
 
     /**
-     * @Route("/detail/{id}", name="recette_show", methods={"GET"})
+     * @Route("/detail/{id}", name="recette_detail", methods={"GET"})
      */
     public function detail(Recette $recette): Response
     {

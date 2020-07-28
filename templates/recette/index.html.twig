@@ -30,16 +30,16 @@
                 <th>Duree</th>
                 <th>Cuisson</th>
                 <th>Photo</th>
-                <th>IngredientsRecette</th>
                 <th>Instructions</th>
                 <th>Type</th>
                 <th>Categorie</th>
-                <th>NbrePart</th>
+                {# <th>NbrePart</th> #}
                 <th>actions</th>
             </tr>
         </thead>
         <tbody>
         {% for recette in recettes %}
+        {{dump(recette)}}
             <tr>
                 <td>{{ recette.id }}</td>
                 <td>{{ recette.titre }}</td>
@@ -47,11 +47,10 @@
                 <td>{{ recette.duree }}</td>
                 <td>{{ recette.cuisson }}</td>
                 <td>{{ recette.photo }}</td>
-                <td>{{ recette.ingredientsRecette }}</td>
                 <td>{{ recette.instructions }}</td>
                 <td>{{ recette.type }}</td>
                 <td>{{ recette.categorie }}</td>
-                <td>{{ recette.nbrePart }}</td>
+                {# <td>{{ recette.nbrePart }}</td> #}
                 <td>
                     <a href="{{ path('recette_show', {'id': recette.id}) }}">voir</a>
                     <a href="{{ path('recette_edit', {'id': recette.id}) }}">modifier</a>
