@@ -3,10 +3,12 @@
 namespace App\Form;
 
 use App\Entity\Recette;
+// use App\Entity\TableRecetteIngredients;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
-use Symfony\Component\OptionsResolver\OptionsResolver;
+// use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Validator\Constraints\File;
+use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\Extension\Core\Type\FileType;
 
 class RecetteType extends AbstractType
@@ -32,6 +34,9 @@ class RecetteType extends AbstractType
                 ],
             ])
             ->add('ingredientsRecette')
+            // ->add('quantite', EntityType::class, [
+            //     'class' => TableRecetteIngredients::class
+            // ])
             ->add('instructions')
             ->add('type')
             ->add('categorie')
