@@ -2,7 +2,7 @@ console.log("hello le monde");
 
 
 
-/* function selectRecette (id, evenementJS, callback)
+function selectRecette (id, evenementJS, callback)
 {
     var listeRecette = document.getElementById(id);
     for(var a=0; a<listeRecette.clientHeight; a++)
@@ -10,20 +10,7 @@ console.log("hello le monde");
         var recette = listeRecette[a];
         recette.addEventListener(id, evenementJS, callback);
     }
-}; */
-
-
-/* const button = document.getElementById('id');
-button.addEventListener('click', event => {
-
-} */
-
-
-
-
-
-
-
+};
 
 
 
