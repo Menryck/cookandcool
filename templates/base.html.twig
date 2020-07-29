@@ -16,11 +16,11 @@
     {% block header %}
         <nav>
             <ul class="iconReglageDesktop">
-                <li><a href="#"><img src="{{asset('assets/img/iconPng/Setting.png')}}" alt=""></a></li>
+                <li><a href="{{ url('contact') }}"><img src="{{asset('assets/img/iconPng/Setting.png')}}" alt=""></a></li>
                 
             </ul>
             <ul class="iconReglageSmartphone">
-                <li><a href="#"><img src="{{asset('assets/img/iconPng/Setting.png')}}" alt=""></a></li>
+                <li><a href="{{ url('contact') }}"><img src="{{asset('assets/img/iconPng/Setting.png')}}" alt=""></a></li>
             </ul>
             <ul class="headerMenuIcon">
                     <div id="iconMenus" class="footerMiseEnPage"><li><a href="{{ url('menu_jours') }}"><img class="footNavImg" src="{{asset('assets/img/iconPng/menu.png')}}" alt="Menus">MENUS</a></li></div>
