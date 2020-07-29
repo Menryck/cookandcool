@@ -44,10 +44,14 @@ class RecetteType extends AbstractType
             ->add('categorie')
             ->add('nbrePart')
         ;
-
-        $builder->add('tags', CollectionType::class, [
+// form_collection
+        $builder->add('ingredient', CollectionType::class, [
             'entry_type' => TableRecetteIngredientsType::class,
             'entry_options' => ['label' => false],
+            'allow_add' => true,
+            'by_reference' => false,
+            ]);
+// form_collection fin
     }
 
     public function configureOptions(OptionsResolver $resolver)

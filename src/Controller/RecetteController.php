@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\Recette;
+use App\Entity\TableRecetteIngredients;
 use App\Form\RecetteType;
 use App\Repository\RecetteRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -31,11 +32,24 @@ class RecetteController extends AbstractController
     public function new(Request $request): Response
     {
         $recette = new Recette();
+
+        // dummy code - add some example tags to the task
+        // (otherwise, the template will render an empty list of tags)
+        // $tableRecetteIngredients1 = new tableRecetteIngredients();
+        // $tableRecetteIngredients1->setQuantite(1);
+        // $recette->getIngredient()->add($tableRecetteIngredients1);
+        // $tableRecetteIngredients2 = new tableRecetteIngredients();
+        // $tableRecetteIngredients2->setName('tableRecetteIngredients2');
+        // $recette->getIngredient()->add($tableRecetteIngredients2);
+        // end dummy code
+
+
+
         $form = $this->createForm(RecetteType::class, $recette);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-
+ // ... do your form processing, like saving the Task and Tag entities
         $photoFile = $form->get('photo')->getData();
         dump($photoFile);
         if ($photoFile){
