@@ -7,10 +7,9 @@ var boutonAjout = document.getElementById("ajouter");
 
 boutonAjout.addEventListener("click", event => {
     window.localStorage.setItem("plat", titreRecette); 
+    window.localStorage.setItem(titreRecette, quantite.innerHTML);
     window.location.href = "../../menu/jours";
 });
-
-
 
 // Gestion du nombre de personnes
 
@@ -22,14 +21,14 @@ var personnes = document.querySelectorAll("span.personnes");
 
 plus.addEventListener("click", event => {
     quantite.innerHTML = parseInt(quantite.innerHTML)+1; 
-    for (let personne of personnes) {
-        personne.innerHTML = parseInt(masque.innerHTML)*parseInt(quantite.innerHTML);
+    for (let i = 0 ; i<personnes.length; i++) {
+        personnes[i].innerHTML = parseInt(masque[i].innerHTML)*parseInt(quantite.innerHTML);
     }});
 moins.addEventListener("click", event => {
     if(quantite.innerHTML != 1) {
     quantite.innerHTML = parseInt(quantite.innerHTML)-1; 
-    for (let personne of personnes) {
-        personne.innerHTML = parseInt(masque.innerHTML)*parseInt(quantite.innerHTML);
+    for (let i = 0 ; i<personnes.length; i++) {
+        personnes[i].innerHTML = parseInt(masque[i].innerHTML)*parseInt(quantite.innerHTML);
     }
 }
     else {
