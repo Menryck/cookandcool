@@ -45,7 +45,7 @@ td {
     text-align: center;
 }
 
-.banniere {
+#banniere {
     background-size: cover;
     min-height: 160px;
     margin-top: 2%;

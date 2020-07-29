@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello ListeRecettesController!{% endblock %}
+{% block title %}Recette {{ recette.titre }}{% endblock %}
 {% block stylesheets %}
 <link rel="stylesheet" href="{{asset('assets/css/recettes.css')}}">
 {% endblock %}
@@ -25,14 +25,14 @@
         <a href="{{ url('accueil') }}"><img class="logoHeader" src="{{asset('assets/img/Logo.png')}}" alt="Cook&Cool"></a>
     </div>
 <style>
-    .banniere {
+    #banniere {
         background-image: url("{{asset('assets/img/recettesImg/' ~ recette.photo)}}");
 </style>
 {% endblock %}
 
 {% block body %}
 <main>
-    <section class="banniere">
+    <section id="banniere" data-img="{{ recette.photo }}">
         <h1 class="texte" id ="titre">{{ recette.titre }}</h1>
         
     </section>
@@ -64,7 +64,7 @@
             </tr>
             {% for ingredient in recette.ingredient %}
             <tr>
-                <td><span class="masque">{{ ingredient.quantite }}</span><span class="personnes">{{ ingredient.quantite }}</span> {{ ingredient.ingredient.unite }} 
+                <td><span class="personnes" data-mesure="{{ ingredient.quantite }}">{{ ingredient.quantite }}</span> {{ ingredient.ingredient.unite }} 
                     {% if ingredient.quantite > 1 %}
                 {{ ingredient.ingredient.nom }}s</td>
             {% else %}
@@ -87,4 +87,6 @@
 </main>
 {% endblock %}
 
-{% block javascripts %}<script src="{{asset('assets/js/detail.js')}}"> </script>{% endblock %}
+{% block javascripts %}
+<script src="{{asset('assets/js/detail.js')}}"> </script>
+{% endblock %}
