@@ -3,6 +3,13 @@
 {% block title %}Recette{% endblock %}
 
 {% block body %}
+<style>
+.btn{
+    width: 200px;
+    margin: 7px;
+}
+</style>
+
     <h1>Recette</h1>
 
     <table class="table">
@@ -54,9 +61,9 @@
         </tbody>
     </table>
 
-    <a href="{{ path('recette_index') }}">back to list</a>
+    <a class="btn btn-danger" href="{{ path('recette_index') }}">retour à la liste</a>
 
-    <a href="{{ path('recette_edit', {'id': recette.id}) }}">edit</a>
+    <a class="btn btn-danger" href="{{ path('recette_edit', {'id': recette.id}) }}">modifier</a>
 
     {{ include('recette/_delete_form.html.twig') }}
 {% endblock %}

@@ -1,13 +1,13 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Edit TableRecetteIngredients{% endblock %}
+{% block title %}Modifier TableRecetteIngredients{% endblock %}
 
 {% block body %}
-    <h1>Edit TableRecetteIngredients</h1>
+    <h1>Modifier TableRecetteIngredients</h1>
 
     {{ include('table_recette_ingredients/_form.html.twig', {'button_label': 'Update'}) }}
 
-    <a href="{{ path('table_recette_ingredients_index') }}">back to list</a>
+    <a class="btn btn-danger" href="{{ path('table_recette_ingredients_index') }}">retour à la liste</a>
 
     {{ include('table_recette_ingredients/_delete_form.html.twig') }}
 {% endblock %}

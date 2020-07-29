@@ -4,11 +4,10 @@
 
 {% block body %}
 <style>
+/* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 
-{# body { 
-    background-color: #C4C4C4;
-} #}
-
+/* REGLAGES SMARTPHONE */
 header{
     background-color: #ffff;
     padding-top: 2px;
@@ -21,7 +20,7 @@ header{
     width: 100%;
     max-width: 768px;
     font-size: 14px;
-    font-family: 'SukhumvitSet-Light', 'sans-serif';
+    font-family: 'Roboto', 'sans-serif';
     text-align: center;
     color: #FFFF;
     background-color: #8C8C8C;
@@ -30,6 +29,7 @@ header{
 
 .titre-liste-course{
     font-weight: lighter;
+    font-size: 20px;
 }
 
 .icon-print{
@@ -65,7 +65,7 @@ header{
     margin-bottom: 30px;
     color: #000000;
     font-size: 14px;
-    font-family: 'SukhumvitSet-Light', 'sans-serif';
+    font-family: 'Roboto', 'sans-serif';
 }
 
 
@@ -78,18 +78,30 @@ header{
     height: 80px;
     max-width: 100%;
     font-size: 20px;
-    font-family: 'SukhumvitSet-Light', 'sans-serif';
+    font-family: 'Roboto', 'sans-serif';
     text-align: center;
     color: #FFFF;
     background-color: #8C8C8C;
     position: fixed;
 }
 
-
+.titre-liste-course{
+    font-weight: lighter;
+    font-size: 35px;
+}
 
 
 }
 
+
+/* REGLAGES TABLETTE */
+@media (min-width: 768px) and (max-width: 1080px){
+.titre-liste-course{
+    font-weight: lighter;
+    font-size: 25px;
+}
+
+}
 
 </style>
 
