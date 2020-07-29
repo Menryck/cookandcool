@@ -1,0 +1,103 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Error!{% endblock %}
+
+{% block stylesheets %}
+<style>
+.error{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    line-height: 17px;
+    margin-top: 180px;
+    left: 50%;
+    top: 50%;
+}
+
+h1{
+    font-size: 20px;
+}
+
+.error-items{
+    color: rgb(52, 111, 114);
+    text-align: center;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+p{
+    font-size: 12px;
+}
+
+
+@media screen and (min-width: 1080px){
+.error{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    line-height: 17px;
+    margin-top: 250px;
+    left: 50%;
+    top: 50%;
+}
+
+.error-items{
+    color: rgb(52, 111, 114);
+    text-align: center;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+h1{
+    font-size: 34px;
+}
+
+p{
+    font-size: 20px;
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 1080px){
+.error{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    line-height: 17px;
+    margin-top: 350px;
+    left: 50%;
+    top: 50%;
+}
+
+.error-items{
+    color: rgb(52, 111, 114);
+    text-align: center;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+h1{
+    font-size: 34px;
+}
+
+p{
+    font-size: 20px;
+}
+
+}
+
+
+</style>
+{% endblock %}
+
+
+
+{% block body %}
+        <section class="error">
+            <div class="error-items">
+                <h1>La page demandée n'existe pas.</h1>
+                <p>Veuillez vous rediriger vers l'accueil de cook&cool</p>
+            </div>
+        </section>
+{% endblock %}
+
