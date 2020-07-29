@@ -40,7 +40,7 @@
         <div class="ligneBlanche texte">
                 <a href=#><img src="{{asset('assets/img/iconPng/retour.png')}}" class="commandesBottom">
                 <span class="commandesTexte">Retour</span></a> - 
-                <a href=#><span class="commandesTexte">Ajouter</span>
+                <a href=#><span class="commandesTexte" id="ajouter">Ajouter</span>
                 <img src="{{asset('assets/img/iconPng/validation.png')}}" class="commandesBottom"></a>
             </div>
         <div class="ligneBlanche texte">
@@ -64,7 +64,7 @@
             </tr>
             {% for ingredient in recette.ingredient %}
             <tr>
-                <td><span class="personnes">{{ ingredient.quantite }}</span> {{ ingredient.ingredient.unite }} 
+                <td><span class="masque">{{ ingredient.quantite }}</span><span class="personnes">{{ ingredient.quantite }}</span> {{ ingredient.ingredient.unite }} 
                     {% if ingredient.quantite > 1 %}
                 {{ ingredient.ingredient.nom }}s</td>
             {% else %}
