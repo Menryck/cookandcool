@@ -1,11 +1,17 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}New TableRecetteIngredients{% endblock %}
+{% block title %}Nouvelle TableRecetteIngredients{% endblock %}
 
 {% block body %}
-    <h1>Create new TableRecetteIngredients</h1>
+<style>
+.btn{
+    width: 200px;
+    margin: 7px;
+}
+</style>
+    <h1>Nouvele TableRecetteIngredients</h1>
 
     {{ include('table_recette_ingredients/_form.html.twig') }}
 
-    <a href="{{ path('table_recette_ingredients_index') }}">back to list</a>
+    <a class="btn btn-danger" href="{{ path('table_recette_ingredients_index') }}">retour à la liste</a>
 {% endblock %}

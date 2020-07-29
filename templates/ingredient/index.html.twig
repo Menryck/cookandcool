@@ -8,6 +8,16 @@
 <style>
 .btn{
     width: 200px;
+    margin: 7px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.table{
+    
 }
 </style>
 
@@ -43,8 +53,8 @@
                 <td>{{ ingredient.gluten ? 'Yes' : 'No' }}</td>
                 <td>{{ ingredient.saison }}</td>
                 <td>
-                    <a href="{{ path('ingredient_show', {'id': ingredient.id}) }}">voir</a>
-                    <a href="{{ path('ingredient_edit', {'id': ingredient.id}) }}">modifier</a>
+                    <a class="btn btn-danger" href="{{ path('ingredient_show', {'id': ingredient.id}) }}">voir</a>
+                    <a class="btn btn-danger" href="{{ path('ingredient_edit', {'id': ingredient.id}) }}">modifier</a>
                 </td>
             </tr>
         {% else %}
