@@ -5,11 +5,13 @@ namespace App\Form;
 use App\Entity\Recette;
 // use App\Entity\TableRecetteIngredients;
 use Symfony\Component\Form\AbstractType;
+use App\Form\TableRecetteIngredientsType;
 use Symfony\Component\Form\FormBuilderInterface;
 // use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Validator\Constraints\File;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\Extension\Core\Type\FileType;
+use Symfony\Component\Form\Extension\Core\Type\CollectionType;
 
 class RecetteType extends AbstractType
 {
@@ -42,6 +44,10 @@ class RecetteType extends AbstractType
             ->add('categorie')
             ->add('nbrePart')
         ;
+
+        $builder->add('tags', CollectionType::class, [
+            'entry_type' => TableRecetteIngredientsType::class,
+            'entry_options' => ['label' => false],
     }
 
     public function configureOptions(OptionsResolver $resolver)
