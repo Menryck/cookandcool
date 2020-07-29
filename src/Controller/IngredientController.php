@@ -36,6 +36,26 @@ class IngredientController extends AbstractController
 
         if ($form->isSubmitted() && $form->isValid()) {
 
+            $photoFile = $form->get('image')->getData();
+            dump($photoFile);
+            if ($photoFile){
+                $originalFilename = pathinfo($photoFile->getClientOriginalName(), PATHINFO_FILENAME);
+                $extension = $photoFile->guessExtension();
+                // A TERME: IL FAUDRA CHANGER LE NOM...
+                $newFilename = "$originalFilename.$extension"; //TEMPORAIRE: A AMELIORER...
+
+                // ON DEPLACE LE FICHIER
+                $photoFile->move(
+                    $this->getParameter('upload_directory'), 
+                            // CHEMIN DU DOSSIER QUI STOCK LES IMAGES UPLOADEES
+                            // A CONFIGURER DANS config/services.yaml
+                    $newFilename
+                );
+
+                // ON CHANGE LE CHEMIN DU FICHIER POUR POUVOIR STOCKER LE BON CHEMIN DANS SQL
+                $ingredient->setImage($newFilename);
+            }
+
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($ingredient);
             $entityManager->flush();

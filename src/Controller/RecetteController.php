@@ -35,6 +35,27 @@ class RecetteController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+
+        $photoFile = $form->get('photo')->getData();
+        dump($photoFile);
+        if ($photoFile){
+            $originalFilename = pathinfo($photoFile->getClientOriginalName(), PATHINFO_FILENAME);
+            $extension = $photoFile->guessExtension();
+            // A TERME: IL FAUDRA CHANGER LE NOM...
+            $newFilename = "$originalFilename.$extension"; //TEMPORAIRE: A AMELIORER...
+
+            // ON DEPLACE LE FICHIER
+            $photoFile->move(
+                $this->getParameter('upload_directory'), 
+                        // CHEMIN DU DOSSIER QUI STOCK LES IMAGES UPLOADEES
+                        // CONFIGURER DANS config/services.yaml
+                $newFilename
+            );
+
+            // ON CHANGE LE CHEMIN DU FICHIER POUR POUVOIR STOCKER LE BON CHEMIN DANS SQL
+            $recette->setPhoto($newFilename);
+        }
+
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($recette);
             $entityManager->flush();
