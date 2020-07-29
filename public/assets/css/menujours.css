@@ -46,5 +46,8 @@
 
 .blanc {
     width: 100%;
-    min-height: 30vh;
+    min-height: 20vh;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    color: white;
+    font-size: xx-large;
 }
