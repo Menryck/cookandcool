@@ -2,10 +2,11 @@
 
 namespace App\Entity;
 
-use App\Repository\RecetteRepository;
-use Doctrine\Common\Collections\ArrayCollection;
-use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use App\Repository\RecetteRepository;
+use App\Entity\TableRecetteIngredients;
+use Doctrine\Common\Collections\Collection;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * @ORM\Entity(repositoryClass=RecetteRepository::class)
@@ -70,7 +71,7 @@ class Recette
     private $nbrePart;
 
     /**
-     * @ORM\OneToMany(targetEntity=TableRecetteIngredients::class, mappedBy="recette")
+     * @ORM\OneToMany(targetEntity=TableRecetteIngredients::class, mappedBy="recette", cascade={"persist"})
      */
     private $ingredient;
 
@@ -234,4 +235,10 @@ class Recette
 
         return $this;
     }
+
+    public function removeTableRecetteIngredients(TableRecetteIngredients $tableRecetteIngredients)
+    {
+        $this->ingredient->removeElement($tableRecetteIngredients);
+    }
+    
 }
