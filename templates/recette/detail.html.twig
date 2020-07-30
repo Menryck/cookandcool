@@ -78,11 +78,7 @@
 
     <section class="preparation">
         <h2 class="texte">Préparation</h2>
-    <ul>
-        {% for ingredient in recette.ingredient %}
-        <li>{{ ingredient.ingredient.etape ?? ""}}</li>
-        {% endfor %}
-    </ul>
+        <div class="texte">{{ recette.instructions }}</div>
     </section>
 </main>
 {% endblock %}
