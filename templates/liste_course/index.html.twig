@@ -1,223 +1,30 @@
-    {% extends 'base.html.twig' %}
+{% extends 'base.html.twig' %}
 
 {% block title %}Liste course{% endblock %}
 
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{asset('assets/css/listeCourse.css')}}">
+{% endblock %}
+
 {% block body %}
-<style>
-/* Roboto */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+    <div class="header-liste-course">
+        <h2 class="titre-liste-course">Votre liste</h2>
+        <a class="text-print" href="#">Imprimer liste<img class="icon-print"src="../../public/assets/img/iconPng/print-white.png" alt="imprimer"></a>
+    </div>
 
-/* REGLAGES SMARTPHONE */
-header{
-    background-color: #ffff;
-    padding-top: 2px;
-}
+    <div class="header-print-smartphone">
+        <a class="text-print" href="#"><img class="icon-print"src="../../public/assets/img/iconPng/print-white.png" alt="imprimer"></a>
+    </div>
 
-.header-liste-course { 
-    display: flex;
-    align-items: center;
-    height: 50px;
-    max-width: 100%;
-    font-size: 14px;
-    font-family: 'Roboto', 'sans-serif';
-    text-align: center;
-    color: #FFFF;
-    background-color: #8C8C8C;
-    position: fixed;
-}
-
-.titre-liste-course{
-    font-weight: lighter;
-    font-size: 20px;
-}
-
-.header-print{
-    text-align: center;
-    font-size: 15px;
-    z-index: 10;
-    position: relative;
-    margin-left: 250px;
-    margin-top: 15px;
-}
-
-.icon-print{
-    width: 25px;
-}
-
-.icon-print, a{
-    color: #ffff;
-}
-
-.header-print-smartphone{
-    display: none;
-}
-
-.icon-print{
-    margin-left: 20px;
-}
-
-#affichage-liste-course{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 100%;
-    margin-top: 120px;
-    margin-left: 35px;
-    margin-bottom: 30px;
-}
-
-.affichage-liste-course-item{
-    margin-top: 65px;
-    margin-left: 35px;
-    margin-bottom: 30px;
-    color: #000000;
-    font-size: 14px;
-    font-family: 'Roboto', 'sans-serif';
-}
+{#     <div id="affichage-liste-course">
+        <form class="was-validated">
+            <div class="custom-control custom-checkbox mb-3">
+                <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+                <label class="custom-control-label" for="customControlValidation1">nom du produit</label>
+                <div class="invalid-feedback">le produit n'est pas valider</div>
+            </div>
+        </form> #}
 
 
-
-/* REGLAGES DESKTOP */
-@media screen and (min-width: 1080px){
-.header-liste-course { 
-    display: flex;
-    align-items: center;
-    height: 80px;
-    max-width: 100%;
-    font-size: 20px;
-    font-family: 'Roboto', 'sans-serif';
-    text-align: center;
-    color: #FFFF;
-    background-color: #8C8C8C;
-    position: fixed;
-}
-
-.titre-liste-course{
-    font-weight: lighter;
-    font-size: 35px;
-    text-align: center;
-}
-
-.header-print{
-    text-align: center;
-    font-size: 25px;
-    z-index: 10;
-    position: relative;
-    margin-left: 1520px;
-    margin-top: 15px;
-}
-
-
-
-.icon-print{
-    width: 50px;
-}
-
-.icon-print, a{
-    color: #ffff;
-}
-
-.text-print{
-    display: flex;
-    margin-left: 50px;
-}
-
-.icon-print{
-    margin-left: 20px;
-}
-
-.header-print-smartphone{
-    display: none;
-}
-
-
-/* REGLAGES TABLETTE */
-@media (min-width: 768px) and (max-width: 1080px){
-.titre-liste-course{
-    font-weight: lighter;
-    font-size: 25px;
-}
-
-.header-liste-course { 
-    display: flex;
-    align-items: center;
-    height: 50px;
-    max-width: 100%;
-    font-size: 14px;
-    font-family: 'Roboto', 'sans-serif';
-    text-align: center;
-    color: #FFFF;
-    background-color: #8C8C8C;
-    position: fixed;
-}
-
-.icon-print{
-    width: 30px;
-}
-
-.icon-print, a{
-    color: #ffff;
-}
-
-.text-print{
-    display: flex;
-    margin-left: 50px;
-}
-
-.icon-print{
-    margin-left: 20px;
-}
-
-.header-print-smartphone{
-    display: none;
-}
-
-
-}
-}
-
-</style>
-
-
-
-
-
-<div class="header-liste-course">
-    <h2 class="titre-liste-course">Votre liste</h2>
-</div>
-
-<div class="header-print">
-    <a class="text-print" href="#">Imprimer liste<img class="icon-print"src="../../public/assets/img/iconPng/print-white.png" alt="imprimer"></a>
-</div>
-
-<div class="header-print-smartphone">
-    <a class="text-print" href="#"><img class="icon-print"src="../../public/assets/img/iconPng/print-white.png" alt="imprimer"></a>
-</div>
-
-
-
-
-
-
-<div id="affichage-liste-course">
-<form class="was-validated">
-<div class="custom-control custom-checkbox mb-3">
-    <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
-    <label class="custom-control-label" for="customControlValidation1">nom du produit</label>
-    <div class="invalid-feedback">le produit n'est pas valider</div>
-</div>
-</form>
-
-{# <div class="affichage-liste-course-item">
-    <input type="checkbox" id="validation" name="form-validation" checked>
-    <label>Test 01</label>
-</div>
-<div class="affichage-liste-course-item">
-    <input type="checkbox" id="validation" name="form-validation" checked>
-    <label>Test 02</label>
-</div> #}
-</div>
-
-
-
+    </div>
 {% endblock %}
