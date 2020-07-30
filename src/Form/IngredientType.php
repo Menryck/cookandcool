@@ -28,9 +28,9 @@ class IngredientType extends AbstractType
                     ])
                 ],
             ])
+            ->add('typeIngredient')
             ->add('calories')
             ->add('unite')
-            ->add('typeIngredient')
             ->add('vegan')
             ->add('vegetarien')
             ->add('gluten')

@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <!-- Bootstrap CSS -->
+        <meta name="keywords" content="Menu,Cuisine,Course,Rapide,Faciliter">
+        <meta name="description" content="Cook and Cool facilite l'organisation ainsi que la creation de vos menus et vous accompagnent jusqu'à la realisation de vos courses">
+        <meta name="author" content="CookandCool">
+        <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
         <title>{% block title %}Cook and Cool{% endblock %}</title>
+        {# <link rel="stylesheet" href="{{asset('assets/css/reset.css')}}"> #}
+        <link rel="stylesheet" href="{{asset('assets/css/normalize.css')}}">
         <link rel="stylesheet" href="{{asset('assets/css/styles.css')}}">
         {% block stylesheets %}{% endblock %}
     </head>
@@ -15,10 +20,6 @@
     <header>
     {% block header %}
         <nav>
-            <ul class="iconReglageDesktop">
-                <li><a href="{{ url('contact') }}"><img src="{{asset('assets/img/iconPng/Setting.png')}}" alt=""></a></li>
-                
-            </ul>
             <ul class="iconReglageSmartphone">
                 <li><a href="{{ url('contact') }}"><img src="{{asset('assets/img/iconPng/Setting.png')}}" alt=""></a></li>
             </ul>
@@ -26,6 +27,7 @@
                     <div id="iconMenus" class="footerMiseEnPage"><li><a href="{{ url('menu_jours') }}"><img class="footNavImg" src="{{asset('assets/img/iconPng/menu.png')}}" alt="Menus">MENUS</a></li></div>
                     <div id="iconListes" class="footerMiseEnPage"><li><a href="{{ url('liste_course') }}"><img class="footNavImg" src="{{asset('assets/img/iconPng/Liste.png')}}" alt="Listes">LISTES</a></li></div>
                     <div id="iconStock" class="footerMiseEnPage"><li><a href="{{ url('stock') }}"><img class="footNavImg" src="{{asset('assets/img/iconPng/Stock.png')}}" alt="Stock">STOCK</a></li></div>
+                    <div id="iconContact" class="footerMiseEnPage"><li><a href="{{ url('contact') }}"><img class="footNavImg" src="{{asset('assets/img/iconPng/contact.png')}}" alt="Contact">CONTACT</a></li></div>
             </ul>
         </nav>
         <div class="logoHeader">
@@ -45,9 +47,9 @@
         {# <div id="iconMenus footerMenuIcon" class="footerMiseEnPage"><li><a href="{{ url('type') }}"><img class="backImg" src="{{asset('assets/img/iconPng/retour.png')}}" alt="Menus"></a></li></div> #}
 
                 <ul class="footerMenuIcon">
-                    <div id="iconMenus" class="footerMiseEnPage"><li><a href="{{ url('menu_jours') }}"><img class="footNavImg" src="{{asset('assets/img/iconPng/menu.png')}}" alt="Menus">MENUS</a></li></div>
-                    <div id="iconListes" class="footerMiseEnPage"><li><a href="{{ url('liste_course') }}"><img class="footNavImg" src="{{asset('assets/img/iconPng/Liste.png')}}" alt="Listes">LISTES</a></li></div>
-                    <div id="iconStock" class="footerMiseEnPage"><li><a href="{{ url('stock') }}"><img class="footNavImg" src="{{asset('assets/img/iconPng/Stock.png')}}" alt="Stock">STOCK</a></li></div>
+                    <li class="footerMiseEnPage"><a href="{{ url('menu_jours') }}"><img class="footNavImg" src="{{asset('assets/img/iconPng/menu.png')}}" alt="Menus">MENUS</a></li>
+                    <li class="footerMiseEnPage"><a href="{{ url('liste_course') }}"><img class="footNavImg" src="{{asset('assets/img/iconPng/Liste.png')}}" alt="Listes">LISTES</a></li>
+                    <li class="footerMiseEnPage"><a href="{{ url('stock') }}"><img class="footNavImg" src="{{asset('assets/img/iconPng/Stock.png')}}" alt="Stock">STOCK</a></li>
                 </ul>
             </nav>
         </div>

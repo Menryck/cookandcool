@@ -109,6 +109,11 @@ class RecetteController extends AbstractController
             // a completer pour affichage du nombre
             'table_recette_ingredient' => $tableRecetteIngredient,
         ]);
+        // test debut
+        return $this->render('table_recette_ingredients/show.html.twig', [
+            'table_recette_ingredient' => $tableRecetteIngredient,
+        ]);
+        // test fin
     }
 
     /**

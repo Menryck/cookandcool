@@ -16,4 +16,13 @@ class CookncoolController extends AbstractController
             'controller_name' => 'CookncoolController',
         ]);
     }
+    /**
+     * @Route("/admin", name="admin")
+     */
+    public function admin()
+    {
+        return $this->render('cookncool/admin.html.twig', [
+            'controller_name' => 'CookncoolController',
+        ]);
+    }
 }

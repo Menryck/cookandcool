@@ -21,19 +21,23 @@
 
 <section class="container">
     <h1>Recette index</h1>
-
+    <ul>
+        <li><a href="{{ '../ingredient' }}">Gerer les ingrédients</a></li>
+        <li><a href="{{ '../admin' }}">Retour page Admin</a></li>
+    </ul>
+    
     <table class="table">
         <thead>
             <tr>
                 <th>Id</th>
                 <th>Titre</th>
+                <th>Photo</th>
+                <th>Type</th>
+                <th>Categorie</th>
                 <th>Difficulte</th>
                 <th>Duree</th>
                 <th>Cuisson</th>
-                <th>Photo</th>
                 <th>Instructions</th>
-                <th>Type</th>
-                <th>Categorie</th>
                 {# <th>NbrePart</th> #}
                 <th>actions</th>
             </tr>
@@ -44,13 +48,13 @@
             <tr>
                 <td>{{ recette.id }}</td>
                 <td>{{ recette.titre }}</td>
+                <td>{{ recette.photo }}</td>
+                <td>{{ recette.type }}</td>
+                <td>{{ recette.categorie }}</td>
                 <td>{{ recette.difficulte }}</td>
                 <td>{{ recette.duree }}</td>
                 <td>{{ recette.cuisson }}</td>
-                <td>{{ recette.photo }}</td>
                 <td>{{ recette.instructions }}</td>
-                <td>{{ recette.type }}</td>
-                <td>{{ recette.categorie }}</td>
                 {# <td>{{ recette.nbrePart }}</td> #}
                 <td>
                     <a class="btn btn-danger" href="{{ path('recette_show', {'id': recette.id}) }}">voir</a>
