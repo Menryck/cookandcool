@@ -9,16 +9,29 @@
 <div class="logoHeader">
     <nav>
         <ul class="iconReglageDesktop">
-            <li><a href="#"><img src="{{asset('assets/img/iconPng/Setting.png')}}" alt=""></a></li>
-            
+            <li>
+                <a href="#"><img src="{{asset('assets/img/iconPng/Setting.png')}}" alt=""></a>
+            </li>
         </ul>
         <ul class="iconReglageSmartphone">
             <li><a href="#"><img src="{{asset('assets/img/iconPng/Setting.png')}}" alt=""></a></li>
         </ul>
         <ul class="headerMenuIcon">
-                <div id="iconMenus" class="footerMiseEnPage"><li><a href="#"><img class="footNavImg" src="{{asset('assets/img/iconPng/menu.png')}}" alt="Menus">MENUS</a></li></div>
-                <div id="iconListes" class="footerMiseEnPage"><li><a href="#"><img class="footNavImg" src="{{asset('assets/img/iconPng/Liste.png')}}" alt="Listes">LISTES</a></li></div>
-                <div id="iconStock" class="footerMiseEnPage"><li><a href="#"><img class="footNavImg" src="{{asset('assets/img/iconPng/Stock.png')}}" alt="Stock">STOCK</a></li></div>
+                <div id="iconMenus" class="footerMiseEnPage">
+                    <li>
+                        <a href="#"><img class="footNavImg" src="{{asset('assets/img/iconPng/menu.png')}}" alt="Menus">MENUS</a>
+                    </li>
+                </div>
+                <div id="iconListes" class="footerMiseEnPage">
+                    <li>
+                        <a href="#"><img class="footNavImg" src="{{asset('assets/img/iconPng/Liste.png')}}" alt="Listes">LISTES</a>
+                    </li>
+                </div>
+                <div id="iconStock" class="footerMiseEnPage">
+                    <li>
+                        <a href="#"><img class="footNavImg" src="{{asset('assets/img/iconPng/Stock.png')}}" alt="Stock">STOCK</a>
+                    </li>
+                </div>
         </ul>
     </nav>
     <div class="logoHeader">
@@ -33,7 +46,7 @@
 {% block body %}
 <main>
     <section id="banniere" data-img="{{ recette.photo }}">
-        <h1 class="texte" id ="titre">{{ recette.titre }}</h1>
+        <h1 class="texte" id ="titre" data-id="{{ recette.id }}">{{ recette.titre }}</h1>
         
     </section>
     <section class="commande middle">
@@ -54,21 +67,34 @@
         <table class="texte centrer">
             <tr class="gras">
                 <td></td>
-                <td class="desktopDetails"><h3>Temps de préparation / Cuisson</h3></td>
-                <td class="desktopDetails"><h3>Difficulte</h3></td>
+                <td class="desktopDetails">
+                    <h3>Temps de préparation / Cuisson</h3>
+                </td>
+                <td class="desktopDetails">
+                    <h3>Difficulte</h3>
+                </td>
             </tr>
             <tr>
-                <td><h3>Ingredients</h3></td>
-                <td class="desktopDetails"> {{ recette.duree }} / {{ recette.cuisson }} minutes</td>
-                <td class="desktopDetails"> {{ recette.difficulte }} </td>
+                <td>
+                    <h3>Ingredients</h3>
+                </td>
+                <td class="desktopDetails"> 
+                    {{ recette.duree }} / {{ recette.cuisson }} minutes
+                </td>
+                <td class="desktopDetails"> 
+                    {{ recette.difficulte }} 
+                </td>
             </tr>
             {% for ingredient in recette.ingredient %}
             <tr>
-                <td><span class="personnes" data-mesure="{{ ingredient.quantite }}">{{ ingredient.quantite }}</span> {{ ingredient.ingredient.unite }} 
+                <td>
+                    <span class="personnes" data-mesure="{{ ingredient.quantite }}">{{ ingredient.quantite }}</span> {{ ingredient.ingredient.unite }} 
                     {% if ingredient.quantite > 1 %}
-                {{ ingredient.ingredient.nom }}s</td>
+                {{ ingredient.ingredient.nom }}s
+                </td>
             {% else %}
-                {{ ingredient.ingredient.nom }}</td>
+                {{ ingredient.ingredient.nom }}
+                </td>
 	    {% endif %}
             </tr>
             {% endfor %}
@@ -78,11 +104,7 @@
 
     <section class="preparation">
         <h2 class="texte">Préparation</h2>
-    <ul>
-        {% for ingredient in recette.ingredient %}
-        <li>{{ ingredient.ingredient.etape ?? ""}}</li>
-        {% endfor %}
-    </ul>
+        <div class="texte">{{ recette.instructions }}</div>
     </section>
 </main>
 {% endblock %}

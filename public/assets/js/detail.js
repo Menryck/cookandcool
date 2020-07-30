@@ -4,14 +4,18 @@ var titreRecette = document.getElementById("titre").innerHTML;
 var boutonAjout = document.getElementById("ajouter");
 
 boutonAjout.addEventListener("click", event => {
-    let image = document.getElementById("banniere").getAttribute("data-img");
-    let repas = localStorage.getItem("repas");
-    let jour = localStorage.getItem("jour");
+    let image   = document.getElementById("banniere").getAttribute("data-img");
+    let id      = document.getElementById("titre").getAttribute("data-id");
+    let repas   = localStorage.getItem("repas");
+    let jour    = localStorage.getItem("jour");
+    // prise en compte du nom de la recette
     window.localStorage.setItem("plat - " + repas + " - " + jour, titreRecette); 
+    // prise en compte de l'id de la recette
+    window.localStorage.setItem("idRecette - " + repas + " - " + jour, id); 
     //  prise en compte du nombre de personnes
     window.localStorage.setItem("personnes - " + repas + " - " + jour, quantite.innerHTML);
     window.location.href = "../../menu/jours";
-    // prise en compte du repas (déjeuner ou dîner)
+    // prise en compte du type de repas (déjeuner ou dîner)
     window.localStorage.setItem("repas - " + repas + " - " + jour, repas);
     // prise en compte du jour
     window.localStorage.setItem("jour - " + repas + " - " + jour, jour);
