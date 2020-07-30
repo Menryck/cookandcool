@@ -7,14 +7,14 @@
 
 {% block body %}
 <section>
-    <a href="{{ url('categorie_entrees') }}"> 
-    <div class="typeDiv">
-        <h2>Nom du plat</h2>
-    </div>
-  
-</section>
 
-{% endblock %}
-{% block javascripts %}
-<script src="{{asset('assets/js/liste.js')}}"> </script>
+    {% for recette in recettes %}}
+    <a href="../recette/detail/{{ recette.id }}">
+        <div class="typeDiv" style="background-image: url('{{asset('assets/img/recettesImg/' ~ recette.photo)}}');background-repeat:no-repeat;background-size: cover;">
+            <h2>{{ recette.titre }}</h2>
+        </div>
+    </a>
+    {% endfor %}
+
+</section>
 {% endblock %}

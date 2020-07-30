@@ -3,19 +3,34 @@
 namespace App\Controller;
 
 use App\Entity\Recette;
-use App\Entity\TableRecetteIngredients;
 use App\Form\RecetteType;
 use App\Repository\RecetteRepository;
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use App\Entity\TableRecetteIngredients;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 /**
  * @Route("/recette")
  */
 class RecetteController extends AbstractController
 {
+
+
+    /**
+     * @Route("/{categorie}", name="recette_liste", methods={"GET"})
+     */
+    public function liste(RecetteRepository $recetteRepository, Request $request, $categorie): Response
+    {
+        $categorie = $request->query->get('categorie');
+        return $this->render('liste_recettes/index.html.twig', [
+            'recettes' => $recetteRepository->findBy(
+                array('categorie' => $categorie)
+            ),
+        ]);
+    }
+
     /**
      * @Route("/", name="recette_index", methods={"GET"})
      */
@@ -25,6 +40,7 @@ class RecetteController extends AbstractController
             'recettes' => $recetteRepository->findAll(),
         ]);
     }
+
 
     /**
      * @Route("/new", name="recette_new", methods={"GET","POST"})
@@ -138,4 +154,5 @@ class RecetteController extends AbstractController
             'recette' => $recette,
         ]);
     }
+
 }

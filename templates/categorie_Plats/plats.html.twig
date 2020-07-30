@@ -12,28 +12,28 @@
     <h2 class="titreCategorie">Plats </h2>
 
 <section class="categorieL1">
-    <a href="{{ url('liste_recettes') }}" id="viande" class="categoriePlat"><div class="categorieViandes bgSize">
+    <a href="{{ url('liste_recettes') }}?viande"><div class="categorieViandes bgSize">
     <h2>Viandes</h2>
     </div></a>
-    <a href="{{ url('liste_recettes') }}" id="poisson" class="categoriePlat"><div class="categoriePoissons bgSize">
+    <a href="{{ url('liste_recettes') }}?poisson"><div class="categoriePoissons bgSize">
     <h2>Poissons</h2>
     </div></a>
 </section>
 
 <section class="categorieL1">
-    <a href="{{ url('liste_recettes') }}" id="monde" class="categoriePlat"><div class="categorieMonde bgSize">
+    <a href="{{ url('liste_recettes') }}?monde"><div class="categorieMonde bgSize">
     <h2>Cuisine du monde</h2>
     </div></a>
-    <a href="{{ url('liste_recettes') }}" id="vegan" class="categoriePlat"><div class="categorieVegan bgSize">
+    <a href="{{ url('liste_recettes') }}?vegan"><div class="categorieVegan bgSize">
     <h2>Vegan</h2>
     </div></a>
 </section>
 
 <section class="categorieL1">
-    {# <a href="" id="traditionnel" class="categoriePlat"><div class="categorieTraditionnel bgSize">
+    {# <a href=""><div class="categorieTraditionnel bgSize">
     <h2>Traditionnel</h2>
     </div></a> #}
-    {# <a href="" id="gastronomique" class="categoriePlat"><div class="categorieGastronomique bgSize">
+    {# <a href=""><div class="categorieGastronomique bgSize">
     <h2>Gastronomique</h2>
     </div></a> #}
 </section>
@@ -41,6 +41,4 @@
 </section>
 {% endblock %}
 
-{% block javascripts %}
-<script src="{{asset('assets/js/categorie.js')}}"> </script>
-{% endblock %}
+
