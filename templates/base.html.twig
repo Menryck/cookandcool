@@ -20,10 +20,6 @@
     <header>
     {% block header %}
         <nav>
-            <ul class="iconReglageDesktop">
-                <li><a href="{{ url('contact') }}"><img src="{{asset('assets/img/iconPng/Setting.png')}}" alt=""></a></li>
-                
-            </ul>
             <ul class="iconReglageSmartphone">
                 <li><a href="{{ url('contact') }}"><img src="{{asset('assets/img/iconPng/Setting.png')}}" alt=""></a></li>
             </ul>
@@ -31,6 +27,7 @@
                     <div id="iconMenus" class="footerMiseEnPage"><li><a href="{{ url('menu_jours') }}"><img class="footNavImg" src="{{asset('assets/img/iconPng/menu.png')}}" alt="Menus">MENUS</a></li></div>
                     <div id="iconListes" class="footerMiseEnPage"><li><a href="{{ url('liste_course') }}"><img class="footNavImg" src="{{asset('assets/img/iconPng/Liste.png')}}" alt="Listes">LISTES</a></li></div>
                     <div id="iconStock" class="footerMiseEnPage"><li><a href="{{ url('stock') }}"><img class="footNavImg" src="{{asset('assets/img/iconPng/Stock.png')}}" alt="Stock">STOCK</a></li></div>
+                    <div id="iconContact" class="footerMiseEnPage"><li><a href="{{ url('contact') }}"><img class="footNavImg" src="{{asset('assets/img/iconPng/contact.png')}}" alt="Contact">CONTACT</a></li></div>
             </ul>
         </nav>
         <div class="logoHeader">
