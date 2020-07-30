@@ -1,6 +1,3 @@
-console.log("hello le monde");
-
-
 
 function selectRecette (id, evenementJS, callback)
 {

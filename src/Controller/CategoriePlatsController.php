@@ -28,7 +28,7 @@ class CategoriePlatsController extends AbstractController
     /**
      * @Route("/categorie/desserts", name="categorie_desserts")
      */
-    public function désserts()
+    public function desserts()
     {
         return $this->render('categorie_Plats/desserts.html.twig', [
             'controller_name' => 'CategoriePlatsController',
