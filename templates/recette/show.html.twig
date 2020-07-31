@@ -46,16 +46,34 @@
                 <th>Instructions</th>
                 <td>{{ recette.instructions }}</td>
             </tr>
-             <tr>
+             {# <tr>
                 <th>Quantite</th>
-                {# affiche quantité mais pas la valeur #}
-                 <td>{{ table_recette_ingredient.quantite }}</td>
-            </tr>
+               
+                {# {{dump(table_recette_ingredient)}} #}
+                {# <td>
+                {% for recetteIngredient in recette.ingredient %}
+               
+                <div>
+                {{recetteIngredient.quantite}} 
+                </div>
+
+                 {% endfor %}
+                </td> 
+                 
+            </tr> #}
              <tr>
                 <th>ingrédients</th>
-                {# a completer n'affiche que l'id et non l'ingredient #}
-                 <td>{{ table_recette_ingredient.id }}</td>
+                <td>
+                {% for recetteIngredient in recette.ingredient %}
+
+                <div>
+                {{recetteIngredient.quantite}}  {{recetteIngredient.ingredient.nom}}
+                </div>
+
+                {% endfor %}
+                </td>
             </tr>
+
             <tr>
                 <th>Type</th>
                 <td>{{ recette.type }}</td>

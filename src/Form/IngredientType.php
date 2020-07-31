@@ -16,9 +16,9 @@ class IngredientType extends AbstractType
         $builder
             ->add('nom')
             ->add('image', FileType::class,[
-                // unmapped fields can't define their validation using annotations
-                // in the associated entity, so you can use the PHP constraint classes
-                'constraints' => [
+                    // unmapped fields can't define their validation using annotations
+                    // in the associated entity, so you can use the PHP constraint classes
+                    'constraints' => [
                     new File([
                         'maxSize' => '10240k',
                         'mimeTypes' => [
