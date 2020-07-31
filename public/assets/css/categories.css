@@ -41,19 +41,15 @@ a{
 
 .categorieViandes {
     background-image: url('../img/categoriePlatsImg/viande01.webp');
-   
 }
 .categoriePoissons {
     background-image: url('../img/categoriePlatsImg/poisson03.webp');
-   
 }
 .categorieVegan {
     background-image: url('../img/categoriePlatsImg/vegan01.webp');
- 
 }
 .categorieGastronomique {
     background-image: url('../img/categoriePlatsImg/poisson02.webp');
-   
 }
 .categorieTraditionnel {
     background-image: url('../img/categoriePlatsImg/cuisineTraditionnel02.webp');
@@ -61,27 +57,22 @@ a{
 }
 .categorieMonde {
     background-image: url('../img/categoriePlatsImg/cuisineDuMonde02.webp');
-   
 }
 /* categorie entrée */
 
 .categorieSalades {
     background-image: url('../img/categoriePlatsImg/EntréeSalade01.webp');
-   
 }
 .categorieSoupes {
     background-image: url('../img/categoriePlatsImg/EntréeSoupe01.webp');
-   
 }
 .categorieEntréesFroides {
     /* Changer image */
     background-image: url('../img/categoriePlatsImg/vegan01.webp');
- 
 }
 .categorieEntréesChaudes {
     /* Changer image */
     background-image: url('../img/categoriePlatsImg/poisson02.webp');
-   
 }
 .categorieRaviolisNems {
     background-image: url('../img/categoriePlatsImg/EntréeRaviolisNems03.webp');
@@ -89,13 +80,11 @@ a{
 }
 .categorieVeganE {
     background-image: url('../img/categoriePlatsImg/EntréeVegan.webp');
-   
 }
 
 /* .categorieGastronomiqueE {
     /* Changer image */
-  /*  background-image: url('../img/categoriePlatsImg/cuisineDuMonde02.webp');
-   
+/*  background-image: url('../img/categoriePlatsImg/cuisineDuMonde02.webp');
 } */
 
 
@@ -158,7 +147,6 @@ h2 {
         margin-top: 0px;
         border-radius: 10px;
         width: 95%;
-/*         box-shadow: 2px 1px 1px hsl(0, 0%, 0%, 50%); */
     }
 
 /* .categorieViandes, .categorieViandes, */
