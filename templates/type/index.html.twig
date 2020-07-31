@@ -8,22 +8,27 @@
 {% block body %}
 
 
+<div class="container-categorie">
+    <div class="container-categorie-item">
+        <a href="{{ url('categorie_entrees') }}">
+            <div class="typeDiv1">
+                <h2>Entrées</h2>
+            </div>
+        </a>
 
-        <a href="{{ url('categorie_entrees') }}"> <div class="typeDiv1">
-        <h2>Entrées</h2>
-                 </div>
-    </a>
+        <a href="{{ url('categorie_plats') }}">
+            <div class="typeDiv2">
+                <h2>Plats</h2>
+            </div>
+        </a>
 
-    <a href="{{ url('categorie_plats') }}"><div class="typeDiv2">
-        <h2>Plats</h2>
-                 </div>
-    </a>
-           
-    <a href="{{ url('categorie_desserts') }}"> <div class="typeDiv3">
-            <h2>Desserts</h2>
-                 </div>
-    </a>
-
+        <a href="{{ url('categorie_desserts') }}">
+            <div class="typeDiv3">
+                <h2>Desserts</h2>
+            </div>
+        </a>
+    </div>
+</div>
 
 
 {% endblock %}
