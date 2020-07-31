@@ -32,6 +32,7 @@ boutonAjout.addEventListener("click", event => {
         window.localStorage.setItem("uniteIngredient" + i + " - " + repas + " - " + jour, unite[i].innerHTML);
         window.localStorage.setItem("nomIngredient" + i + " - " + repas + " - " + jour, ingredient[i].innerHTML);
     };
+    window.localStorage.setItem("nbreIngredients" + " - " + repas + " - " + jour, parpersonne.length);
 
 });
 
