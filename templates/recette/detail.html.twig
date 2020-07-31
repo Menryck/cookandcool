@@ -88,14 +88,10 @@
             {% for ingredient in recette.ingredient %}
             <tr>
                 <td>
-                    <span class="personnes" data-mesure="{{ ingredient.quantite }}">{{ ingredient.quantite }}</span> {{ ingredient.ingredient.unite }} 
-                    {% if ingredient.quantite > 1 %}
-                {{ ingredient.ingredient.nom }}s
+                    <span class="personnes" data-mesure="{{ ingredient.quantite }}">{{ ingredient.quantite }}</span> 
+                    <span class="unite">{{ ingredient.ingredient.unite }}</span> 
+                    <span class="nom">{{ ingredient.ingredient.nom }}</span>
                 </td>
-            {% else %}
-                {{ ingredient.ingredient.nom }}
-                </td>
-	    {% endif %}
             </tr>
             {% endfor %}
         </table>

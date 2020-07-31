@@ -9,7 +9,7 @@
 <section>
 
     {% for recette in recettes %}}
-    <a href="../recette/detail/{{ recette.id }}">
+    <a href="../detail/{{ recette.id }}">
         <div class="typeDiv" style="background-image: url('{{asset('assets/img/recettesImg/' ~ recette.photo)}}');background-repeat:no-repeat;background-size: cover;">
             <h2>{{ recette.titre }}</h2>
         </div>

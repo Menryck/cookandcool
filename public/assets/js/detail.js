@@ -3,11 +3,16 @@
 var titreRecette = document.getElementById("titre").innerHTML;
 var boutonAjout = document.getElementById("ajouter");
 
+
+
 boutonAjout.addEventListener("click", event => {
-    let image   = document.getElementById("banniere").getAttribute("data-img");
-    let id      = document.getElementById("titre").getAttribute("data-id");
-    let repas   = localStorage.getItem("repas");
-    let jour    = localStorage.getItem("jour");
+    let image           = document.getElementById("banniere").getAttribute("data-img");
+    let id              = document.getElementById("titre").getAttribute("data-id");
+    let parpersonne     = document.getElementsByClassName("personnes");
+    let unite           = document.getElementsByClassName("unite");
+    let ingredient      = document.getElementsByClassName("nom");
+    let repas           = localStorage.getItem("repas");
+    let jour            = localStorage.getItem("jour");
     // prise en compte du nom de la recette
     window.localStorage.setItem("plat - " + repas + " - " + jour, titreRecette); 
     // prise en compte de l'id de la recette
@@ -21,6 +26,12 @@ boutonAjout.addEventListener("click", event => {
     window.localStorage.setItem("jour - " + repas + " - " + jour, jour);
     // prise en compte de l'image
     window.localStorage.setItem("image - " + repas + " - " + jour, image);
+    // prise en compte de la quantite d'ingredient pour une personne
+    for (i=0; i<parpersonne.length; i++) {
+        window.localStorage.setItem("quantiteIngredientParPersonne" + i + " - " + repas + " - " + jour, parpersonne[i].getAttribute("data-mesure"));
+        window.localStorage.setItem("uniteIngredient" + i + " - " + repas + " - " + jour, unite[i].innerHTML);
+        window.localStorage.setItem("nomIngredient" + i + " - " + repas + " - " + jour, ingredient[i].innerHTML);
+    };
 
 });
 
