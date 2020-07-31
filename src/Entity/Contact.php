@@ -36,6 +36,10 @@ class Contact
      * @ORM\Column(type="datetime")
      */
     private $dateMessage;
+    public function __construct()
+    {
+        $this->dateMessage = new \DateTime();
+    }
 
     public function getId(): ?int
     {
