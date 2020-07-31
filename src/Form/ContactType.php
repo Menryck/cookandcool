@@ -8,7 +8,7 @@ use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
-use Symfony\Component\Form\Extension\Core\Type\DateType;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 
 class ContactType extends AbstractType
 {
@@ -18,7 +18,7 @@ class ContactType extends AbstractType
             ->add('email',    TextType::class)
             ->add('nom',    TextType::class)
             ->add('message',    TextareaType::class)
-            ->add('dateMessage',      DateType::class)
+            ->add('save', SubmitType::class)
         ;
     }
 
@@ -28,4 +28,7 @@ class ContactType extends AbstractType
             'data_class' => Contact::class,
         ]);
     }
+
+    
+
 }

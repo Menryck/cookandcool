@@ -1,42 +1,6 @@
 /* Roboto */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 
-
-.categorieL1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-    max-width: 100%;
-}
-
-.bgSize {
-    background-size: cover;
-    background-position: center;
-    height: 20rem;
-    margin: 20px 10px;
-    border-radius: 10px;
-    width: 90%;
-}
-
-h2 {
-    padding: 25px;
-    font-size: 40px;
-    font-weight: 200;
-    text-align: center;
-    font-family: 'Roboto', 'sans-serif';
-    background-color: rgba(255, 255, 255, 0.906);
-}
-
-a{
-    color:#3f3f3f;
-}
-
-
-.titreCategorie {
-    font-size: 50px;
-    margin-top: 25px;
-    background-color: rgba(223, 238, 238, 0.3);
-}
 /* categorie plats */
 
 .categorieViandes {
@@ -58,6 +22,7 @@ a{
 .categorieMonde {
     background-image: url('../img/categoriePlatsImg/cuisineDuMonde02.webp');
 }
+
 /* categorie entrée */
 
 .categorieSalades {
@@ -113,43 +78,8 @@ a{
 }
 
 
-/* mediaquerries smartphone*/
+
 @media (min-width: 250px) and (max-width: 768px){
-.titreCategorie {
-    font-size: 35px;
-    color: rgb(36, 34, 34);
-    padding-top: 1rem;
-    background-color: white;
-    text-transform: uppercase;
-    text-shadow: none;
-    padding-bottom: 2rem;
-}
-
-h2 {
-    padding: 2px;
-    font-size: 30px;
-    font-weight: 200;
-    text-align: center;
-    font-family: 'Roboto', 'sans-serif';
-    background-color: rgba(255, 255, 255, 0.906);
-}
-
-.titreCategorie {
-    background-color: rgba(223, 238, 238, 0.3);
-}
-
-
-.bgSize {
-        background-size: cover;
-        background-position: center;
-        height: 5rem;
-        margin: 30px 10px;
-        margin-top: 0px;
-        border-radius: 10px;
-        width: 95%;
-    }
-
-/* .categorieViandes, .categorieViandes, */
     .categorieL1 {
         display: flex;
         justify-content: center;
@@ -158,8 +88,105 @@ h2 {
         max-width: 100%;
     }
 
+    .categorieR{
+        margin: 50px;
+        width: 100%;
+    }
+}
+
+
+/* REGLAGES SMARTPHONE */
+h2{
+    padding: 8px;
+    font-size: 17px;
+    font-weight: 300;
+    text-align: center;
+    font-family: 'Roboto', 'sans-serif';
+    background-color: rgba(255, 255, 255, 0.906);
+}
+
+.bgSize {
+    background-size: cover;
+    background-position: center;
+    height: 21vh;
+    margin: 20px 10px;
+    border-radius: 10px;
+    width: 90%;
+}
+
+a{
+    color:#3f3f3f;
+}
 
 
 
+/* REGLAGES DESKTOP */
+@media screen and (min-width: 1080px){
+.categorieL1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    max-width: 100%;
+}
 
+.bgSize {
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+    margin: 20px 10px;
+    border-radius: 10px;
+    width: 90%;
+}
+
+h2 {
+    padding: 25px;
+    font-size: 40px;
+    font-weight: 200;
+    text-align: center;
+    font-family: 'Roboto', 'sans-serif';
+    background-color: rgba(255, 255, 255, 0.906);
+}
+
+a{
+    color:#3f3f3f;
+}
+
+.titreCategorie {
+    font-size: 50px;
+    margin-top: 25px;
+    background-color: rgba(223, 238, 238, 0.3);
+}
+
+.categorieR{
+    margin: auto;
+    width: 100%;
+}
+}
+
+
+/* REGLAGES TABLETTE */
+@media (min-width: 768px) and (max-width: 1080px){
+h2{
+    padding: 8px;
+    font-size: 40px;
+    font-weight: 200;
+    height: 12vh;
+    text-align: center;
+    font-family: 'Roboto', 'sans-serif';
+    background-color: rgba(255, 255, 255, 0.906);
+}
+
+.bgSize {
+    background-size: cover;
+    background-position: center;
+    height: 27vh;
+    margin: 30px 10px;
+    margin-top: 0px;
+    border-radius: 10px;
+    width: 95%;
+}
+
+a{
+    color:#3f3f3f;
+}
 }
