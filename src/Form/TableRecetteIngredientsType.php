@@ -15,8 +15,8 @@ class TableRecetteIngredientsType extends AbstractType
     {
         $builder
             ->add('quantite')
-            ->add('ordre')
-            ->add('etape')
+            // ->add('ordre')
+            // ->add('etape')
          // ->add('recette')
             ->add('ingredient', EntityType::class, [
                     'class' => Ingredient::class,

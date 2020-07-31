@@ -35,6 +35,8 @@ class TableRecetteIngredientsController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+            $tableRecetteIngredient->setEtape(0);
+            $tableRecetteIngredient->setOrdre(0);
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($tableRecetteIngredient);
             $entityManager->flush();

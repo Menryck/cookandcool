@@ -19,11 +19,10 @@ class RecetteController extends AbstractController
 
 
     /**
-     * @Route("/{categorie}", name="recette_liste", methods={"GET"})
+     * @Route("/liste/{categorie}", name="recette_liste", methods={"GET"})
      */
     public function liste(RecetteRepository $recetteRepository, Request $request, $categorie): Response
     {
-        $categorie = $request->query->get('categorie');
         return $this->render('liste_recettes/index.html.twig', [
             'recettes' => $recetteRepository->findBy(
                 array('categorie' => $categorie)
@@ -43,7 +42,7 @@ class RecetteController extends AbstractController
 
 
     /**
-     * @Route("/new/add", name="recette_new", methods={"GET","POST"})
+     * @Route("/new", name="recette_new", methods={"GET","POST"})
      */
     public function new(Request $request): Response
     {

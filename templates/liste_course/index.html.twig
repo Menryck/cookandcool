@@ -5,11 +5,11 @@
 <link rel="stylesheet" href="{{asset('assets/css/course.css')}}">
 {% endblock %}
 {% block body %}
-
-{% for i in 1..7 %}
-    {% set ingredients ~ i = '<script type="text/javascript">window.localStorage.getItem("idRecette - dejeuner - ");</script>' %}
-    {{ ingredients ~ i}}
-{% endfor %}
+<script>
+for (i=0; i<8; i++) {
+    window["ingredientsdejeuner"+i]=window.localStorage.getItem("idRecette - dejeuner - "+i);
+}
+</script>
 
 
 <div class="header-liste-course">
@@ -50,7 +50,6 @@
 
 
 
-{% block body %}
     <div class="header-liste-course">
         <h2 class="titre-liste-course">Votre liste</h2>
         <a class="text-print" href="#">Imprimer liste<img class="icon-print"src="../../public/assets/img/iconPng/print-white.png" alt="imprimer"></a>
