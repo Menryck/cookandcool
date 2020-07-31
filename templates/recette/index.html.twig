@@ -44,7 +44,7 @@
         </thead>
         <tbody>
         {% for recette in recettes %}
-        {{dump(recette)}}
+        {# {{dump(recette)}} #}
             <tr>
                 <td>{{ recette.id }}</td>
                 <td>{{ recette.titre }}</td>
@@ -58,7 +58,12 @@
                 {# <td>{{ recette.nbrePart }}</td> #}
                 <td>
                     <a class="btn btn-danger" href="{{ path('recette_show', {'id': recette.id}) }}">voir</a>
-                    <a class="btn btn-danger" href="{{ path('recette_edit', {'id': recette.id}) }}">modifier</a>
+
+
+                    {# update a configurer pour la v2 #}
+                    {# <a class="btn btn-danger" href="{{ path('recette_edit', {'id': recette.id}) }}">modifier</a> #}
+
+
                 </td>
             </tr>
         {% else %}
