@@ -12,7 +12,7 @@ use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 /**
- * @Route("/recette")
+ * @Route("admin/recette")
  */
 class RecetteController extends AbstractController
 {
@@ -103,16 +103,14 @@ class RecetteController extends AbstractController
      */
     public function show(Recette $recette, TableRecetteIngredients $tableRecetteIngredient): Response
     {
+
         return $this->render('recette/show.html.twig', [
             'recette' => $recette,
             // a completer pour affichage du nombre
-            'table_recette_ingredient' => $tableRecetteIngredient,
+          // 'table_recette_ingredient' => $tableRecetteIngredient,  
+          'table_recette_ingredient' => $recette -> getIngredient(),
         ]);
-        // test debut
-        return $this->render('table_recette_ingredients/show.html.twig', [
-            'table_recette_ingredient' => $tableRecetteIngredient,
-        ]);
-        // test fin
+       
     }
 
     /**

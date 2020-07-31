@@ -59,7 +59,11 @@
                 <td>{{ ingredient.saison }}</td>
                 <td>
                     <a class="btn btn-danger" href="{{ path('ingredient_show', {'id': ingredient.id}) }}">voir</a>
-                    <a class="btn btn-danger" href="{{ path('ingredient_edit', {'id': ingredient.id}) }}">modifier</a>
+
+
+                {# update a configurer pour v2 #}
+                    {# <a class="btn btn-danger" href="{{ path('ingredient_edit', {'id': ingredient.id}) }}">modifier</a> #}
+                    
                 </td>
             </tr>
         {% else %}
