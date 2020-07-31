@@ -12,34 +12,58 @@
     </div>
 
     <div class="container contact-form">
-        <form method="post">
+        <form action="honeypot.php" method="POST" enctype="multipart/form-data">
             <h3>Laissez nous un message</h3>
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <input type="text" name="txtName" class="form-control" placeholder="Votre nom *" value="" />
+                            <input type="text" name="nom" class="form-control" required placeholder="Votre nom *" value="" />
                         </div>
                         <div class="form-group">
-                            <input type="email" name="txtEmail" class="form-control" placeholder="Votre email *" value="" />
+                            <input type="email" name="email" class="form-control" required placeholder="Votre email *" value="" />
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <textarea name="txtMsg" class="form-control" placeholder="Votre message *"></textarea>
+                            <textarea name="message" class="form-control" placeholder="Votre message *"></textarea>
                         </div>
                         <div class="form-group">
                             <input type="submit" name="btnSubmit" class="btnContact" value="Envoyé" />
                         </div>
                     </div>
                 </div>
+                <!-- PARTIE TECHNIQUE -->
+                <input type="hidden" name="classeCible" value="Contact">
+                <input type="hidden" name="methodeCible" value="create">
+                <!-- POUR AFFICHER UN MESSAGE DE CONFIRMATION -->
+                <div class="confirmation"></div>
         </form>
     </div>
 
-    <section class"map">
-    <div class="map-item">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.737817569192!2d5.379149815486312!3d43.29881197913513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9bfcdc25b14c7%3A0x5f67deef73c302cb!2sWebforce3%20Marseille%20-%20Formation%20D%C3%A9veloppeur%20web%2C%20Technicien%20syst%C3%A8mes%20r%C3%A9seaux%2C%20Designer%20web%20marketing%20digital...!5e0!3m2!1sfr!2sfr!4v1596140464289!5m2!1sfr!2sfr" width="350" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+{#     <section class"container-map">
+    <div class="container-map-item">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem ex unde perferendis modi ducimus, nesciunt numquam facere cumque rem recusandae, at a. Temporibus aliquam placeat nostrum ipsam, aspernatur distinctio asperiores.</p>
     </div>
-    </section>
+    <div class="container-map-item">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem ex unde perferendis modi ducimus, nesciunt numquam facere cumque rem recusandae, at a. Temporibus aliquam placeat nostrum ipsam, aspernatur distinctio asperiores.</p>
+    </div>
+    <div class="map-item">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.737817569192!2d5.379149815486312!3d43.29881197913513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9bfcdc25b14c7%3A0x5f67deef73c302cb!2sWebforce3%20Marseille%20-%20Formation%20D%C3%A9veloppeur%20web%2C%20Technicien%20syst%C3%A8mes%20r%C3%A9seaux%2C%20Designer%20web%20marketing%20digital...!5e0!3m2!1sfr!2sfr!4v1596140464289!5m2!1sfr!2sfr" width="100%" height="650px" frameborder="0" style="border:0;" allowfullscreen></iframe>
+    </div>
+    </section> #}
+
+
+
+
+<div class="container">
+    <div class="text-infos">
+		<h1 class="title">Presentation du projet</h1>
+		<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste est natus non dolores ex reprehenderit incidunt excepturi officiis nostrum deleniti placeat alias quis, voluptas veniam culpa, voluptatem fuga dignissimos vero?</p>
+	</div>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.737817569192!2d5.379149815486312!3d43.29881197913513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9bfcdc25b14c7%3A0x5f67deef73c302cb!2sWebforce3%20Marseille%20-%20Formation%20D%C3%A9veloppeur%20web%2C%20Technicien%20syst%C3%A8mes%20r%C3%A9seaux%2C%20Designer%20web%20marketing%20digital...!5e0!3m2!1sfr!2sfr!4v1596140464289!5m2!1sfr!2sfr" width="100%" height="650px" frameborder="0" style="border:0;" allowfullscreen></iframe>
+    </div>
+</div>
 {% endblock %}
 
 
