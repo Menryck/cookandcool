@@ -1,14 +1,14 @@
 /* Roboto */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 
-
+/* REGLAGES SMARTPHONE */
 h2 {
-    font-weight: 200;
+    padding: 8px;
+    font-size: 17px;
+    font-weight: 300;
+    text-align: center;
     font-family: 'Roboto', 'sans-serif';
     background-color: rgba(255, 255, 255, 0.906);
-    padding: 25px;
-    text-align: center;
-    font-size: 40px;
 }
 
 a{
@@ -17,15 +17,68 @@ a{
 
 
 .typeDiv {
-    background-image: url('../img/typeImg/entrée04.webp');
-    height: 25rem;
+    height: 21vh;
     margin: 5px auto;
     object-fit: cover;
     border-radius: 10px;
-    width: 90%;
+    width: 93%;
+    background-image: url('../img/typeImg/entrée04.webp');
 }
 
 
 
 
-/* mediaquerries */
+
+
+/* REGLAGES DESKTOP */
+@media screen and (min-width: 1080px){
+    .typeDiv {
+        background-image: url('../img/typeImg/entrée04.webp');
+        height: 35vh;
+        margin: 5px auto;
+        object-fit: cover;
+        border-radius: 10px;
+        width: 90%;
+    }
+
+    .container-liste-recette{
+        display: flex;
+    }
+
+    h2 {
+        padding: 25px;
+        font-size: 40px;
+        font-weight: 200;
+        text-align: center;
+        font-family: 'Roboto', 'sans-serif';
+        background-color: rgba(255, 255, 255, 0.906);
+    }
+}
+
+
+
+
+
+
+/* REGLAGES TABLETTE */
+@media (min-width: 768px) and (max-width: 1080px){
+    .typeDiv {
+        background-image: url('../img/typeImg/entrée04.webp');
+        height: 27vh;
+        margin: 5px auto;
+        object-fit: cover;
+        border-radius: 10px;
+        width: 90%;
+        margin-top: 50px;
+    }
+
+    h2 {
+        padding: 35px;
+        font-size: 40px;
+        font-weight: 200;
+        height: 12vh;
+        text-align: center;
+        font-family: 'Roboto', 'sans-serif';
+        background-color: rgba(255, 255, 255, 0.906);
+    }
+}

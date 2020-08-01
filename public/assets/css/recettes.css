@@ -1,30 +1,82 @@
+/* REGLAGES SMARTPHONE */
+.container-header-recette-smartphone{
+    display: flex;
+    flex-wrap: wrap;
+}
 
-.logoHeader {
-    max-width: 300px;
+#banniere{
+    background-size: cover;
+    min-height: 160px;
+    height: 27vh;
+    position: relative;
+}
+
+.commandesBottom {
+    width: 25px;
 }
 
 .texte {
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 0;
     padding-top: 2%;
+    font-size: 17px;
+    font-weight: 300;
+    font-family: 'Roboto', 'sans-serif';
 }
 
-h3 {
-    font-style: normal;
+#titre {
+    font-size: 17px;
+    text-align: center;
+    color:#3f3f3f;
+    height: 12vh;
+    margin-top: 0;
+    padding: 27px;
+    background-color: rgba(255, 255, 255, 0.906);
 }
-/* footer du main (icone navigation) */
-main {
-    max-height: 73vh;
-    overflow-y: scroll;
 
+.middle {
+    text-align: center;
+    padding: 25px 0 0 0;
 }
+
+.ligneBlanche {
+    background-color: white;
+}
+
 a {
     text-decoration: none;
     color: black;
 }
 
+.container-detail-recette{
+    margin: 15px auto;
+    padding: 0 25px;
+}
+
+h2.texte{
+    font-size: 27px;
+    padding-top: 27px;
+}
+
+.desktopDetails {
+    display: none;
+}
+
+.masque {
+    display: none;
+}
+
+table {
+    border-spacing: 0px;
+    width: 100%;
+}
+
+h3{
+    font-size: 27px;
+    font-weight: 400;
+}
+
 td {
-    padding : 10px;
+    padding : 5px 0 3px 0;
     font-style: italic;
 }
 
@@ -37,91 +89,206 @@ td {
     font-weight: bold;
 }
 
-.centrer {
-    margin: auto;
-}
 
-.middle {
-    text-align: center;
-}
 
-#banniere {
-    background-size: cover;
-    min-height: 160px;
-    margin-top: 2%;
-    position: relative;
-}
 
-#titre {
-    text-align: center;
-    color: rgb(186, 232, 232);
-    background-color: rgba(0, 0, 0, 0.2);
-    padding-bottom: 2%;
-}
 
-.commande {
-    position: sticky;
-    top: 0px;
-}
 
-.commandesTexte {
-    vertical-align: center;
-}
-
-.ligneBlanche {
-    background-color: white;
-}
-
-.commandesTop {
-    width: 60px;
-}
-
-.commandesBottom {
-    width: 40px;
-}
-
-table {
-    border-spacing: 0px;
-}
-
-.left {
-    margin-right: auto;
-}
-
-.right {
-    margin-left: auto;
-}
-
-.commandesBas {
-    width: 5%;
-}
-
-.desktopDetails {
-    display: none;
-}
-
-.masque {
-    display: none;
-}
-
-@media screen and (min-width: 640px) 
-{
-    .logoHeader {
-        width: 350px;
-        margin: auto;
+/* REGLAGES DESKTOP */
+@media screen and (min-width: 1080px){
+    .container-header-recette{
+        display: flex;
     }
-    .texte { 
+
+    #banniere{
+        background-size: cover;
+        background-position: center;
+        height: 45vh;
+        width: 100%;
+        border-radius: 10px;
+        margin: 0 90px 0 auto;
+        order: 2;
+    }
+
+    .commandesBottom {
+        width: 40px;
+    }
+
+    .texte {
+        padding-right: 150px;
+        padding-left: 70px;
+        padding-top: 2%;
         font-size: 30px;
+        font-weight: 300;
+        font-family: 'Roboto', 'sans-serif';
     }
 
-    .banniere {
-        min-height: 250px;
+    h2.texte{
+        font-size: 30px;
+        padding-top: 0;
+    }
+
+    h3{
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    #titre {
+        padding: 50px;
+        margin-top: 0;
+        font-size: 35px;
+        text-align: center;
+        color:#3f3f3f;
+        background-color: rgba(255, 255, 255, 0.906);
+    }
+
+    .middle {
+        text-align: center;
+        margin-top: 130px;
+    }
+
+    .ligneBlanche {
+        background-color: white;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .container-detail-recette{
+        display: flex;
+        margin: 95px auto;
+    }
+
+    .desktopDetails {
+        display: none;
+    }
+
+    .masque {
+        display: none;
+    }
+
+    table {
+        border-spacing: 0px;
+        width: 100%;
+    }
+
+    td {
+        padding : 5px;
+        font-style: italic;
+    }
+
+    .etape {
+        font-size: 20px;
+        padding-bottom: 2%;
+    }
+
+    .gras {
+        font-weight: bold;
+    }
+
+    .ingredients{
+        padding-right: 150px;
+        padding-left: 150px;
     }
 }
 
-    @media screen and (min-width: 450px) 
-{
+
+
+
+
+/* REGLAGES TABLETTE */
+@media (min-width: 768px) and (max-width: 1080px){
+    .container-header-recette-smartphone{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #banniere{
+        background-size: cover;
+        min-height: 160px;
+        margin-top: 2rem;
+        height: 27vh;
+        position: relative;
+    }
+
+    .commandesBottom {
+        width: 30px;
+    }
+
+    .texte {
+        padding-left: 0;
+        padding-right: 10%;
+        padding-top: 2%;
+        font-size: 21px;
+        font-weight: 300;
+        font-family: 'Roboto', 'sans-serif';
+    }
+
+    h2.texte{
+        font-size: 27px;
+        padding-top: 0;
+    }
+
+    #titre {
+        font-size: 35px;
+        text-align: center;
+        color:#3f3f3f;
+        height: 12vh;
+        margin-top: 0;
+        padding: 40px;
+        background-color: rgba(255, 255, 255, 0.906);
+    }
+
+    .middle {
+        text-align: center;
+        padding: 50px 0 0 50px;
+    }
+
+    .ligneBlanche {
+        background-color: white;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .container-detail-recette{
+        display: flex;
+        margin: 35px auto;
+    }
+
     .desktopDetails {
-        display: table-cell;
+        display: none;
+    }
+
+    .masque {
+        display: none;
+    }
+
+    table {
+        border-spacing: 0px;
+        width: 100%;
+    }
+
+    td {
+        padding : 5px;
+        font-style: italic;
+    }
+
+    .etape {
+        font-size: 20px;
+        padding-bottom: 2%;
+    }
+
+    .gras {
+        font-weight: bold;
+    }
+
+    .ingredients{
+        padding-right: 35px;
+        padding-left: 35px;
     }
 }
