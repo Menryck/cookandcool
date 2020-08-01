@@ -1,0 +1,68 @@
+.admin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    
+}
+.admin h1 {
+    font-size: 3rem;
+    color: black;
+    text-shadow: 2px 2px 1px rgb(179, 179, 179); 
+    border: 2px solid red;
+    box-shadow: 1px 1px rgb(226, 133, 133);
+    padding: 1rem;
+}
+.adminRecette {
+    margin-top: 1vh;
+   background-color: orange;
+   border-radius: 4px;
+   padding: 0.5rem 0 ;
+   width: 95%;
+}
+.adminRecette a{
+   text-decoration: none;
+   padding: 0 10vh;
+   font-size: 2rem;
+   color: rgb(179, 179, 179);
+   text-shadow: 2px 2px  rgb(0, 0, 0);
+   
+}
+.adminIngredient {
+    margin-top: 7vh;
+    background-color: darkorange;
+    border-radius: 4px;
+    padding: 0.5rem 0 ;
+    width: 95%;
+    
+}
+.adminIngredient a{
+    text-decoration: none;
+    padding: 0 10vh;
+    font-size: 2rem;
+    color: rgb(179, 179, 179);
+    text-shadow: 2px 2px  black;
+}
+.bIngredient {
+    border:none;
+	padding:6px 0 6px 0;
+	border-radius:75%;
+	border-bottom:7px solid #515153;
+	font:bold 13px Arial;
+	color:#555;
+	background:#fff;
+	box-shadow:2px 2px 3px #999;
+	border-top:2px solid #00a0a0;
+}
+.bRecette {
+    border:none;
+	padding:6px 0 6px 0;
+	border-radius:75%;
+	border-bottom:7px solid #515153;
+	font:bold 13px Arial;
+	color:#555;
+	background:#fff;
+	box-shadow:2px 2px 3px #999;
+	border-top:2px solid #00a0a0;
+}
