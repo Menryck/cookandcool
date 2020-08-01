@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 
 /* REGLAGES SMARTPHONE */
+header{
+    background-color: #ffff;
+    padding: 2px 0 17px 0;
+}
+
 h2 {
     padding: 8px;
     font-size: 17px;
@@ -18,7 +23,8 @@ a{
 
 .typeDiv {
     height: 21vh;
-    margin: 5px auto;
+    margin: auto;
+    margin-bottom: 35px;
     object-fit: cover;
     border-radius: 10px;
     width: 93%;

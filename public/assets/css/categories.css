@@ -96,6 +96,11 @@
 
 
 /* REGLAGES SMARTPHONE */
+header{
+    background-color: #ffff;
+    padding: 2px 0 17px 0;
+}
+
 h2{
     padding: 8px;
     font-size: 17px;
@@ -109,8 +114,8 @@ h2{
     background-size: cover;
     background-position: center;
     height: 21vh;
-    margin: 5px auto;
-    margin-top: 3rem;
+    margin: auto;
+    margin-bottom: 35px;
     border-radius: 10px;
     width: 93%;
 }

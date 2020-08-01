@@ -4,7 +4,7 @@
 /* REGLAGES SMARTPHONE */
 header{
     background-color: #ffff;
-    padding-top: 2px;
+    padding: 2px 0 5px 0;
 }
 
 .header-liste-course { 
@@ -12,16 +12,18 @@ header{
     align-items: center;
     height: 50px;
     max-width: 100%;
+    padding-top: 25px;
     font-size: 14px;
     font-family: 'Roboto', 'sans-serif';
     text-align: center;
-    color: #FFFF;
-    background-color: #C4C4C4;
+    color: #C4C4C4;
+    background-color: #FFFF;
     position: fixed;
+    z-index: 999;
 }
 
 .titre-liste-course{
-    font-weight: lighter;
+    font-weight: 300;
     font-size: 20px;
 }
 
@@ -39,7 +41,7 @@ header{
 }
 
 .icon-print, a{
-    color: #ffff;
+    color: #C4C4C4;
 }
 
 .header-print-smartphone{

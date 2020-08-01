@@ -18,6 +18,11 @@ body {
 
 
 /* REGLAGES SMARTPHONE */
+header{
+    background-color: #ffff;
+    padding-top: 2px;
+}
+
 /* header */
 .logoHeader {
     width: 150px;

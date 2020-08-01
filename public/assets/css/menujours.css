@@ -27,6 +27,11 @@
 
 
 /* REGLAGES SMARTPHONE */
+header{
+    background-color: #ffff;
+    padding: 2px 0 17px 0;
+}
+
     .blanc {
         width: 100%;
         min-height: 20vh;

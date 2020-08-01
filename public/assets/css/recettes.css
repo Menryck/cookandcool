@@ -1,4 +1,9 @@
 /* REGLAGES SMARTPHONE */
+header{
+    background-color: #ffff;
+    padding: 2px 0 17px 0;
+}
+
 .container-header-recette-smartphone{
     display: flex;
     flex-wrap: wrap;

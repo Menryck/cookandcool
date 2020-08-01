@@ -3,7 +3,7 @@
 {% block title %}Contact{% endblock %}
 
 {% block stylesheets %}
-<link rel="stylesheet" href="{{asset('assets/css/contact.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/contact.css')}}">
 {% endblock %}
 
 {% block body %}
@@ -11,29 +11,26 @@
         <h2 class="titre-contact">Contact</h2>
     </div>
 
-    <div class="container contact-form">
-        <h3>Laissez nous un message</h3>
-        {{form(form)}}
-            {% for messages in app.session.flashbag.all() %}
-                {% for message in messages %}
-                    {{ message }}
-                {% endfor %}
-            {% endfor %}
-    </div>
-
-
-
+<div class="container contact-form">
+    {{form(form)}}
+        {% for messages in app.session.flashbag.all() %}
+            {% for message in messages %}
+            {{ message }}
+        {% endfor %}
+    {% endfor %}
+</div>
 
 <div class="container">
     <div class="text-infos">
         <h1 class="title">Presentation du projet</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste est natus non dolores ex reprehenderit incidunt excepturi officiis nostrum deleniti placeat alias quis, voluptas veniam culpa, voluptatem fuga dignissimos vero?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste est natus non dolores ex reprehenderit
+                incidunt excepturi officiis nostrum deleniti placeat alias quis, voluptas veniam culpa, voluptatem fuga
+                dignissimos vero?
+            </p>
     </div>
     <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.737817569192!2d5.379149815486312!3d43.29881197913513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9bfcdc25b14c7%3A0x5f67deef73c302cb!2sWebforce3%20Marseille%20-%20Formation%20D%C3%A9veloppeur%20web%2C%20Technicien%20syst%C3%A8mes%20r%C3%A9seaux%2C%20Designer%20web%20marketing%20digital...!5e0!3m2!1sfr!2sfr!4v1596140464289!5m2!1sfr!2sfr" width="100%" height="650px" frameborder="0" style="border:0;" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.737817569192!2d5.379149815486312!3d43.29881197913513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9bfcdc25b14c7%3A0x5f67deef73c302cb!2sWebforce3%20Marseille%20-%20Formation%20D%C3%A9veloppeur%20web%2C%20Technicien%20syst%C3%A8mes%20r%C3%A9seaux%2C%20Designer%20web%20marketing%20digital...!5e0!3m2!1sfr!2sfr!4v1596140464289!5m2!1sfr!2sfr" width="100%" height="650px" frameborder="0" style="border:0;" allowfullscreen>
+        </iframe>
     </div>
 </div>
 {% endblock %}
-
-
-

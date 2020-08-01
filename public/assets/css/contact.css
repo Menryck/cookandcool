@@ -4,26 +4,35 @@
 /* REGLAGES SMARTPHONE */
 header{
     background-color: #ffff;
-    padding-top: 2px;
+    padding: 2px 0 5px 0;
 }
 
 .header-contact { 
     display: flex;
     align-items: center;
-    height: 50px;
+    height: 75px;
     max-width: 100%;
     font-size: 14px;
     font-family: 'Roboto', 'sans-serif';
     text-align: center;
-    color: #FFFF;
-    background-color: #C4C4C4;
+    color: #C4C4C4;
+    background-color: #ffffff;
     position: fixed;
-    z-index: 1;
+    z-index: 999;
 }
 
 .titre-contact{
-    font-weight: lighter;
+    font-weight: 300;
     font-size: 20px;
+}
+
+.title{
+    padding-top: 25px;
+    text-align: center;
+}
+
+p{
+    text-align: justify;
 }
 
 .contact-form{
@@ -41,7 +50,7 @@ header{
 }
 
 .contact-form form{
-    padding: 120px 0 0 0;
+    padding: 75px 0 0 0;
 }
 
 .contact-form h3{
@@ -79,7 +88,14 @@ header{
     padding: 0px 0px 0px 32px;
 }
 
+.btn{
+    border: none;
+    background-color: rgb(121, 171, 174);
+}
 
+#contact_message{
+    height: 110px;
+}
 
 
 
@@ -91,6 +107,11 @@ header{
 
 /* REGLAGES DESKTOP */
 @media screen and (min-width: 1080px){
+header{
+    background-color: #ffff;
+    padding: 2px 0 5px 0;
+}
+
 .header-contact { 
     display: flex;
     align-items: center;
@@ -120,7 +141,7 @@ header{
 }
 
 .contact-form form{
-    padding: 150px 0 0 0;
+    padding: 50px 0 0 0;
 }
 
 .contact-form h3{
@@ -189,6 +210,11 @@ header{
 .title{
     margin: 0.12em 0;
 }
+
+.btn{
+    border: none;
+    background-color: rgb(121, 171, 174);
+}
 }
 
 
@@ -196,37 +222,16 @@ header{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* REGLAGES TABLETTE */
+header{
+    background-color: #ffff;
+    padding: 2px 0 5px 0;
+}
 @media (min-width: 768px) and (max-width: 1080px){
-.titre-liste-course{
-    font-weight: lighter;
+.titre-contact{
+    font-weight: 300;
     font-size: 25px;
+    padding-top: 55px;
 }
 
 .header-contact { 
@@ -237,9 +242,10 @@ header{
     font-size: 14px;
     font-family: 'Roboto', 'sans-serif';
     text-align: center;
-    color: #FFFF;
-    background-color: #C4C4C4;
+    color: #C4C4C4;
+    background-color: #ffffff;
     position: fixed;
+    z-index: 999;
 }
 
 .contact-form{
@@ -285,9 +291,10 @@ header{
     padding: 0px 0px 0px 40px;
 }
 
-/* .container{
-    padding: 0 0 120px 0;
-} */
+.btn{
+    border: none;
+    background-color: rgb(121, 171, 174);
+}
 
 
 
