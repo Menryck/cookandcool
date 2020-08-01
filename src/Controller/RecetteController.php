@@ -107,10 +107,9 @@ class RecetteController extends AbstractController
         return $this->render('recette/show.html.twig', [
             'recette' => $recette,
             // a completer pour affichage du nombre
-          // 'table_recette_ingredient' => $tableRecetteIngredient,  
-          'table_recette_ingredient' => $recette -> getIngredient(),
+            // 'table_recette_ingredient' => $tableRecetteIngredient,  
+            'table_recette_ingredient' => $recette -> getIngredient(),
         ]);
-       
     }
 
     /**
