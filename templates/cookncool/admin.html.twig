@@ -1,12 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{{asset('assets/css/admin.css')}}">
+{% endblock %}
 {% block body %}
 
-<div class="example-wrapper">
+<div class="admin">
     <h1>Espace ADMIN  </h1>
+       <div class="adminRecette"> 
+      <button class="bRecette"> <a href="{{ 'admin/recette' }}">Gerer les recettes</a></button>
+       </div>
 
+       <div class="adminIngredient">  
+      <button class="bIngredient">  <a href="{{ 'admin/ingredient' }}">Gerer les ingrédients</a></button>
+       </div>
    
-    <ul>
-        <li><code><a href="{{ 'admin/recette' }}">Gerer les recettes</a></code></li>
-        <li><code><a href="{{ 'admin/ingredient' }}">Gerer les ingrédients</a></code></li>
-    </ul>
 </div>
+
+
 {% endblock %}
