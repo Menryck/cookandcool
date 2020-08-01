@@ -1,70 +1,176 @@
-.admin {
+/* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+
+
+/* REGLAGES SMARTPHONE */
+.container-admin{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    /* flex-wrap: wrap; */
-    flex-direction: column;
-    
+    padding: 25px 0 15px 0;
+    text-align: center;
 }
-.admin h1 {
-    font-size: 3rem;
-    color: black;
-    text-shadow: 2px 2px 1px rgb(179, 179, 179); 
-    border-bottom: 2px solid rgb(156, 64, 64);
-    box-shadow: 1px 1px rgb(226, 133, 133);
-    padding: 1rem;
+
+.btn-recette, .btn-ingredient{
+    width: 250px;
+    height: 320px;
+    border-radius: 10px;
+    border: none;
 }
-.adminRecette {
-    margin-top: 1vh;
-    background-image: url('../img/categoriePlatsImg/cuisineDuMonde02.webp');
-    background-size: cover;
-   border-radius: 4px;
-   padding: 0.5rem 0 ;
-   width: 95%;
+
+.btn-recette{
+    background-image: url('../img/admin/background-recette.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 15px;
 }
-.adminRecette a{
-   text-decoration: none;
-   padding: 0 10vh;
-   font-size: 2rem;
-   color: rgb(179, 179, 179);
-   text-shadow: 2px 2px  rgb(0, 0, 0);
-   
+
+.btn-ingredient{
+    background-image: url('../img/admin/background-ingredient.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 15px;
 }
-.adminIngredient {
-    margin-top: 7vh;
-    background-image: url('../img/categoriePlatsImg/dessertCrèpes01.webp');
-    background-size: cover;
-    border-radius: 4px;
-    padding: 0.5rem 0 ;
-    width: 95%;
-    
-}
-.adminIngredient a{
+
+a{
     text-decoration: none;
-    padding: 0 10vh;
-    font-size: 2rem;
-    color: rgb(179, 179, 179);
-    text-shadow: 2px 2px  black;
+    color: black;
 }
-.bIngredient {
-    border:none;
-	padding:6px 0 6px 0;
-	border-radius:75%;
-	border-bottom:7px solid #515153;
-	font:bold 13px Arial;
-	color:#555;
-	background:rgba(255, 255, 255, 0.7);
-	box-shadow:2px 2px 3px #999;
-	border-top:2px solid #00a0a0;
+
+h1{
+    font-size: 21px;
+    font-weight: 200;
+    font-family: 'Roboto', 'sans-serif';
 }
-.bRecette {
-    border:none;
-	padding:6px 0 6px 0;
-	border-radius:75%;
-	border-bottom:7px solid #515153;
-	font:bold 13px Arial;
-	color:#555;
-	background:rgba(255, 255, 255, 0.7);
-	box-shadow:2px 2px 3px #999;
-	border-top:2px solid #00a0a0;
+
+.btn-recette, .btn-ingredient{
+    position: relative;
+}
+
+.btn-recette a, .btn-ingredient a {
+    position: absolute;
+    top: 0;
+    right: 50px;
+    left: 0;
+    padding: 50px 0 50px 0;
+    background-color: rgba(255, 255, 255, 0.906);
+}
+
+
+
+
+
+
+/* REGLAGES DESKTOP */
+@media screen and (min-width: 1080px){
+    .container-admin{
+        display: flex;
+        padding-top: 45px;
+        text-align: center;
+    }
+
+    .btn-recette, .btn-ingredient{
+        width: 250px;
+        height: 320px;
+        border-radius: 10px;
+        border: none;
+    }
+
+    .btn-recette{
+        background-image: url('../img/admin/background-recette.jpg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin: 50px;
+    }
+
+    .btn-ingredient{
+        background-image: url('../img/admin/background-ingredient.jpg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin: 50px;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+        font-size: 25px;
+    }
+
+    h1{
+        font-size: 30px;
+        font-weight: 200;
+        font-family: 'Roboto', 'sans-serif';
+    }
+
+    .btn-recette, .btn-ingredient{
+        position: relative;
+    }
+
+    .btn-recette a, .btn-ingredient a {
+        position: absolute;
+        top: 0;
+        right: 50px;
+        left: 0;
+        padding: 50px 0 50px 0;
+        background-color: rgba(255, 255, 255, 0.906);
+    }
+}
+
+
+
+
+
+
+/* REGLAGES TABLETTE */
+@media (min-width: 768px) and (max-width: 1080px){
+    .container-admin{
+        display: flex;
+        padding-top: 120px;
+        text-align: center;
+    }
+
+    .btn-recette, .btn-ingredient{
+        width: 250px;
+        height: 320px;
+        border-radius: 10px;
+        border: none;
+    }
+
+    .btn-recette{
+        background-image: url('../img/admin/background-recette.jpg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin: 50px;
+    }
+
+    .btn-ingredient{
+        background-image: url('../img/admin/background-ingredient.jpg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin: 50px;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+        font-size: 25px;
+    }
+
+    h1{
+        font-size: 27px;
+        font-weight: 200;
+        font-family: 'Roboto', 'sans-serif';
+    }
+
+    .btn-recette, .btn-ingredient{
+        position: relative;
+    }
+
+    .btn-recette a, .btn-ingredient a {
+        position: absolute;
+        top: 0;
+        right: 50px;
+        left: 0;
+        padding: 50px 0 50px 0;
+        background-color: rgba(255, 255, 255, 0.906);
+    }
 }
