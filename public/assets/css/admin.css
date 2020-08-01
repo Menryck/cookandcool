@@ -10,13 +10,13 @@
     font-size: 3rem;
     color: black;
     text-shadow: 2px 2px 1px rgb(179, 179, 179); 
-    border: 2px solid red;
+    border-bottom: 2px solid rgb(156, 64, 64);
     box-shadow: 1px 1px rgb(226, 133, 133);
     padding: 1rem;
 }
 .adminRecette {
     margin-top: 1vh;
-   background-color: orange;
+   background-color: rgb(79, 195, 160);
    border-radius: 4px;
    padding: 0.5rem 0 ;
    width: 95%;
@@ -51,7 +51,7 @@
 	border-bottom:7px solid #515153;
 	font:bold 13px Arial;
 	color:#555;
-	background:#fff;
+	background:rgba(255, 255, 255, 0.7);
 	box-shadow:2px 2px 3px #999;
 	border-top:2px solid #00a0a0;
 }
@@ -62,7 +62,7 @@
 	border-bottom:7px solid #515153;
 	font:bold 13px Arial;
 	color:#555;
-	background:#fff;
+	background:rgba(255, 255, 255, 0.7);
 	box-shadow:2px 2px 3px #999;
 	border-top:2px solid #00a0a0;
 }
