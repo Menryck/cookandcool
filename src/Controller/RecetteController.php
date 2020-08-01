@@ -23,7 +23,7 @@ class RecetteController extends AbstractController
      */
     public function liste(RecetteRepository $recetteRepository, Request $request, $categorie): Response
     {
-        return $this->render('liste_recettes/index.html.twig', [
+        return $this->render('cookncool/liste_recettes.html.twig', [
             'recettes' => $recetteRepository->findBy(
                 array('categorie' => $categorie)
             ),
@@ -146,14 +146,16 @@ class RecetteController extends AbstractController
         return $this->redirectToRoute('recette_index');
     }
 
-    /**
-     * @Route("/detail/{id}", name="recette_detail", methods={"GET"})
-     */
-    public function detail(Recette $recette): Response
-    {
-        return $this->render('recette/detail.html.twig', [
-            'recette' => $recette,
-        ]);
-    }
+    
+     /**
+      * @Route("/detail/{id}", name="recette_detail", methods={"GET"})
+      */
+     public function detail(Recette $recette): Response
+     {
+         return $this->render('cookncool/detail_recette.html.twig', [
+             'recette' => $recette,
+         ]);
+     }
+    
 
 }
