@@ -71,7 +71,7 @@ class Recette
     private $nbrePart;
 
     /**
-     * @ORM\OneToMany(targetEntity=TableRecetteIngredients::class, mappedBy="recette", cascade={"persist"}, fetch="EAGER")
+     * @ORM\OneToMany(targetEntity=TableRecetteIngredients::class, mappedBy="recette", cascade={"persist", "remove"}, fetch="EAGER")
      */
     private $ingredient;
 
