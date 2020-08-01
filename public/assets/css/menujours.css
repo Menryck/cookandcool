@@ -1,53 +1,209 @@
 /* Roboto */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 
-
-.cyan {
-    background-color: #5ED3D3;
-    color: white;
-    text-align: center;
-    width: 100%;
-    min-height: 5vh;
-    display: table;
-}
-
-.jour {
-    vertical-align: middle;
-    display: table-cell;
-    font-family: 'Roboto', 'sans-serif';
-}
-
-.repas {
-    padding-left: 3vw;
-    font-family: 'Roboto', 'sans-serif';
-}
-
-.droite {
+/* .droite {
     text-align: right;
-}
+} */
 
-.logo {
-    margin: 0px 5vw;
-    width: 30px;
-    padding : 5px;
-}
-
-.gauche {
+/* .gauche {
     text-align: left;
-}
+} */
 
-.gris {
-    background-color: #C7C7C7;
-    color: white;
-    width: 100%;
-    display: table;
-    min-height: 3vh;
-}
-
-.blanc {
+/* .blanc {
     width: 100%;
     min-height: 20vh;
     text-shadow: black 0.1em 0.1em 0.2em;
     color: white;
     font-size: xx-large;
+} */
+
+
+
+
+
+/* CSS EN COURS DE CONSTRUCTION */
+
+
+
+
+/* REGLAGES SMARTPHONE */
+    .blanc {
+        width: 100%;
+        min-height: 20vh;
+        padding-top: 25px;
+/*         color:#3f3f3f; */
+        color:white;
+        font-size: 17px;
+        text-align: center;
+        font-weight: 300;
+        font-family: 'Roboto', 'sans-serif';
+    }
+
+    .cyan {
+        background-color: #5ED3D3;
+        color: white;
+        text-align: center;
+        width: 100%;
+        min-height: 5vh;
+        display: table;
+    }
+
+    .jour {
+        vertical-align: middle;
+        display: table-cell;
+        font-family: 'Roboto', 'sans-serif';
+    }
+
+    .repas {
+        padding-left: 3vw;
+        font-family: 'Roboto', 'sans-serif';
+    }
+
+    .logo {
+        margin: 0px 5vw;
+        width: 30px;
+        padding : 5px;
+    }
+
+    .gris {
+        background-color: #C7C7C7;
+        color: white;
+        width: 100%;
+        display: table;
+        min-height: 3vh;
+    }
+
+
+
+
+
+
+
+
+
+/* REGLAGES DESKTOP */
+@media screen and (min-width: 1080px){
+    .contrainer-jour-menu{
+        width: 50%;
+        margin: auto;
+    }
+
+    .cyan-border-radius-jour-premier .cyan{
+        border-radius: 10px 10px 0 0 ;
+    }
+
+    .blanc {
+        text-align: right;
+        padding: 50px;
+        width: 100%;
+        min-height: 20vh;
+/*      color:#3f3f3f; */
+        color:white;
+        font-size: xx-large;
+        font-weight: 300;
+        font-family: 'Roboto', 'sans-serif';
+    }
+
+    .blanc, background-image{
+        width: 50%;
+    }
+
+    .cyan {
+        background-color: #5ED3D3;
+        color: white;
+        text-align: center;
+        width: 100%;
+        min-height: 5vh;
+        display: table;
+    }
+
+    .jour {
+        vertical-align: middle;
+        display: table-cell;
+        font-family: 'Roboto', 'sans-serif';
+    }
+
+    .repas {
+        padding-left: 3vw;
+        font-family: 'Roboto', 'sans-serif';
+    }
+
+    .logo {
+        margin: 0px 5vw;
+        width: 30px;
+        padding : 5px;
+    }
+
+    .gris {
+        background-color: #C7C7C7;
+        color: white;
+        width: 100%;
+        display: table;
+        min-height: 3vh;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* REGLAGES TABLETTE */
+@media (min-width: 768px) and (max-width: 1080px){
+.contrainer-jour-menu{
+    margin-top: 2rem;
+}
+
+    .blanc {
+        text-align: right;
+        padding: 50px;
+        width: 100%;
+        min-height: 20vh;
+/*         color:#3f3f3f; */
+        color: white;
+        font-size: 22px;
+        font-weight: 300;
+        font-family: 'Roboto', 'sans-serif';
+    }
+
+    .blanc, background-image{
+        width: 50%;
+    }
+
+    .cyan {
+        background-color: #5ED3D3;
+        color: white;
+        text-align: center;
+        width: 100%;
+        min-height: 5vh;
+        display: table;
+    }
+
+    .jour {
+        vertical-align: middle;
+        display: table-cell;
+        font-family: 'Roboto', 'sans-serif';
+    }
+
+    .repas {
+        padding-left: 3vw;
+        font-family: 'Roboto', 'sans-serif';
+    }
+
+    .logo {
+        margin: 0px 5vw;
+        width: 30px;
+        padding : 5px;
+    }
+
+    .gris {
+        background-color: #C7C7C7;
+        color: white;
+        width: 100%;
+        display: table;
+        min-height: 3vh;
+    }
 }

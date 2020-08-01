@@ -5,103 +5,86 @@
 <link rel="stylesheet" href="{{asset('assets/css/recettes.css')}}">
 {% endblock %}
 
-{% block header %}
-<div class="logoHeader">
-    <nav>
-        <ul class="iconReglageDesktop">
-            <li>
-                <a href="#"><img src="{{asset('assets/img/iconPng/Setting.png')}}" alt=""></a>
-            </li>
-        </ul>
-        <ul class="iconReglageSmartphone">
-            <li><a href="#"><img src="{{asset('assets/img/iconPng/Setting.png')}}" alt=""></a></li>
-        </ul>
-        <ul class="headerMenuIcon">
-                <div id="iconMenus" class="footerMiseEnPage">
-                    <li>
-                        <a href="#"><img class="footNavImg" src="{{asset('assets/img/iconPng/menu.png')}}" alt="Menus">MENUS</a>
-                    </li>
-                </div>
-                <div id="iconListes" class="footerMiseEnPage">
-                    <li>
-                        <a href="#"><img class="footNavImg" src="{{asset('assets/img/iconPng/Liste.png')}}" alt="Listes">LISTES</a>
-                    </li>
-                </div>
-                <div id="iconStock" class="footerMiseEnPage">
-                    <li>
-                        <a href="#"><img class="footNavImg" src="{{asset('assets/img/iconPng/Stock.png')}}" alt="Stock">STOCK</a>
-                    </li>
-                </div>
-        </ul>
-    </nav>
-    <div class="logoHeader">
-        <a href="{{ url('accueil') }}"><img class="logoHeader" src="{{asset('assets/img/Logo.png')}}" alt="Cook&Cool"></a>
-    </div>
+
+{% block body %}
 <style>
     #banniere {
         background-image: url("{{asset('assets/img/recettesImg/' ~ recette.photo)}}");
 </style>
-{% endblock %}
 
-{% block body %}
 <main>
-    <section id="banniere" data-img="{{ recette.photo }}">
-        <h1 class="texte" id ="titre" data-id="{{ recette.id }}">{{ recette.titre }}</h1>
-        
-    </section>
-    <section class="commande middle">
-        <div class="ligneBlanche texte">
+    <div class="container-header-recette">
+        <section id="banniere" data-img="{{ recette.photo }}">
+            <h1 class="texte" id="titre" data-id="{{ recette.id }}">{{ recette.titre }}</h1>
+        </section>
+
+        <section class="commande middle">
+            <div class="ligneBlanche texte">
                 <a href=#><img src="{{asset('assets/img/iconPng/retour.png')}}" class="commandesBottom">
-                <span class="commandesTexte">Retour</span></a> - 
+                    <span class="commandesTexte">Retour</span></a> -
                 <a href=#><span class="commandesTexte" id="ajouter">Ajouter</span>
-                <img src="{{asset('assets/img/iconPng/validation.png')}}" class="commandesBottom"></a>
+                    <img src="{{asset('assets/img/iconPng/validation.png')}}" class="commandesBottom"></a>
             </div>
-        <div class="ligneBlanche texte">
-            <span class="commandesTexte">Nombre de personnes : </span><span id="quantite">1</span> 
-            <img src="{{asset('assets/img/iconPng/plus.png')}}" class="commandesBottom" id="plus"> 
-            <img src="{{asset('assets/img/iconPng/negative-sign.png')}}" class="commandesBottom" id="moins">
-        </div>
-            
-    </section>
-    <section class="ingredients">
-        <table class="texte centrer">
-            <tr class="gras">
-                <td></td>
-                <td class="desktopDetails">
-                    <h3>Temps de préparation / Cuisson</h3>
-                </td>
-                <td class="desktopDetails">
-                    <h3>Difficulte</h3>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <h3>Ingredients</h3>
-                </td>
-                <td class="desktopDetails"> 
-                    {{ recette.duree }} / {{ recette.cuisson }} minutes
-                </td>
-                <td class="desktopDetails"> 
-                    {{ recette.difficulte }} 
-                </td>
-            </tr>
-            {% for ingredient in recette.ingredient %}
-            <tr>
-                <td>
-                    <span class="personnes" data-mesure="{{ ingredient.quantite }}">{{ ingredient.quantite }}</span> 
-                    <span class="unite">{{ ingredient.ingredient.unite }}</span> 
-                    <span class="nom">{{ ingredient.ingredient.nom }}</span>
-                </td>
-            </tr>
-            {% endfor %}
-        </table>
-    </section>
+            <div class="ligneBlanche texte">
+                <span class="commandesTexte">Nombre de personnes : </span><span id="quantite">1</span>
+                <img src="{{asset('assets/img/iconPng/plus.png')}}" class="commandesBottom" id="plus">
+                <img src="{{asset('assets/img/iconPng/negative-sign.png')}}" class="commandesBottom" id="moins">
+            </div>
+        </section>
 
 
-    <section class="preparation">
-        <h2 class="texte">Préparation</h2>
-        <div class="texte">{{ recette.instructions }}</div>
-    </section>
+    </div>
+
+    <div class="container-detail-recette">
+        <section class="ingredients">
+            <table class="texte centrer">
+                <tr class="gras">
+                    <td class="desktopDetails">
+                        <h3>Temps de préparation / Cuisson</h3>
+                    </td>
+                    <td class="desktopDetails">
+                        <h3>Difficulte</h3>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="desktopDetails">
+                        {{ recette.duree }} / {{ recette.cuisson }} minutes
+                    </td>
+                    <td class="desktopDetails">
+                        {{ recette.difficulte }}
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </div>
+
+    <div class="container-detail-recette">
+        <section class="ingredients">
+            <table class="texte centrer">
+                <tr>
+                    <td>
+                        <h3>Ingredients</h3>
+                    </td>
+                </tr>
+                {% for ingredient in recette.ingredient %}
+
+                <tr>
+                    <td>
+                        <span class="personnes" data-mesure="{{ ingredient.quantite }}">{{ ingredient.quantite }}</span>
+                        <span class="unite">{{ ingredient.ingredient.unite }}</span>
+                        <span class="nom">{{ ingredient.ingredient.nom }}</span>
+                    </td>
+                </tr>
+                {% endfor %}
+            </table>
+        </section>
+
+        <section class="preparation">
+            <h2 class="texte">Préparation</h2>
+            <div class="texte">{{ recette.instructions }}</div>
+        </section>
+    </div>
 </main>
 {% endblock %}
 

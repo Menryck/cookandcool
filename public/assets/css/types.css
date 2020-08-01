@@ -70,14 +70,11 @@ h2{
     margin-top: 150px;
 }
 
-.container-categorie{
-/*     margin: 23px; */
-}
 
 .typeDiv1 {
     background-image: url('../img/typeImg/entrée04.webp');
     height: 35vh;
-    margin: 0;
+    margin: 5px auto;
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -87,7 +84,7 @@ h2{
 .typeDiv2 {
     background-image: url('../img/typeImg/plat02.webp');
     height: 35vh;
-    margin: 0;
+    margin: 5px auto;
     background-size: cover;
     border-radius: 10px;
     width: 93%;
@@ -96,7 +93,7 @@ h2{
 .typeDiv3 {
     background-image: url('../img/typeImg/dessert02.webp');
     height: 35vh;
-    margin: 0;
+    margin: 5px auto;
     background-size: cover;
     background-position: center;
     border-radius: 10px;

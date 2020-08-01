@@ -5,133 +5,158 @@
 {% endblock %}
 {% block body %}
 
-<div class="cyan">
-    <!-- <img class="logo gauche jour" src="{{asset('assets/img/iconPng/retour.png')}}" alt="Précédent"> -->
-    <span class="jour">Jour 1</span>
-    <!-- <img class="logo droite jour" src="{{asset('assets/img/iconPng/bottom.png')}}" alt="Suivant"> -->
-</div>
-<div class="gris">
-    <span class="jour repas">Déjeuner</span>
-    <div><a href="{{ url('type')}}" id="liendej1"> <img class="logo droite" src="{{asset('assets/img/iconPng/plus.png')}}" alt="Ajouter un déjeuner" id="dejeuner1" data-etat="valider"></a></div>
-</div>
-<div class="blanc" id="platdejeuner1">
 
-</div>
-<div class="gris">
-    <span class="jour repas">Dîner</span>
-    <div><a href="{{ url('type')}}" id="liendin1"> <img class="logo droite" src="{{asset('assets/img/iconPng/plus.png')}}" alt="Ajouter un diner" id="diner1"></a></div>
-</div>
-<div class="blanc" id="platdiner1">
+<div class="contrainer-jour-menu">
+    <div class="cyan-border-radius-jour-premier">
+        <div class="cyan">
+            <!-- <img class="logo gauche jour" src="{{asset('assets/img/iconPng/retour.png')}}" alt="Précédent"> -->
+            <span class="jour">Jour 1</span>
+            <!-- <img class="logo droite jour" src="{{asset('assets/img/iconPng/bottom.png')}}" alt="Suivant"> -->
+        </div>
+    </div>
+    <div class="gris">
+        <span class="jour repas">Déjeuner</span>
+        <div>
+            <a href="{{ url('type')}}" id="liendej1"> <img class="logo droite"
+                    src="{{asset('assets/img/iconPng/plus.png')}}" alt="Ajouter un déjeuner" id="dejeuner1"
+                    data-etat="valider"></a>
+        </div>
+    </div>
+    <div class="container-blanc">
+        <div class="blanc" id="platdejeuner1">
+        </div>
+    </div>
+    <div class="gris">
+        <span class="jour repas">Dîner</span>
+        <div>
+            <a href="{{ url('type')}}" id="liendin1"> <img class="logo droite"
+                    src="{{asset('assets/img/iconPng/plus.png')}}" alt="Ajouter un diner" id="diner1"></a>
+        </div>
+    </div>
+    <div class="blanc" id="platdiner1">
+    </div>
 
+    <div class="cyan">
+        <span class="jour">Jour 2</span>
+    </div>
+    <div class="gris">
+        <span class="jour repas">Déjeuner</span>
+        <div><a href="{{ url('type')}}" id="liendej2"> <img class="logo droite"
+                    src="{{asset('assets/img/iconPng/plus.png')}}" alt="Ajouter un déjeuner" id="dejeuner2"></a></div>
+    </div>
+    <div class="blanc" id="platdejeuner2">
+
+    </div>
+    <div class="gris">
+        <span class="jour repas">Dîner</span>
+        <div><a href="{{ url('type')}}" id="liendin2"> <img class="logo droite"
+                    src="{{asset('assets/img/iconPng/plus.png')}}" alt="Ajouter un diner" id="diner2"></a></div>
+    </div>
+    <div class="blanc" id="platdiner2">
+
+    </div>
+
+    <div class="cyan">
+        <span class="jour">Jour 3</span>
+    </div>
+    <div class="gris">
+        <span class="jour repas">Déjeuner</span>
+        <div><a href="{{ url('type')}}" id="liendej3"> <img class="logo droite"
+                    src="{{asset('assets/img/iconPng/plus.png')}}" alt="Ajouter un déjeuner" id="dejeuner3"></a></div>
+    </div>
+    <div class="blanc" id="platdejeuner3">
+
+    </div>
+    <div class="gris">
+        <span class="jour repas">Dîner</span>
+        <div><a href="{{ url('type')}}" id="liendin3"> <img class="logo droite"
+                    src="{{asset('assets/img/iconPng/plus.png')}}" alt="Ajouter un diner" id="diner3"></a></div>
+    </div>
+    <div class="blanc" id="platdiner3">
+
+    </div>
+
+    <div class="cyan">
+        <span class="jour">Jour 4</span>
+    </div>
+    <div class="gris">
+        <span class="jour repas">Déjeuner</span>
+        <div><a href="{{ url('type')}}" id="liendej4"> <img class="logo droite"
+                    src="{{asset('assets/img/iconPng/plus.png')}}" alt="Ajouter un déjeuner" id="dejeuner4"></a></div>
+    </div>
+    <div class="blanc" id="platdejeuner4">
+
+    </div>
+    <div class="gris">
+        <span class="jour repas">Dîner</span>
+        <div><a href="{{ url('type')}}" id="liendin4"> <img class="logo droite"
+                    src="{{asset('assets/img/iconPng/plus.png')}}" alt="Ajouter un diner" id="diner4"></a></div>
+    </div>
+    <div class="blanc" id="platdiner4">
+
+    </div>
+
+    <div class="cyan">
+        <span class="jour">Jour 5</span>
+    </div>
+    <div class="gris">
+        <span class="jour repas">Déjeuner</span>
+        <div><a href="{{ url('type')}}" id="liendej5"> <img class="logo droite"
+                    src="{{asset('assets/img/iconPng/plus.png')}}" alt="Ajouter un déjeuner" id="dejeuner5"></a></div>
+    </div>
+    <div class="blanc" id="platdejeuner5">
+
+    </div>
+    <div class="gris">
+        <span class="jour repas">Dîner</span>
+        <div><a href="{{ url('type')}}" id="liendin5"> <img class="logo droite"
+                    src="{{asset('assets/img/iconPng/plus.png')}}" alt="Ajouter un diner" id="diner5"></a></div>
+    </div>
+    <div class="blanc" id="platdiner5">
+
+    </div>
+
+    <div class="cyan">
+        <span class="jour">Jour 6</span>
+    </div>
+    <div class="gris">
+        <span class="jour repas">Déjeuner</span>
+        <div><a href="{{ url('type')}}" id="liendej6"> <img class="logo droite"
+                    src="{{asset('assets/img/iconPng/plus.png')}}" alt="Ajouter un déjeuner" id="dejeuner6"></a></div>
+    </div>
+    <div class="blanc" id="platdejeuner6">
+
+    </div>
+    <div class="gris">
+        <span class="jour repas">Dîner</span>
+        <div><a href="{{ url('type')}}" id="liendin6"> <img class="logo droite"
+                    src="{{asset('assets/img/iconPng/plus.png')}}" alt="Ajouter un diner" id="diner6"></a></div>
+    </div>
+    <div class="blanc" id="platdiner6">
+
+    </div>
+
+    <div class="cyan">
+        <span class="jour">Jour 7</span>
+    </div>
+    <div class="gris">
+        <span class="jour repas">Déjeuner</span>
+        <div><a href="{{ url('type')}}" id="liendej7"> <img class="logo droite"
+                    src="{{asset('assets/img/iconPng/plus.png')}}" alt="Ajouter un déjeuner" id="dejeuner7"></a></div>
+    </div>
+    <div class="blanc" id="platdejeuner7">
+
+    </div>
+    <div class="gris">
+        <span class="jour repas">Dîner</span>
+        <div><a href="{{ url('type')}}" id="liendin7"> <img class="logo droite"
+                    src="{{asset('assets/img/iconPng/plus.png')}}" alt="Ajouter un diner" id="diner7"></a></div>
+    </div>
+    <div class="blanc" id="platdiner7">
+
+    </div>
 </div>
 
-<div class="cyan">
-    <span class="jour">Jour 2</span>
-</div>
-<div class="gris">
-    <span class="jour repas">Déjeuner</span>
-    <div><a href="{{ url('type')}}" id="liendej2"> <img class="logo droite" src="{{asset('assets/img/iconPng/plus.png')}}" alt="Ajouter un déjeuner" id="dejeuner2"></a></div>
-</div>
-<div class="blanc" id="platdejeuner2">
-
-</div>
-<div class="gris">
-    <span class="jour repas">Dîner</span>
-    <div><a href="{{ url('type')}}" id="liendin2"> <img class="logo droite" src="{{asset('assets/img/iconPng/plus.png')}}" alt="Ajouter un diner" id="diner2"></a></div>
-</div>
-<div class="blanc" id="platdiner2">
-
-</div>
-
-<div class="cyan">
-    <span class="jour">Jour 3</span>
-</div>
-<div class="gris">
-    <span class="jour repas">Déjeuner</span>
-    <div><a href="{{ url('type')}}" id="liendej3"> <img class="logo droite" src="{{asset('assets/img/iconPng/plus.png')}}" alt="Ajouter un déjeuner" id="dejeuner3"></a></div>
-</div>
-<div class="blanc" id="platdejeuner3">
-
-</div>
-<div class="gris">
-    <span class="jour repas">Dîner</span>
-    <div><a href="{{ url('type')}}" id="liendin3"> <img class="logo droite" src="{{asset('assets/img/iconPng/plus.png')}}" alt="Ajouter un diner" id="diner3"></a></div>
-</div>
-<div class="blanc" id="platdiner3">
-
-</div>
-
-<div class="cyan">
-    <span class="jour">Jour 4</span>
-</div>
-<div class="gris">
-    <span class="jour repas">Déjeuner</span>
-    <div><a href="{{ url('type')}}" id="liendej4"> <img class="logo droite" src="{{asset('assets/img/iconPng/plus.png')}}" alt="Ajouter un déjeuner" id="dejeuner4"></a></div>
-</div>
-<div class="blanc" id="platdejeuner4">
-
-</div>
-<div class="gris">
-    <span class="jour repas">Dîner</span>
-    <div><a href="{{ url('type')}}" id="liendin4"> <img class="logo droite" src="{{asset('assets/img/iconPng/plus.png')}}" alt="Ajouter un diner" id="diner4"></a></div>
-</div>
-<div class="blanc" id="platdiner4">
-
-</div>
-
-<div class="cyan">
-    <span class= "jour">Jour 5</span>
-</div>
-<div class="gris">
-    <span class="jour repas">Déjeuner</span>
-    <div><a href="{{ url('type')}}" id="liendej5"> <img class="logo droite" src="{{asset('assets/img/iconPng/plus.png')}}" alt="Ajouter un déjeuner" id="dejeuner5"></a></div>
-</div>
-<div class="blanc" id="platdejeuner5">
-
-</div>
-<div class="gris">
-    <span class="jour repas">Dîner</span>
-    <div><a href="{{ url('type')}}" id="liendin5"> <img class="logo droite" src="{{asset('assets/img/iconPng/plus.png')}}" alt="Ajouter un diner" id="diner5"></a></div>
-</div>
-<div class="blanc" id="platdiner5">
-
-</div>
-
-<div class="cyan">
-    <span class="jour">Jour 6</span>
-</div>
-<div class="gris">
-    <span class="jour repas">Déjeuner</span>
-    <div><a href="{{ url('type')}}" id="liendej6"> <img class="logo droite" src="{{asset('assets/img/iconPng/plus.png')}}" alt="Ajouter un déjeuner" id="dejeuner6"></a></div>
-</div>
-<div class="blanc" id="platdejeuner6">
-
-</div>
-<div class="gris">
-    <span class="jour repas">Dîner</span>
-    <div><a href="{{ url('type')}}" id="liendin6"> <img class="logo droite" src="{{asset('assets/img/iconPng/plus.png')}}" alt="Ajouter un diner" id="diner6"></a></div>
-</div>
-<div class="blanc" id="platdiner6">
-
-</div>
-
-<div class="cyan">
-    <span class="jour">Jour 7</span>
-</div>
-<div class="gris">
-    <span class="jour repas">Déjeuner</span>
-    <div><a href="{{ url('type')}}" id="liendej7"> <img class="logo droite" src="{{asset('assets/img/iconPng/plus.png')}}" alt="Ajouter un déjeuner" id="dejeuner7"></a></div>
-</div>
-<div class="blanc" id="platdejeuner7">
-
-</div>
-<div class="gris">
-    <span class="jour repas">Dîner</span>
-    <div><a href="{{ url('type')}}" id="liendin7"> <img class="logo droite" src="{{asset('assets/img/iconPng/plus.png')}}" alt="Ajouter un diner" id="diner7"></a></div>
-</div>
-<div class="blanc" id="platdiner7">
-
-</div>
 {% endblock %}
 
 {% block javascripts %}
