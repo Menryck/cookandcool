@@ -16,7 +16,8 @@
 }
 .adminRecette {
     margin-top: 1vh;
-   background-color: rgb(79, 195, 160);
+    background-image: url('../img/categoriePlatsImg/cuisineDuMonde02.webp');
+    background-size: cover;
    border-radius: 4px;
    padding: 0.5rem 0 ;
    width: 95%;
@@ -31,7 +32,8 @@
 }
 .adminIngredient {
     margin-top: 7vh;
-    background-color: darkorange;
+    background-image: url('../img/categoriePlatsImg/dessertCrèpes01.webp');
+    background-size: cover;
     border-radius: 4px;
     padding: 0.5rem 0 ;
     width: 95%;
