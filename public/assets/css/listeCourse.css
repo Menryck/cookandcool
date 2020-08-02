@@ -44,10 +44,6 @@ header{
     color: #C4C4C4;
 }
 
-.header-print-smartphone{
-    display: none;
-}
-
 .icon-print{
     margin-left: 20px;
 }
@@ -103,10 +99,6 @@ header{
 .icon-print, a{
     color: #C4C4C4;
 }
-
-.header-print-smartphone{
-    display: none;
-}
 }
 
 
@@ -150,9 +142,5 @@ header{
 
 .icon-print, a{
     color: #C4C4C4;
-}
-
-.header-print-smartphone{
-    display: none;
 }
 }

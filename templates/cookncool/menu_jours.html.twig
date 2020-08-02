@@ -5,6 +5,10 @@
 {% endblock %}
 
 {% block body %}
+<div class="header-print-course">
+    <a class="text-print" href="#" onclick="window.print()">Imprimer liste<img class="icon-print"src="../../public/assets/img/iconPng/print-grey.png" alt="imprimer"></a>
+</div>
+
 <div class="contrainer-jour-menu">
     <div class="cyan-border-radius-jour-premier">
 
@@ -13,6 +17,12 @@
         <div class="cyan">
         <!-- <img class="logo gauche jour" src="{{asset('assets/img/iconPng/retour.png')}}" alt="Précédent"> -->
         <span class="jour">Jour 1</span>
+
+<!-- JOUR 01 -->
+{# <div class="header-print-course">
+<a class="text-print" href="#" onclick="window.print()">Imprimer liste<img class="icon-print"src="../../public/assets/img/iconPng/print-grey.png" alt="imprimer"></a>
+</div> #}
+
         <!-- <img class="logo droite jour" src="{{asset('assets/img/iconPng/bottom.png')}}" alt="Suivant"> -->
         </div>
     </div>
