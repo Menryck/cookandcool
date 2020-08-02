@@ -44,18 +44,18 @@ for (a=0; a<tableauNomIngredients.length; a++) {
         listeIngredients[nomIngredient] = parseInt(tableauQuantiteIngredients[a]);
     }
 }
-var codeHTML = "<div id='affichage-liste-course'><form class='was-validated'><div class='custom-control custom-checkbox mb-3'>";
+var codeHTML = "<form class='was-validated'><div id='affichage-liste-course'>";
 
 for (var ingredient in listeIngredients) {
     codeHTML += `
-            
+            <div class='custom-control custom-checkbox mb-3'>
                 <input type="checkbox" class="custom-control-input" id="${ingredient}" required>
                 <label class="custom-control-label" for="${ingredient}">${listeIngredients[ingredient]} ${ingredient} </label>
                 <div class="invalid-feedback">le produit n'est pas validé</div>
-            
+            </div>
     `
 }
-codeHTML += "</form></div></div>";
+codeHTML += "</div></form>";
 
 
 // var tableauNomIngredientsDiner = []; CODE V1
