@@ -1,0 +1,107 @@
+/* REGLAGES SMARTPHONE */
+    header{
+        background-color: #ffff;
+        padding: 2px 0 5px 0;
+    }
+
+    form{
+        width: 80%;
+        margin-top: 5%;
+        margin: auto;
+        padding: 50px 0 0 0;
+    }
+
+    .btn{
+        width: 50%;
+        height: 50%;
+        padding: 1.5%;
+        margin-top: 15px;
+        color: #fff;
+        background-color: #31a69d;
+        border: none;
+        cursor: pointer;
+    }
+
+    .btn-primary:hover{
+        background-color: #C4C4C4;
+    }
+
+    label{
+        padding: 12px 0 6px 0;
+    }
+
+
+
+
+
+/* REGLAGES TABLETTE */
+@media (min-width: 768px) and (max-width: 1080px){
+    header{
+        background-color: #ffff;
+        padding: 2px 0 5px 0;
+    }
+
+    form{
+        width: 50%;
+        margin-top: 5%;
+        margin: auto;
+        padding: 150px 0 0 0;
+    }
+
+    .btn{
+        width: 50%;
+        height: 50%;
+        padding: 1.5%;
+        margin-top: 15px;
+        color: #fff;
+        background-color: #31a69d;
+        border: none;
+        cursor: pointer;
+    }
+
+    .btn-primary:hover{
+        background-color: #C4C4C4;
+    }
+
+    label{
+        padding: 12px 0 6px 0;
+    }
+}
+
+
+
+
+
+/* REGLAGES DESKTOP */
+@media screen and (min-width: 1080px){
+    header{
+        background-color: #ffff;
+        padding: 2px 0 5px 0;
+    }
+
+    form{
+        width: 35%;
+        margin-top: 5%;
+        margin: auto;
+        padding: 50px 0 0 0;
+    }
+
+    .btn{
+        width: 35%;
+        height: 50%;
+        padding: 1.5%;
+        margin-top: 15px;
+        color: #fff;
+        background-color: #31a69d;
+        border: none;
+        cursor: pointer;
+    }
+
+    .btn-primary:hover{
+        background-color: #C4C4C4;
+    }
+
+    label{
+        padding: 12px 0 6px 0;
+    }
+}

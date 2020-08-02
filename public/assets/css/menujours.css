@@ -88,6 +88,20 @@ header{
 
 /* REGLAGES DESKTOP */
 @media screen and (min-width: 1080px){
+.contrainer-jour-menu{
+    position: absolute;
+}
+.blanc{
+    position: relative;
+    right: 0;
+}
+
+
+
+
+
+
+
     .contrainer-jour-menu{
         width: 50%;
         margin: auto;
