@@ -6,6 +6,10 @@
 {% block body %}
 
 <style>
+.titrecrud {
+    text-align: center;
+    color:burlywood;
+}
 .btn{
     width: 200px;
     margin: 7px;
@@ -22,7 +26,7 @@
 </style>
 
 <section class="container">
-    <h1>Ingredient index</h1>
+    <h1 class="titrecrud">Ingredient index</h1>
     <ul>
         {# <li><a href="{{ '../recette' }}">Gérer les recettes</a></li> #}
         <li><a href="{{ '../../recette' }}">Gérer les recettes</a></li>
@@ -50,7 +54,7 @@
             <tr>
                 <td>{{ ingredient.id }}</td>
                 <td>{{ ingredient.nom }}</td>
-                <td>{{ ingredient.image }}</td>
+                <td><img class="miniature" src="{{asset('assets/img/ingredientsImg/' ~ ingredient.image )}}"></td>
                 <td>{{ ingredient.typeIngredient }}</td>
                 <td>{{ ingredient.calories }}</td>
                 <td>{{ ingredient.unite }}</td>
