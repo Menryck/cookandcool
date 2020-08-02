@@ -47,4 +47,9 @@ class RecetteRepository extends ServiceEntityRepository
         ;
     }
     */
+
+    public function findAll()
+    {
+        return $this->findBy(array(), array('id' => 'DESC'));
+    }
 }
