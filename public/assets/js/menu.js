@@ -59,6 +59,14 @@ for (let i = 1 ; i<8; i++) {
             localStorage.removeItem("personnes - dejeuner - "+i);
             localStorage.removeItem("jour - dejeuner - "+i);
             localStorage.removeItem("repas - dejeuner - "+i);
+            localStorage.removeItem("idRecette - dejeuner - "+i);
+            var nbreIngredients = localStorage.getItem("nbreIngredients - dejeuner - "+i);
+            for (let j = 0 ; j<nbreIngredients; j++) {
+                localStorage.removeItem("quantiteIngredientParPersonne"+j+" - dejeuner - "+i);
+                localStorage.removeItem("uniteIngredient"+j+" - dejeuner - "+i);
+                localStorage.removeItem("nomIngredient"+j+" - dejeuner - "+i);
+            }
+            localStorage.removeItem("nbreIngredients - dejeuner - "+i);
             platdejeuner[i].innerHTML = "";
             platdejeuner[i].removeAttribute("style");
             document.location.reload(true);
@@ -99,6 +107,14 @@ for (let i = 1 ; i<8; i++) {
             localStorage.removeItem("personnes - diner - "+i);
             localStorage.removeItem("jour - diner - "+i);
             localStorage.removeItem("repas - diner - "+i);
+            localStorage.removeItem("idRecette - diner - "+i);
+            var nbreIngredients = localStorage.getItem("nbreIngredients - diner - "+i);
+            for (let j = 0 ; j<nbreIngredients; j++) {
+                localStorage.removeItem("quantiteIngredientParPersonne"+j+" - diner - "+i);
+                localStorage.removeItem("uniteIngredient"+j+" - diner - "+i);
+                localStorage.removeItem("nomIngredient"+j+" - diner - "+i);
+            }
+            localStorage.removeItem("nbreIngredients - diner - "+i);
             platdiner[i].innerHTML = "";
             platdiner[i].removeAttribute("style");
             document.location.reload(true);
