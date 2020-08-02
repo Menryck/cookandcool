@@ -102,19 +102,17 @@ header{
 }
 
 .header-print-course{ 
-    display: flex;
-    align-items: center;
-    height: 80px;
-    max-width: 100%;
+    display:inline-block;
+    position: absolute;
+    height: 25px;
+    width: 250px;
     font-size: 13px;
     font-family: 'Roboto', 'sans-serif';
-    text-align: right;
     top: 0px;
-    padding-top: 65px;
-    padding-right: 35px;
+    margin-top: 55px;
+    margin-left: 215px;
     color: #C4C4C4;
     position: fixed;
-    z-index: 999;
 }
 
 .icon-print{
@@ -123,8 +121,14 @@ header{
 }
 
 .icon-print, a{
+    position: relative;
     color: #C4C4C4;
 }
+
+.text-print{
+    margin-right: 35px;
+}
+
 
 
 
@@ -231,18 +235,17 @@ header{
 }
 
 .header-print-course{ 
-    display: flex;
-    align-items: center;
-    height: 80px;
-    max-width: 100%;
+    display:inline-block;
+    position: absolute;
+    height: 45px;
+    width: 350px;
     font-size: 20px;
     font-family: 'Roboto', 'sans-serif';
     text-align: right;
-    padding-top: 254px;
-    padding-right: 95px;
+    margin-top: 200px;
+    margin-left: 69.5em;
     color: #C4C4C4;
     position: fixed;
-    z-index: 999;
 }
 
 .icon-print{
@@ -251,9 +254,15 @@ header{
 }
 
 .icon-print, a{
+    position: relative;
     color: #C4C4C4;
 }
+
+.text-print{
+    margin-right: 95px;
 }
+}
+
 
 
 
@@ -361,19 +370,17 @@ header{
 }
 
 .header-print-course{ 
-    display: flex;
-    align-items: center;
-    height: 80px;
-    max-width: 100%;
+    display:inline-block;
+    position: absolute;
+    height: 45px;
+    width: 350px;
     font-size: 20px;
     font-family: 'Roboto', 'sans-serif';
     text-align: right;
-    top: 0px;
-    padding-top: 135px;
-    padding-right: 55px;
+    margin-top: 110px;
+    margin-left: 20.7em;
     color: #C4C4C4;
     position: fixed;
-    z-index: 999;
 }
 
 .icon-print{
@@ -382,6 +389,11 @@ header{
 }
 
 .icon-print, a{
+    position: relative;
     color: #C4C4C4;
+}
+
+.text-print{
+    margin-right: 50px;
 }
 }
