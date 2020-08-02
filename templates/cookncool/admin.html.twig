@@ -16,6 +16,8 @@
         <button class="btn-ingredient">
             <a href="{{ 'admin/ingredient' }}">Gerer les ingrédients</a>
         </button>
+
+        <p>Vous êtes connecté sur le compte {{ app.user.email }} <br><a href="{{ path('app_logout') }}">Se déconnecter</a></p>
     </div>
 </div>
 {% endblock %}
