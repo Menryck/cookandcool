@@ -1,5 +1,3 @@
-console.log("JS du menu en cours de chargement");
-
 // Suppression du type de repas (si l'utilisateur change d'avis)
 localStorage.removeItem("repas");
 localStorage.removeItem("jour");
