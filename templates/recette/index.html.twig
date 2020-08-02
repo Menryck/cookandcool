@@ -50,7 +50,7 @@
             <tr>
                 <td>{{ recette.id }}</td>
                 <td>{{ recette.titre }}</td>
-                <td>{{ recette.photo }}</td>
+                <td><img class="miniature" src="{{asset('assets/img/recettesImg/' ~ recette.photo )}}"></td>
                 <td>{{ recette.type }}</td>
                 <td>{{ recette.categorie }}</td>
                 <td>{{ recette.difficulte }}</td>
