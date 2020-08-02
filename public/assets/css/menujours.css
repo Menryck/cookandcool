@@ -1,86 +1,105 @@
 /* Roboto */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 
-/* .droite {
-    text-align: right;
-} */
-
-/* .gauche {
-    text-align: left;
-} */
-
-/* .blanc {
-    width: 100%;
-    min-height: 20vh;
-    text-shadow: black 0.1em 0.1em 0.2em;
-    color: white;
-    font-size: xx-large;
-} */
-
-
-
-
-
-/* CSS EN COURS DE CONSTRUCTION */
-
-
-
-
 /* REGLAGES SMARTPHONE */
 header{
     background-color: #ffff;
     padding: 2px 0 17px 0;
 }
 
-    .blanc {
-        width: 100%;
-        min-height: 20vh;
-        padding-top: 25px;
-/*         color:#3f3f3f; */
-        color:white;
-        font-size: 17px;
-        text-align: center;
-        font-weight: 300;
-        font-family: 'Roboto', 'sans-serif';
-    }
+.container-blanc{
+    display: flex;
+    align-items: center;
+}
 
-    .cyan {
-        background-color: #5ED3D3;
-        color: white;
-        text-align: center;
-        width: 100%;
-        min-height: 5vh;
-        display: table;
-    }
+.container-recette-jour{
+    display: flex;
+    align-items: center;
+}
 
-    .jour {
-        vertical-align: middle;
-        display: table-cell;
-        font-family: 'Roboto', 'sans-serif';
-    }
+#nomdejeuner1, #nomdejeuner2,
+#nomdejeuner3, #nomdejeuner4,
+#nomdejeuner5, #nomdejeuner6,
+#nomdejeuner7{
+    text-align: right;
+    padding-right: 15px;
+    color:#3f3f3f;
+    font-size: 13px;
+    font-weight: 300;
+    font-family: 'Roboto', 'sans-serif';
+}
 
-    .repas {
-        padding-left: 3vw;
-        font-family: 'Roboto', 'sans-serif';
-    }
+#platdejeuner1, #platdejeuner2,
+#platdejeuner3, #platdejeuner4,
+#platdejeuner5, #platdejeuner6,
+#platdejeuner7{
+    width: 100%;
+}
 
-    .logo {
-        margin: 0px 5vw;
-        width: 30px;
-        padding : 5px;
-    }
+#nomdiner1, #nomdiner2,
+#nomdiner3, #nomdiner4,
+#nomdiner5, #nomdiner6,
+#nomdiner7{
+    text-align: right;
+    padding-right: 15px;
+    color:#3f3f3f;
+    font-size: 13px;
+    font-weight: 300;
+    font-family: 'Roboto', 'sans-serif';
+}
 
-    .gris {
-        background-color: #C7C7C7;
-        color: white;
-        width: 100%;
-        display: table;
-        min-height: 3vh;
-    }
+#platdiner1, #platdiner2,
+#platdiner3, #platdiner4,
+#platdiner5, #platdiner6,
+#platdiner7{
+    width: 100%;
+}
 
+.contrainer-jour-menu{
+    width: 100%;
+    margin: auto;
+}
 
+.blanc {
+    padding: 50px;
+    width: 100%;
+    min-height: 20vh;
+}
 
+.cyan {
+    background-color: #5ED3D3;
+    color: white;
+    text-align: center;
+    width: 100%;
+    min-height: 5vh;
+    display: table;
+}
 
+.jour {
+    font-size: 17px;
+    vertical-align: middle;
+    display: table-cell;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+.repas {
+    padding-left: 3vw;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+.logo {
+    margin: 0px 2.5vw;
+    width: 30px;
+    padding : 5px;
+}
+
+.gris {
+    background-color: #C7C7C7;
+    color: white;
+    width: 100%;
+    display: table;
+    min-height: 3vh;
+}
 
 
 
@@ -88,83 +107,104 @@ header{
 
 /* REGLAGES DESKTOP */
 @media screen and (min-width: 1080px){
+.container-blanc{
+    display: flex;
+    align-items: center;
+}
+
+.container-recette-jour{
+    display: flex;
+    align-items: center;
+}
+
+#nomdejeuner1, #nomdejeuner2,
+#nomdejeuner3, #nomdejeuner4,
+#nomdejeuner5, #nomdejeuner6,
+#nomdejeuner7{
+    text-align: right;
+    padding-right: 25px;
+    color:#3f3f3f;
+    font-size: 25px;
+    font-weight: 300;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+#platdejeuner1, #platdejeuner2,
+#platdejeuner3, #platdejeuner4,
+#platdejeuner5, #platdejeuner6,
+#platdejeuner7{
+    width: 100%;
+}
+
+#nomdiner1, #nomdiner2,
+#nomdiner3, #nomdiner4,
+#nomdiner5, #nomdiner6,
+#nomdiner7{
+    text-align: right;
+    padding-right: 25px;
+    color:#3f3f3f;
+    font-size: 25px;
+    font-weight: 300;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+#platdiner1, #platdiner2,
+#platdiner3, #platdiner4,
+#platdiner5, #platdiner6,
+#platdiner7{
+    width: 100%;
+}
+
 .contrainer-jour-menu{
-    position: absolute;
-}
-.blanc{
-    position: relative;
-    right: 0;
+    width: 50%;
+    margin: auto;
 }
 
-
-
-
-
-
-
-    .contrainer-jour-menu{
-        width: 50%;
-        margin: auto;
-    }
-
-    .cyan-border-radius-jour-premier .cyan{
-        border-radius: 10px 10px 0 0 ;
-    }
-
-    .blanc {
-        text-align: right;
-        padding: 50px;
-        width: 100%;
-        min-height: 20vh;
-/*      color:#3f3f3f; */
-        color:white;
-        font-size: xx-large;
-        font-weight: 300;
-        font-family: 'Roboto', 'sans-serif';
-    }
-
-    .blanc, background-image{
-        width: 50%;
-    }
-
-    .cyan {
-        background-color: #5ED3D3;
-        color: white;
-        text-align: center;
-        width: 100%;
-        min-height: 5vh;
-        display: table;
-    }
-
-    .jour {
-        vertical-align: middle;
-        display: table-cell;
-        font-family: 'Roboto', 'sans-serif';
-    }
-
-    .repas {
-        padding-left: 3vw;
-        font-family: 'Roboto', 'sans-serif';
-    }
-
-    .logo {
-        margin: 0px 5vw;
-        width: 30px;
-        padding : 5px;
-    }
-
-    .gris {
-        background-color: #C7C7C7;
-        color: white;
-        width: 100%;
-        display: table;
-        min-height: 3vh;
-    }
+.cyan-border-radius-jour-premier .cyan{
+    border-radius: 10px 10px 0 0 ;
 }
 
+.blanc {
+    padding: 50px;
+    width: 100%;
+    min-height: 20vh;
+}
 
+.cyan {
+    background-color: #5ED3D3;
+    color: white;
+    text-align: center;
+    width: 100%;
+    min-height: 5vh;
+    display: table;
+}
 
+.jour {
+    font-size: 27px;
+    vertical-align: middle;
+    display: table-cell;
+    font-family: 'Roboto', 'sans-serif';
+}
 
+.repas {
+    padding-left: 3vw;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+.logo {
+    margin: 0px 2.5vw;
+    width: 30px;
+    padding : 5px;
+}
+
+.gris {
+    background-color: #C7C7C7;
+    color: white;
+    width: 100%;
+    display: table;
+    min-height: 3vh;
+}
+}
 
 
 
@@ -172,57 +212,102 @@ header{
 
 /* REGLAGES TABLETTE */
 @media (min-width: 768px) and (max-width: 1080px){
-.contrainer-jour-menu{
-    margin-top: 2rem;
+header{
+    background-color: #ffff;
+    padding: 2px 0 17px 0;
 }
 
-    .blanc {
-        text-align: right;
-        padding: 50px;
+.container-blanc{
+    display: flex;
+    align-items: center;
+}
+
+.container-recette-jour{
+    display: flex;
+    align-items: center;
+}
+
+#nomdejeuner1, #nomdejeuner2,
+#nomdejeuner3, #nomdejeuner4,
+#nomdejeuner5, #nomdejeuner6,
+#nomdejeuner7{
+    text-align: right;
+    padding-right: 25px;
+    color:#3f3f3f;
+    font-size: 21px;
+    font-weight: 300;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+#platdejeuner1, #platdejeuner2,
+#platdejeuner3, #platdejeuner4,
+#platdejeuner5, #platdejeuner6,
+#platdejeuner7{
+    width: 100%;
+}
+
+#nomdiner1, #nomdiner2,
+#nomdiner3, #nomdiner4,
+#nomdiner5, #nomdiner6,
+#nomdiner7{
+    text-align: right;
+    padding-right: 25px;
+    color:#3f3f3f;
+    font-size: 21px;
+    font-weight: 300;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+#platdiner1, #platdiner2,
+#platdiner3, #platdiner4,
+#platdiner5, #platdiner6,
+#platdiner7{
+    width: 100%;
+}
+
+.contrainer-jour-menu{
         width: 100%;
-        min-height: 20vh;
-/*         color:#3f3f3f; */
-        color: white;
-        font-size: 22px;
-        font-weight: 300;
-        font-family: 'Roboto', 'sans-serif';
-    }
+        margin: auto;
+}
 
-    .blanc, background-image{
-        width: 50%;
-    }
+.blanc {
+    padding: 50px;
+    width: 100%;
+    min-height: 20vh;
+}
 
-    .cyan {
-        background-color: #5ED3D3;
-        color: white;
-        text-align: center;
-        width: 100%;
-        min-height: 5vh;
-        display: table;
-    }
+.cyan {
+    background-color: #5ED3D3;
+    color: white;
+    text-align: center;
+    width: 100%;
+    min-height: 5vh;
+    display: table;
+}
 
-    .jour {
-        vertical-align: middle;
-        display: table-cell;
-        font-family: 'Roboto', 'sans-serif';
-    }
+.jour {
+    font-size: 23px;
+    vertical-align: middle;
+    display: table-cell;
+    font-family: 'Roboto', 'sans-serif';
+}
 
-    .repas {
-        padding-left: 3vw;
-        font-family: 'Roboto', 'sans-serif';
-    }
+.repas {
+    padding-left: 5vw;
+    font-family: 'Roboto', 'sans-serif';
+}
 
-    .logo {
-        margin: 0px 5vw;
-        width: 30px;
-        padding : 5px;
-    }
+.logo {
+    margin: 0px 5vw;
+    width: 30px;
+    padding : 5px;
+}
 
-    .gris {
-        background-color: #C7C7C7;
-        color: white;
-        width: 100%;
-        display: table;
-        min-height: 3vh;
-    }
+.gris {
+    background-color: #C7C7C7;
+    color: white;
+    width: 100%;
+    display: table;
+    min-height: 3vh;
+}
 }

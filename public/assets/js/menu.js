@@ -6,20 +6,25 @@ localStorage.removeItem("jour");
 for (let i = 1 ; i<8; i++) {
     let platdiner= Array();
     let platdejeuner= Array();
+    let nomdejeuner= Array();
+    let nomdiner= Array();
     platdiner[i] = document.getElementById("platdiner"+i);
     platdejeuner[i] = document.getElementById("platdejeuner"+i);
+    nomdejeuner[i] = document.getElementById("nomdejeuner"+i);
+    nomdiner[i] = document.getElementById("nomdiner"+i);
+
     if (localStorage.getItem("repas - diner - "+i)) {
         let image = localStorage.getItem("image - diner - "+i);
         let recette = localStorage.getItem("plat - diner - "+i);
         let personnes = localStorage.getItem("personnes - diner - "+i);
-        platdiner[i].innerHTML = recette + " - " + personnes + " personne(s)";
+        nomdiner[i].innerHTML = recette + '<br>' + personnes + " personne(s)";
         platdiner[i].setAttribute("style", "background-image: url(../assets/img/recettesImg/" + image + ");background-repeat: no-repeat; background-size: cover");
     }
     if (localStorage.getItem("repas - dejeuner - "+i)) {
         let image = localStorage.getItem("image - dejeuner - "+i);
         let recette = localStorage.getItem("plat - dejeuner - "+i);
         let personnes = localStorage.getItem("personnes - dejeuner - "+i);
-        platdejeuner[i].innerHTML = recette + " - " + personnes + " personne(s)";
+        nomdejeuner[i].innerHTML = recette + '<br>' + personnes + " personne(s)";
         platdejeuner[i].setAttribute("style", "background-image: url(../assets/img/recettesImg/" + image + ");background-repeat: no-repeat; background-size: cover");
     }
 }
