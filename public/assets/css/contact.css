@@ -84,6 +84,10 @@ p{
     cursor: pointer;
 }
 
+#contact_envoyer:hover{
+    background-color: #C4C4C4;
+}
+
 .col-md-6{
     padding: 0px 0px 0px 32px;
 }
@@ -120,13 +124,14 @@ header{
     font-size: 20px;
     font-family: 'Roboto', 'sans-serif';
     text-align: center;
-    color: #FFFF;
-    background-color: #C4C4C4;
+    color: #C4C4C4;
+    background-color: #ffffff;
     position: fixed;
+    z-index: 999;
 }
 
 .titre-contact{
-    font-weight: lighter;
+    font-weight: 300;
     font-size: 35px;
 }
 
@@ -157,7 +162,6 @@ header{
     border: none;
     border-radius: 0.5rem;
     padding: 1.5%;
-    background: #dc3545;
     font-weight: 600;
     color: #fff;
     cursor: pointer;
@@ -171,6 +175,14 @@ header{
     background-color: #31a69d;
     border: none;
     cursor: pointer;
+}
+
+#contact_envoyer:hover{
+    background-color: #C4C4C4;
+}
+
+#contact_envoyer{
+    width: 150px;
 }
 
 .col-md-6{
@@ -196,14 +208,13 @@ header{
 }
 
 .container .text-infos .title {
-    font-size: 2.5em;
     font-family: "Roboto", sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     color: #242424;
 }
 
 .container .text-infos {
-    font-size: 1em;
+    font-size: 18px;
     font-weight: 400;
 }
 
@@ -215,6 +226,10 @@ header{
     border: none;
     background-color: rgb(121, 171, 174);
 }
+
+.text-infos{
+    padding: 0 70px 0 0;
+}
 }
 
 
@@ -223,11 +238,12 @@ header{
 
 
 /* REGLAGES TABLETTE */
+@media (min-width: 768px) and (max-width: 1080px){
 header{
     background-color: #ffff;
     padding: 2px 0 5px 0;
 }
-@media (min-width: 768px) and (max-width: 1080px){
+
 .titre-contact{
     font-weight: 300;
     font-size: 25px;
@@ -287,6 +303,14 @@ header{
     cursor: pointer;
 }
 
+#contact_envoyer:hover{
+    background-color: #C4C4C4;
+}
+
+#contact_envoyer{
+    width: 150px;
+}
+
 .col-md-6{
     padding: 0px 0px 0px 40px;
 }
@@ -295,7 +319,4 @@ header{
     border: none;
     background-color: rgb(121, 171, 174);
 }
-
-
-
 }

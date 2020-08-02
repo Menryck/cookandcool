@@ -75,13 +75,14 @@ header{
     font-size: 20px;
     font-family: 'Roboto', 'sans-serif';
     text-align: center;
-    color: #FFFF;
-    background-color: #C4C4C4;
+    color: #C4C4C4;
+    background-color: #ffffff;
     position: fixed;
+    z-index: 999;
 }
 
 .titre-liste-stock{
-    font-weight: lighter;
+    font-weight: 300;
     font-size: 35px;
 }
 }
