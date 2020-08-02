@@ -4,6 +4,13 @@
 
 {% block body %}
 <style>
+body {
+    font-size: 3rem;
+}
+.titrecrud {
+    text-align: center;
+    color:burlywood;
+}
 .btn{
     width: 200px;
     margin: 7px;
@@ -12,15 +19,15 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+   
 }
-
 .table{
     
 }
 </style>
 
 <section class="container">
-    <h1>Recette index</h1>
+    <h1 class="titrecrud">Recette index</h1>
     <ul>
         {# <li><a href="{{ '../ingredient' }}">Gérer les ingrédients</a></li> #}
         <li><a href="{{ '../admin/ingredient' }}">Gérer les ingrédients</a></li>

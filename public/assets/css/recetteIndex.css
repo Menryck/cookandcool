@@ -1,0 +1,172 @@
+.btn{
+    width: 200px;
+    margin: 7px;
+}
+
+
+
+
+.miniature{
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/* @media (max-width: 700px){
+.table thead {
+    display: none;
+}
+
+.table tr{
+display: block;
+margin-bottom: 40px;
+}
+
+.table td {
+display: block;
+text-align: right;
+}
+.table td:before {
+content: attr(data-label);
+float: left;
+font-weight: bold;
+}
+} */
+
+
+.container{
+/*     display: flex; */
+/*     flex-wrap: wrap;
+    width: 100%; */
+}
+
+
+
+
+/* REGLAGES DESKTOP */
+@media screen and (min-width: 1080px){
+    .container-nav-item{
+                text-align: center;
+    }
+
+    .container-admin{
+        display: flex;
+        padding-top: 45px;
+        text-align: center;
+    }
+
+    .btn-admin, .btn-ingredient{
+        width: 250px;
+        height: 320px;
+        border-radius: 10px;
+        border: none;
+    }
+
+    .btn-admin{
+        background-image: url('../img/admin/background-recette.jpg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin: 50px;
+    }
+
+    .btn-ingredient{
+        background-image: url('../img/admin/background-ingredient.jpg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin: 50px;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .titre-nav-admin{
+    font-size: 25px;
+    }
+
+    h1{
+        font-size: 30px;
+        font-weight: 200;
+        font-family: 'Roboto', 'sans-serif';
+    }
+
+    .btn-admin, .btn-ingredient{
+        position: relative;
+    }
+
+    .btn-admin a, .btn-ingredient a {
+        position: absolute;
+        top: 0;
+        right: 50px;
+        left: 0;
+        padding: 50px 0 50px 0;
+        background-color: rgba(255, 255, 255, 0.906);
+    }
+
+    th {
+        max-width:500px;
+        }
+
+/*     .table{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
+    }
+
+.table-item-1{
+    float: left;
+    width: 25%;
+}
+
+.table-item{
+    float: left;
+    width: 75%;
+} */
+
+/* table{
+    text-align:center;
+    table-layout:fixed;
+    display:block;
+}
+
+thead{
+    display:block;
+    table-layout:fixed;
+    position:relative;
+    padding: 0 16px 0 0;
+}
+
+tbody{
+    max-height:600px;
+    width: 100%
+    display:block;
+    overflow:auto;
+    table-layout:fixed;
+}
+
+td tr{
+    width: 2500px;
+} */
+
+/*     .table-item{
+        order: 2;
+    } */
+
+/*     .table thead {
+        display: block;
+        text-align: right;
+    }
+
+    .table tr{
+        display: block;
+        margin-bottom: 40px;
+        }
+
+        .table td {
+        display: block;
+        text-align: right;
+        } */
+}
