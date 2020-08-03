@@ -30,7 +30,7 @@ class IngredientType extends AbstractType
             ])
             ->add('typeIngredient')
             ->add('calories')
-            ->add('unite')
+            // ->add('unite')
             ->add('vegan')
             ->add('vegetarien')
             ->add('gluten')
