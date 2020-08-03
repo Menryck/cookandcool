@@ -180,7 +180,6 @@ img.footNavImg {
     text-align: center;
 }
 
-
 @media screen and (max-width: 768px) {
 .copyright{
     display: none;
@@ -192,6 +191,11 @@ img.footNavImg {
 
 /* REGLAGES DESKTOP */
 @media screen and (min-width: 1080px) {
+.main-accueil {
+        overflow-y: hidden;
+        max-height: 80vh;
+}
+    
     .sectionCreerMenu {
         width: 100%;
         height: 70vh;
@@ -217,10 +221,6 @@ img.footNavImg {
     footer {
         display: none;
     }
-
-/*     main {
-        overflow-y: initial;
-    } */
 
     header {
         display: block;

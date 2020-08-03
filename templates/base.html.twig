@@ -35,9 +35,11 @@
         </div>
     {% endblock %}
     </header>
+    {% block main %}
     <main>
         {% block body %}{% endblock %}
     </main>
+    {% endblock %}
     <footer>
     {% block footer %}
         <div class="footerMenu">
