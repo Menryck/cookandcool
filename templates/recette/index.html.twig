@@ -23,31 +23,31 @@
     <table class="table">
         <thead>
             <tr>
-                <th>Id</th>
+                {# <th>Id</th> #}
+                <th> </th>  {# <th>photo </th>  #}
                 <th>Titre</th>
-                <th>Photo</th>
                 <th>Type</th>
                 <th>Categorie</th>
                 <th>Difficulte</th>
-                <th>Duree</th>
-                <th>Cuisson</th>
+                {# <th>Duree</th>
+                <th>Cuisson</th> #}
                 {# <th>Instructions</th> #}
                 {# <th>NbrePart</th> #}
-                <th>actions</th>
+                {# <th>actions</th> #}
             </tr>
         </thead>
         <tbody>
         {% for recette in recettes %}
         {# {{dump(recette)}} #}
             <tr>
-                <td>{{ recette.id }}</td>
-                <td>{{ recette.titre }}</td>
+                {# <td>{{ recette.id }}</td> #}
                 <td><img class="miniature" src="{{asset('assets/img/recettesImg/' ~ recette.photo )}}"></td>
+                <td>{{ recette.titre }}</td>
                 <td>{{ recette.type }}</td>
                 <td>{{ recette.categorie }}</td>
                 <td>{{ recette.difficulte }}</td>
-                <td>{{ recette.duree }}</td>
-                <td>{{ recette.cuisson }}</td>
+                {# <td>{{ recette.duree }}</td>
+                <td>{{ recette.cuisson }}</td> #}
                 {# <td class="instructionCss">{{ recette.instructions }}</td> #}
                 {# <td>{{ recette.nbrePart }}</td> #}
                 <td>

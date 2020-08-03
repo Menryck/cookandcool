@@ -19,9 +19,9 @@
     <table class="table">
         <thead>
             <tr>
-                <th>Id</th>
+                {# <th>Id</th> #}
+                <th>{# Image #}</th>
                 <th>Nom</th>
-                <th>Image</th>
                 <th>TypeIngredient</th>
                 <th>Calories</th>
                 <th>Unite</th>
@@ -29,15 +29,16 @@
                 <th>Vegetarien</th>
                 <th>Gluten</th>
                 <th>Saison</th>
-                <th>actions</th>
+                {# <th>actions</th> #}
             </tr>
         </thead>
         <tbody>
         {% for ingredient in ingredients %}
             <tr>
-                <td>{{ ingredient.id }}</td>
-                <td>{{ ingredient.nom }}</td>
+                {# <td>{{ ingredient.id }}</td> #}
+               
                 <td><img class="miniature" src="{{asset('assets/img/ingredientsImg/' ~ ingredient.image )}}"></td>
+                <td>{{ ingredient.nom }}</td>
                 <td>{{ ingredient.typeIngredient }}</td>
                 <td>{{ ingredient.calories }}</td>
                 <td>{{ ingredient.unite }}</td>

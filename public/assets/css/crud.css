@@ -6,7 +6,28 @@ h1 {
     text-align: center;
     color: rgb(82, 79, 75);
 }
+.miniature {
+ width: 75px;
+}
+label, h3 {
+    color: rgb(93, 92, 92);
+    font-size: 22px;
+    font-weight: 700;
+}
+button {
+    padding: 1rem;
+    font-size: 18px;
+    width: 40%;
 
+}
+
+
+li {
+    list-style: none;
+}
+td {
+    color: rgb(153, 72, 72);
+}
 /* index recette */
 .titrecrud {
     text-align: center;
