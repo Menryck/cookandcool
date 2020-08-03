@@ -8,17 +8,23 @@ for (let i = 1 ; i<8; i++) {
     let platdejeuner= Array();
     let nomdejeuner= Array();
     let nomdiner= Array();
+    let lienrecettedejeuner= Array();
+    let lienrecettediner= Array();
+    let idRecette= Array();
     platdiner[i] = document.getElementById("platdiner"+i);
     platdejeuner[i] = document.getElementById("platdejeuner"+i);
     nomdejeuner[i] = document.getElementById("nomdejeuner"+i);
     nomdiner[i] = document.getElementById("nomdiner"+i);
-
+    lienrecettedejeuner[i]= document.getElementById("lienrecettedejeuner"+i);
+    lienrecettediner[i]= document.getElementById("lienrecettediner"+i);
     if (localStorage.getItem("repas - diner - "+i)) {
         let image = localStorage.getItem("image - diner - "+i);
         let recette = localStorage.getItem("plat - diner - "+i);
         let personnes = localStorage.getItem("personnes - diner - "+i);
         nomdiner[i].innerHTML = recette + '<br>' + personnes + " personne(s)";
         platdiner[i].setAttribute("style", "background-image: url(../assets/img/recettesImg/" + image + ");background-repeat: no-repeat; background-size: cover");
+        idRecette[i] = localStorage.getItem("idRecette - diner - "+i);
+        lienrecettediner[i].setAttribute("href", "../recette/detail/"+idRecette[i]);
     }
     if (localStorage.getItem("repas - dejeuner - "+i)) {
         let image = localStorage.getItem("image - dejeuner - "+i);
@@ -26,6 +32,8 @@ for (let i = 1 ; i<8; i++) {
         let personnes = localStorage.getItem("personnes - dejeuner - "+i);
         nomdejeuner[i].innerHTML = recette + '<br>' + personnes + " personne(s)";
         platdejeuner[i].setAttribute("style", "background-image: url(../assets/img/recettesImg/" + image + ");background-repeat: no-repeat; background-size: cover");
+        idRecette[i] = localStorage.getItem("idRecette - dejeuner - "+i);
+        lienrecettedejeuner[i].setAttribute("href", "../recette/detail/"+idRecette[i]);
     }
 }
 
