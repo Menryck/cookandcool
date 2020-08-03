@@ -9,7 +9,7 @@ boutonAjout.addEventListener("click", event => {
     let image           = document.getElementById("banniere").getAttribute("data-img");
     let id              = document.getElementById("titre").getAttribute("data-id");
     let parpersonne     = document.getElementsByClassName("personnes");
-    let unite           = document.getElementsByClassName("unite");
+    // let unite           = document.getElementsByClassName("unite");
     let ingredient      = document.getElementsByClassName("nom");
     let repas           = localStorage.getItem("repas");
     let jour            = localStorage.getItem("jour");
@@ -29,7 +29,7 @@ boutonAjout.addEventListener("click", event => {
     // prise en compte de la quantite d'ingredient pour une personne
     for (i=0; i<parpersonne.length; i++) {
         window.localStorage.setItem("quantiteIngredientParPersonne" + i + " - " + repas + " - " + jour, parpersonne[i].getAttribute("data-mesure"));
-        window.localStorage.setItem("uniteIngredient" + i + " - " + repas + " - " + jour, unite[i].innerHTML);
+        // window.localStorage.setItem("uniteIngredient" + i + " - " + repas + " - " + jour, unite[i].innerHTML);
         window.localStorage.setItem("nomIngredient" + i + " - " + repas + " - " + jour, ingredient[i].innerHTML);
     };
     window.localStorage.setItem("nbreIngredients" + " - " + repas + " - " + jour, parpersonne.length);
