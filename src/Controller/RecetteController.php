@@ -21,7 +21,7 @@ class RecetteController extends AbstractController
     /**
      * @Route("/liste/{categorie}", name="recette_liste", methods={"GET"})
      */
-    public function liste(RecetteRepository $recetteRepository, Request $request, $categorie): Response
+    public function liste(RecetteRepository $recetteRepository, $categorie): Response
     {
         return $this->render('cookncool/liste_recettes.html.twig', [
             'recettes' => $recetteRepository->findBy(
