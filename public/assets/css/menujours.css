@@ -108,7 +108,7 @@ header{
     font-size: 17px;
     font-family: 'Roboto', 'sans-serif';
     text-align: right;
-    margin-top: 200px;
+    margin-top: 240px;
     margin-left: 69.5em;
     color: #C4C4C4;
     position: fixed;
@@ -119,6 +119,14 @@ header{
 .listeCourses{ 
     display: none;
 }
+
+
+@media screen and (max-width: 767px){
+    .listeCourses-smartphone{
+        display: none;
+    }
+}
+
 
 .listeCourses-smartphone{
     display:inline-block;
@@ -152,6 +160,39 @@ header{
 .listeCourses {
     text-align: center;
 }
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1568px){
+    .listeCourses{ 
+        display:inline-block;
+        height: 45px;
+        width: 350px;
+        font-size: 17px;
+        font-weight: 300;
+        font-family: 'Roboto', 'sans-serif';
+        text-align: right;
+        margin-top: 200px;
+        margin-left: 69.5em;
+        color: #C4C4C4;
+        position: fixed;
+        right: 5.9rem;
+        top: 12%;
+    }
+
+    .listeCourses-smartphone{
+        display: none;
+    }
+}
+
+
+
+
 
 
 
@@ -271,22 +312,6 @@ header{
     top: 2.8%;
 }
 
-.listeCourses{ 
-    display:inline-block;
-    height: 45px;
-    width: 350px;
-    font-size: 17px;
-    font-weight: 300;
-    font-family: 'Roboto', 'sans-serif';
-    text-align: right;
-    margin-top: 200px;
-    margin-left: 69.5em;
-    color: #C4C4C4;
-    position: fixed;
-    right: 5.9rem;
-    top: 12%;
-}
-
 .listeCourses-smartphone{
     display: none;
 }
@@ -312,7 +337,7 @@ header{
 
 
 /* REGLAGES TABLETTE */
-@media (min-width: 768px) and (max-width: 1080px){
+@media (min-width: 768px) and (max-width: 1079px){
 header{
     background-color: #ffff;
     padding: 2px 0 17px 0;
@@ -444,6 +469,7 @@ header{
     margin-bottom: 25px;
     color: #C4C4C4;
     top: 12%;
+/*     display: none; */
 }
 
 .icon-print{

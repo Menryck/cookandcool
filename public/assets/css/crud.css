@@ -20,7 +20,9 @@ button {
     width: 40%;
 
 }
-
+.ulNav {
+    padding:1.5rem; 
+}
 
 li {
     list-style: none;
@@ -28,10 +30,16 @@ li {
 td {
     color: rgb(153, 72, 72);
     font-weight: 750;
+    width: 100%;
+    white-space: nowrap;
 }
 th {
     font-weight: 700;
+    width: 100%;
+    white-space: nowrap;
 }
+
+
 /* index recette */
 .titrecrud {
     text-align: center;
