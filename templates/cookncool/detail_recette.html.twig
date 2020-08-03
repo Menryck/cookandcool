@@ -22,8 +22,8 @@
             <div class="ligneBlanche texte">
                 <a href="{{ url('type')}}"><img src="{{asset('assets/img/iconPng/retour.png')}}" class="commandesBottom">
                     <span class="commandesTexte">Retour</span></a> -
-                <a href=#><span class="commandesTexte" id="ajouter">Ajouter</span>
-                    <img src="{{asset('assets/img/iconPng/validation.png')}}" class="commandesBottom"></a>
+                <a href=#><span class="commandesTexte" id="ajouter">ajouter
+                    <img src="{{asset('assets/img/iconPng/validation.png')}}" class="commandesBottom"></span></a>
             </div>
             <div class="ligneBlanche texte">
                 <span class="commandesTexte">Nombre de personnes : </span><span id="quantite">1</span>
@@ -72,7 +72,7 @@
                 <tr>
                     <td>
                         <span class="personnes" data-mesure="{{ ingredient.quantite }}">{{ ingredient.quantite }}</span>
-                        <span class="unite">{{ ingredient.ingredient.unite }}</span>
+                        
                         <span class="nom">{{ ingredient.ingredient.nom }}</span>
                     </td>
                 </tr>
