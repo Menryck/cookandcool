@@ -2,31 +2,12 @@
 
 {% block title %}Recette index{% endblock %}
 
+{% block stylesheets %}
+<link rel="stylesheet" href="{{asset('assets/css/crud.css')}}">
+{% endblock %}
+
 {% block body %}
-<style>
-body {
-    font-size: 3rem;
-}
 
-.titrecrud {
-    text-align: center;
-    color:burlywood;
-}
-.btn{
-    width: 200px;
-    margin: 7px;
-}
-.container{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-   
-}
-
-.table{
-    
-}
-</style>
 
 <section class="container">
     <h1 class="titrecrud">Recette index</h1>
@@ -36,7 +17,9 @@ body {
         {# <li><a href="{{ '../' }}">Retour page Admin</a></li> #}
         <li><a href="{{ '../admin' }}">Retour page Admin</a></li>
     </ul>
+
     <a class="btn btn-danger" href="{{ path('recette_new') }}">Ajouter une recette</a>
+    
     <table class="table">
         <thead>
             <tr>
@@ -48,7 +31,7 @@ body {
                 <th>Difficulte</th>
                 <th>Duree</th>
                 <th>Cuisson</th>
-                <th>Instructions</th>
+                {# <th>Instructions</th> #}
                 {# <th>NbrePart</th> #}
                 <th>actions</th>
             </tr>
@@ -65,7 +48,7 @@ body {
                 <td>{{ recette.difficulte }}</td>
                 <td>{{ recette.duree }}</td>
                 <td>{{ recette.cuisson }}</td>
-                <td>{{ recette.instructions }}</td>
+                {# <td class="instructionCss">{{ recette.instructions }}</td> #}
                 {# <td>{{ recette.nbrePart }}</td> #}
                 <td>
                     <a class="btn btn-danger" href="{{ path('recette_show', {'id': recette.id}) }}">voir</a>

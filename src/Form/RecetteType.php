@@ -35,19 +35,20 @@ class RecetteType extends AbstractType
                     ])
                 ],
             ])
-            ->add('ingredientsRecette')
+            // ->add('ingredientsRecette')
             // ->add('quantite', EntityType::class, [
             //     'class' => TableRecetteIngredients::class
             // ])
             ->add('instructions')
             ->add('type')
             ->add('categorie')
-            ->add('nbrePart')
-        ;
+            // ->add('nbrePart')
+        
 // form_collection
-        $builder->add('ingredient', CollectionType::class, [
+            ->add ('ingredient', CollectionType::class, [
             'entry_type' => TableRecetteIngredientsType::class,
-            'entry_options' => ['label' => false],
+            'label' => " ",
+            'entry_options' => ['label' => 'ingredient'],
             'allow_add' => true,
             'by_reference' => false,
             'allow_delete' => true,
