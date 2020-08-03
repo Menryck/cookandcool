@@ -2,28 +2,11 @@
 
 {% block title %}Ingredient index{% endblock %}
 
+{% block stylesheets %}
+<link rel="stylesheet" href="{{asset('assets/css/crud.css')}}">
+{% endblock %}
 
 {% block body %}
-
-<style>
-.titrecrud {
-    text-align: center;
-    color:burlywood;
-}
-.btn{
-    width: 200px;
-    margin: 7px;
-}
-.container{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-.table{
-    
-}
-</style>
 
 <section class="container">
     <h1 class="titrecrud">Ingredient index</h1>

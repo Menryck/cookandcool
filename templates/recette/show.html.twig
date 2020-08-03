@@ -2,16 +2,15 @@
 
 {% block title %}Recette{% endblock %}
 
-{% block body %}
-<style>
-.btn{
-    width: 200px;
-    margin: 7px;
-}
-</style>
+{% block stylesheets %}
+<link rel="stylesheet" href="{{asset('assets/css/crud.css')}}">
+{% endblock %}
 
+{% block body %}
+
+<section class="container">
     <h1>Recette</h1>
-{{ dump(recette.ingredient) }}
+
     <table class="table">
         <tbody>
             <tr>
@@ -35,17 +34,14 @@
                 <td>{{ recette.cuisson }}</td>
             </tr>
             <tr>
-                <th>Photo</th>
-                <td>{{ recette.photo }}</td>
+            <tr>
+                <th>Instructions</th>
+                <td>{{ recette.instructions }}</td>
             </tr>
             {# <tr>
                 <th>IngredientsRecette</th>
                 <td>{{ recette.ingredientsRecette }}</td>
             </tr> #}
-            <tr>
-                <th>Instructions</th>
-                <td>{{ recette.instructions }}</td>
-            </tr>
              {# <tr>
                 <th>Quantite</th>
                
@@ -61,7 +57,6 @@
                 </td> 
                  
             </tr> #}
-             <tr>
                 <th>ingrédients</th>
                 <td>
                 {% for recetteIngredient in recette.ingredient %}
@@ -86,13 +81,19 @@
                 <th>NbrePart</th>
                 <td>{{ recette.nbrePart }}</td>
             </tr> #}
+             <tr>
+                <th>Photo</th>
+                <td><img class="miniature" src="{{asset('assets/img/recettesImg/' ~ recette.photo )}}"> {{ recette.photo }}</td>
+                
+            </tr>
         </tbody>
     </table>
 
-    <a class="btn btn-danger" href="{{ path('recette_index') }}">retour à la liste</a>
     
 {# update a configurer pour v2 #}
     {# <a class="btn btn-danger" href="{{ path('recette_edit', {'id': recette.id}) }}">modifier</a> #}
 
     {{ include('recette/_delete_form.html.twig') }}
+    <a class="btn btn-danger" href="{{ path('recette_index') }}">retour à la liste</a>
+    </section>
 {% endblock %}

@@ -1,19 +1,14 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}Ingredient{% endblock %}
-
+{% block stylesheets %}
+<link rel="stylesheet" href="{{asset('assets/css/crud.css')}}">
+{% endblock %}
 
 {% block body %}
 
-<style>
-.btn{
-    width: 200px;
-    margin: 7px;
-}
-</style>
-
 <section class="container">
-    <h1>Ingredient</h1>
+    <h1>INGREDIENT</h1>
     <table class="table">
         <tbody>
             <tr>
@@ -23,10 +18,6 @@
             <tr>
                 <th>Nom</th>
                 <td>{{ ingredient.nom }}</td>
-            </tr>
-            <tr>
-                <th>Image</th>
-                <td>{{ ingredient.image }}</td>
             </tr>
             <tr>
                 <th>Calories</th>
@@ -55,6 +46,11 @@
             <tr>
                 <th>Saison</th>
                 <td>{{ ingredient.saison }}</td>
+            </tr>
+            <tr>
+                <th>Image</th>
+                <td><img class="miniature" src="{{asset('assets/img/ingredientsImg/' ~ ingredient.image )}}"> {{ ingredient.image }}</td>
+                
             </tr>
         </tbody>
     </table>
