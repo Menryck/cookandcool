@@ -46,6 +46,10 @@ h1{
     font-family: 'Roboto', 'sans-serif';
 }
 
+p{
+    padding: 17px 12px 0 12px;
+}
+
 .btn-recette, .btn-ingredient{
     position: relative;
 }
@@ -97,6 +101,10 @@ h1{
         text-decoration: none;
         color: black;
         font-size: 25px;
+    }
+
+    a.mentions-legales-link{
+        font-size: 16px;
     }
 
     h1{

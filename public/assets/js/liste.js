@@ -25,7 +25,6 @@ for (i=0; i<nbreIngredientsRepas.length; i++) {
         var jour = elementTabIngredients.jour;
         var repas = elementTabIngredients.repas;
         var personnes = elementTabIngredients.nbPersonnes;
-        console.log(elementTabIngredients.nbIngredients);
         for (k=0; k<elementTabIngredients.nbIngredients; k++) {
             tableauQuantiteIngredients.push(parseInt(window.localStorage.getItem("quantiteIngredientParPersonne" + k + " - " + repas + " - " + jour))*parseInt(personnes));
             tableauNomIngredients.push(window.localStorage.getItem("nomIngredient" + k + " - " + repas + " - " + jour));

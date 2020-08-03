@@ -181,6 +181,12 @@ img.footNavImg {
 }
 
 
+@media screen and (max-width: 768px) {
+.copyright{
+    display: none;
+}
+}
+
 
 
 
@@ -211,6 +217,10 @@ img.footNavImg {
     footer {
         display: none;
     }
+
+/*     main {
+        overflow-y: initial;
+    } */
 
     header {
         display: block;
@@ -279,7 +289,16 @@ img.footNavImg {
         padding-bottom: 5px;
     }
 
+    .copyright{
+        text-align: center;
+        font-weight: 300;
+        margin-top: 50px;
+        font-family: 'Roboto', 'sans-serif';
+    }
 
+    .mentions-legales-link{
+        color: #000000;
+    }
 }
 
 
@@ -324,5 +343,9 @@ img.footNavImg {
         width: initial;
         padding-bottom: 5px;
         text-align: center;
+    }
+
+    .copyright{
+        display: none;
     }
 }

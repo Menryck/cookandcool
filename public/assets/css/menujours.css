@@ -129,7 +129,9 @@ header{
     margin-right: 35px;
 }
 
-
+.listeCourses {
+    text-align: center;
+}
 
 
 
@@ -259,7 +261,7 @@ header{
 }
 
 .text-print{
-    margin-right: 95px;
+    margin-right: 0;
 }
 }
 
