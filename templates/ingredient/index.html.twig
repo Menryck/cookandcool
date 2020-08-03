@@ -9,13 +9,17 @@
 {% block body %}
 
 <section class="container">
+
     <h1 class="titrecrud">Ingredient index</h1>
-    <ul>
+
+    <ul class="ulNav">
         {# <li><a href="{{ '../recette' }}">Gérer les recettes</a></li> #}
         <li><a href="{{ '../../recette' }}">Gérer les recettes</a></li>
         <li><a href="{{ '../' }}">Retour page Admin</a></li>
     </ul>
+
     <a class="btn btn-danger" href="{{ path('ingredient_new') }}">Ajouter un ingrédient</a>
+
     <table class="table">
         <thead>
             <tr>

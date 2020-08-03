@@ -12,7 +12,7 @@ class CategoriePlatsController extends AbstractController
      */
     public function plats()
     {
-        return $this->render('categorie_plats/plats.html.twig', [
+        return $this->render('categorie_Plats/plats.html.twig', [
             'controller_name' => 'CategoriePlatsController',
         ]);
     }
