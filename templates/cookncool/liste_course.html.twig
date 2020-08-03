@@ -10,7 +10,6 @@ for (i=0; i<8; i++) {
     window["ingredientsdejeuner"+i]=window.localStorage.getItem("idRecette - dejeuner - "+i);
 }
 </script>
-
     <div class="header-liste-course">
         <h2 class="titre-liste-course">Votre liste</h2>
         <a class="text-print" href="#" onclick="window.print()">Imprimer<img class="icon-print"src="../../public/assets/img/iconPng/print-grey.png" alt="imprimer"></a>
@@ -18,11 +17,8 @@ for (i=0; i<8; i++) {
 
     <script src="{{asset('assets/js/liste.js')}}"> </script>
         <script>
-document.write(codeHTML);
+            document.write(codeHTML);
         </script>
-        
-
-    </div>
 {% endblock %}
 {% block javascripts %}
 
