@@ -123,7 +123,7 @@ header{
 
 
 /* REGLAGES TABLETTE */
-@media (min-width: 768px) and (max-width: 1080px){
+@media (min-width: 768px) and (max-width: 1079px){
 header{
         background-color: #ffff;
         padding: 2px 0 5px 0;
