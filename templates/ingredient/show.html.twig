@@ -8,7 +8,7 @@
 {% block body %}
 
 <section class="container">
-    <h1>INGREDIENT</h1>
+    <h1>Ingredient</h1>
     <table class="table">
         <tbody>
             <tr>
@@ -23,25 +23,25 @@
                 <th>Calories</th>
                 <td>{{ ingredient.calories }}</td>
             </tr>
-            <tr>
+            {# <tr>
                 <th>Unite</th>
                 <td>{{ ingredient.unite }}</td>
-            </tr>
+            </tr> #}
             <tr>
                 <th>TypeIngredient</th>
                 <td>{{ ingredient.typeIngredient }}</td>
             </tr>
             <tr>
                 <th>Vegan</th>
-                <td>{{ ingredient.vegan ? 'Yes' : 'No' }}</td>
+                <td>{{ ingredient.vegan ? 'Oui' : 'Non' }}</td>
             </tr>
             <tr>
                 <th>Vegetarien</th>
-                <td>{{ ingredient.vegetarien ? 'Yes' : 'No' }}</td>
+                <td>{{ ingredient.vegetarien ? 'Oui' : 'Non' }}</td>
             </tr>
             <tr>
                 <th>Gluten</th>
-                <td>{{ ingredient.gluten ? 'Yes' : 'No' }}</td>
+                <td>{{ ingredient.gluten ? 'Oui' : 'Non' }}</td>
             </tr>
             <tr>
                 <th>Saison</th>
