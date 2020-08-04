@@ -180,10 +180,20 @@ img.footNavImg {
     text-align: center;
 }
 
+a.headerMiseEnPage {
+    color: black;
+}
+
+a.headerMiseEnPage:hover {
+    color: rgb(121, 171, 174);
+    text-decoration: none;
+}
+
 @media screen and (max-width: 768px) {
 .copyright{
     display: none;
 }
+
 }
 
 
@@ -239,14 +249,6 @@ img.footNavImg {
         width: 150px;
     }
 
-    .headerMiseEnPage a {
-        color: rgb(0, 0, 0);
-    }
-
-    .headerMiseEnPage a:hover {
-        color: rgb(49, 166, 158);
-    }
-
     #iconMenus {
         margin-left: 25px;
     }
@@ -260,26 +262,28 @@ img.footNavImg {
     }
 
     nav ul li {
-        padding: 0.5rem;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
     }
 
     #iconMenus {
-        padding: 0 15px;
+        padding: 0 95px;
         text-align: center;
     }
 
     #iconListes {
-        padding: 0 15px;
+        padding: 0 10px;
         text-align: center;
     }
 
     #iconStock {
-        padding: 0 15px;
+        padding: 0 95px;
         text-align: center;
     }
 
     #iconContact {
-        padding: 0 0 0 7px;
+        padding: 0 25px 0 7px;
         text-align: center;
     }
 
@@ -299,6 +303,8 @@ img.footNavImg {
     .mentions-legales-link{
         color: #000000;
     }
+
+
 }
 
 
